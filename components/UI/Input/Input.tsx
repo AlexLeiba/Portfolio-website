@@ -1,6 +1,6 @@
 'use client';
 import { cn } from '@/lib/utils';
-import React, { useState } from 'react';
+import React, { ChangeEventHandler, useState } from 'react';
 
 import { Eye, EyeOff, Search } from 'lucide-react';
 import { Spacer } from '../spacer/spacer';
@@ -16,7 +16,7 @@ type InputProps = {
   disabled?: boolean;
   defaultValue?: string;
   readOnly?: boolean;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
 } & Pick<React.InputHTMLAttributes<HTMLInputElement>, 'type'>;
 export function Input({
   type = 'text',
@@ -35,7 +35,7 @@ export function Input({
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div>
-      <p className={cn([`${error && 'grow text-red-500'}`])}>{label}</p>
+      <p>{label}</p>
       <Spacer size={1} />
       <label
         className={cn([
@@ -46,12 +46,15 @@ export function Input({
         {leftIcon}
         {type == 'textarea' ? (
           <textarea
-            onChange={onchange}
+            onChange={onChange}
             defaultValue={defaultValue ? defaultValue : ''}
             {...props}
             disabled={disabled}
             className={cn(' w-full  grow', [
-              `${error && ' text-red-500'}`,
+              `${
+                error ? 'border border-error-600' : 'border border-baseline-300'
+              }`,
+              'p-4 rounded  focus:border-white focus:ring focus:ring-offset-1',
               className,
             ])}
             placeholder={placeholder}
@@ -82,7 +85,7 @@ export function Input({
         )}
       </label>
       <Spacer size={1} />
-      <p className='text-xs text-red-500'>{error}</p>
+      <p className='text-xs text-error-600'>{error}</p>
 
       {inputType === 'password' &&
         (showPassword ? (
