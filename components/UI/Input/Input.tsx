@@ -54,7 +54,7 @@ export function Input({
               `${
                 error ? 'border border-error-600' : 'border border-baseline-300'
               }`,
-              'p-4 rounded  focus:border-white focus:ring focus:ring-offset-1',
+              'p-4 rounded  focus:border-white focus:ring focus:ring-offset-1 text-black',
               className,
             ])}
             placeholder={placeholder}
