@@ -65,15 +65,6 @@ function About() {
             </Col>
           );
         })}
-        {/* <Col className='w-full'>
-          <div
-            onClick={() => router.push('#my-skills')}
-            className='cursor-pointer flex justify-center items-center  gap-4 border mb-4 border-primary-200 pb-4  p-4 rounded-xl flex-wrap overflow-hidden'
-          >
-            <h5 className='text-primary-400'>Skills</h5>
-            <ChevronDown className='text-primary-400' width={50} height={50} />
-          </div>
-        </Col> */}
       </Row>
     </div>
   );

@@ -474,6 +474,40 @@ export const projectsData: {
   },
   {
     id: 9,
+    title: 'My portfolio',
+    description:
+      'My portfolio app is a simple portfolio website which shows my currect skills and projects I have worked on.',
+    techUsed: [
+      'Next.js',
+      'Tailwind',
+      'Typescript',
+      'React hook form',
+      'zod',
+      'AOS',
+    ],
+    github: '',
+    website: 'https://worldwide-everyday-news.netlify.app',
+    icon: (
+      <Image
+        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        src='/projects/my-portofolio-web.webp'
+        width={400}
+        height={400}
+        alt='W W News'
+      />
+    ),
+    icon2: (
+      <Image
+        className='h-[650px] w-[365px] object-cover object-top shadow-lg rounded-lg'
+        src='/projects/my-portofolio-web.webp'
+        width={400}
+        height={400}
+        alt='W W News'
+      />
+    ),
+  },
+  {
+    id: 10,
     title: 'WW-News',
     description:
       'World Wide News is a news app which shows realtime  news from around the world  provided by the Guardian OpenPlatform Api.',
@@ -500,7 +534,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 10,
+    id: 11,
     title: 'Weather forecast',
     description:
       'Weather forecast is a simple forecast app which shows real 5 days forecast of Romanian big cities',
@@ -673,6 +707,19 @@ export const skillsData: {
         height={70}
         alt='Zustand'
         className=' shadow-lg rounded-full w-[50px] h-[50px] object-contain '
+      />
+    ),
+  },
+  {
+    title: 'GraphQL',
+    percentage: 50,
+    icon: (
+      <Image
+        src='/categories/GraphQL.svg'
+        width={50}
+        height={50}
+        alt='Git'
+        className=' shadow-lg rounded-full w-[50px] h-[50px] object-contain'
       />
     ),
   },
