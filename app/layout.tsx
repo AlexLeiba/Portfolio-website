@@ -9,6 +9,7 @@ import { Spacer } from '@/components/UI/spacer/spacer';
 import AosInit from '../lib/aosInit';
 
 import { Toaster } from 'react-hot-toast';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -43,6 +44,7 @@ export default function RootLayout({
           <Spacer size={12} /> {/*Header size*/}
           <main className='flex-grow'>
             <AosInit>{children}</AosInit>
+            <ScrollToTopButton />
           </main>
           <footer>
             <Footer />
