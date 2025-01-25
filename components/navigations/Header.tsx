@@ -1,10 +1,9 @@
-import { Code2, Github, Linkedin, Mail } from 'lucide-react';
-
 import React from 'react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle';
 import { Col, Container, Row } from '../UI/Grid';
 import Link from 'next/link';
-import AuthLinks from './AuthLinks';
+import AuthLinks from './NavLinks';
 
 function header() {
   return (

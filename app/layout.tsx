@@ -37,7 +37,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Toaster />
-        <div className='flex min-h-[100vh] bg-white  flex-col text-black dark:text-white dark:bg-black'>
+        <div className='flex min-h-[100vh] bg-white  flex-col text-black dark:text-white dark:bg-black overflow-hidden'>
           <header>
             <Header />
           </header>

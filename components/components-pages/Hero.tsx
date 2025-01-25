@@ -4,7 +4,7 @@ import { Col, Container, Row } from '@/components/UI/Grid';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import { Spacer } from '../UI/spacer/spacer';
-import { FileDown, Scale } from 'lucide-react';
+import { FileDown } from 'lucide-react';
 
 function Hero() {
   function handleDownloadPdf() {
@@ -13,12 +13,12 @@ function Hero() {
   return (
     <Container
       variant={'fluid'}
-      className='relative h-[100vh] bg-[linear-gradient(to_bottom,_#6b8dff_10%,_#c1dbe7_40%,_#89e0ef_90%,_#ffffff_90%)] dark:bg-[linear-gradient(to_bottom,_#000,_#2B1942_35%,_#8F5C55_60%,_#DBAF6E_80%)] overflow-clip'
+      className='relative overflow-hidden h-[100vh] bg-[linear-gradient(to_bottom,_#6b8dff_10%,_#c1dbe7_40%,_#89e0ef_90%,_#ffffff_90%)] dark:bg-[linear-gradient(to_bottom,_#000,_#2B1942_35%,_#8F5C55_60%,_#DBAF6E_80%)] '
     >
       <Row>
         <Col>
           {/* BLACK CIRCLE */}
-          <div className=' z-20 position absolute   w-[3000px] h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] top-[730px] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 '></div>
+          <div className=' z-20 position absolute  w-[3000px]  h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] top-[730px] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 '></div>
 
           <div className=' flex justify-center flex-col items-center  '>
             <div>

@@ -16,7 +16,7 @@ function About() {
     setShowMore((prev) => !prev);
   }
   return (
-    <div>
+    <>
       <Row>
         <Col lgOffset={2} lg={8}>
           <div className='flex justify-center gap-4'>
@@ -126,7 +126,7 @@ function About() {
           </div>
         </Col>
       </Row>
-    </div>
+    </>
   );
 }
 
