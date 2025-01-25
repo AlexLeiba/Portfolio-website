@@ -34,7 +34,7 @@ function Projects() {
                     <div data-aos='fade-up'>{data.icon}</div>
                     <div
                       data-aos='fade-left'
-                      className=' absolute top-10 left-96 '
+                      className=' absolute top-16 left-96 '
                       data-aos-delay={500}
                     >
                       {data.icon2}
@@ -131,7 +131,7 @@ function Projects() {
                   <>
                     <div data-aos='fade-up'>{data.icon}</div>
                     <div
-                      className='absolute top-10 right-96'
+                      className='absolute top-16 right-96'
                       data-aos='fade-right'
                       data-aos-delay={500}
                     >

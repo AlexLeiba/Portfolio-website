@@ -4,6 +4,7 @@ import Hero from '@/components/components-pages/Hero';
 import Projects from '@/components/components-pages/Projects';
 import Skills from '@/components/components-pages/Skills';
 import { Container, Row } from '@/components/UI/Grid';
+import { Spacer } from '@/components/UI/spacer/spacer';
 
 export default function Home() {
   return (
@@ -18,11 +19,13 @@ export default function Home() {
           <Container id='skills'>
             <Skills />
           </Container>
-          <Container id='projects'>
+          <Container id='projects' spacing='none'>
+            <Spacer size={24} />
             <Projects />
           </Container>
-          <Container id='contact'>
+          <Container id='contact' spacing='none'>
             <Contact />
+            <Spacer size={24} />
           </Container>
         </Row>
       </Container>

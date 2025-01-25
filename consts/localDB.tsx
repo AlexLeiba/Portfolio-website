@@ -236,19 +236,19 @@ export const projectsData: {
     icon: (
       <Image
         src='/projects/wes-web.webp'
-        width={400}
+        width={600}
         height={400}
         alt='Wonderland'
-        className='h-[400px] w-[600px] object-cover shadow-lg'
+        className=' object-cover shadow-lg'
       />
     ),
     icon2: (
       <Image
         src='/projects/wes-mobile.webp'
-        width={400}
+        width={250}
         height={400}
         alt='Wonderland'
-        className='h-[650px] w-[370px] object-cover object-top shadow-lg rounded-lg '
+        className=' object-cover object-top shadow-lg rounded-lg '
       />
     ),
   },
@@ -262,18 +262,18 @@ export const projectsData: {
     website: '',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/wes-app.webp'
-        width={400}
+        width={600}
         height={400}
         alt='Wonderland-mobile'
       />
     ),
     icon2: (
       <Image
-        className='h-[650px] w-[370px] object-cover object-top shadow-lg rounded-lg'
+        className=' object-cover object-top shadow-lg rounded-lg'
         src='/projects/wes-app-2.webp'
-        width={400}
+        width={250}
         height={400}
         alt='Wonderland-mobile'
       />
@@ -289,18 +289,18 @@ export const projectsData: {
     website: 'https://marketpal.com/',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/enovatika-web.webp'
-        width={400}
+        width={600}
         height={400}
         alt='Enovatika'
       />
     ),
     icon2: (
       <Image
-        className='h-[650px] w-[370px] object-cover object-top shadow-lg rounded-lg'
+        className=' object-cover object-top shadow-lg rounded-lg'
         src='/projects/enovatika-mobile.webp'
-        width={400}
+        width={250}
         height={400}
         alt='Enovatika'
       />
@@ -324,18 +324,18 @@ export const projectsData: {
     website: 'https://marketpal.com/',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/marketpal-web.webp'
-        width={400}
+        width={600}
         height={400}
         alt='Marketpal'
       />
     ),
     icon2: (
       <Image
-        className='h-[650px] w-[370px] object-cover object-top shadow-lg rounded-lg'
+        className=' object-cover object-top shadow-lg rounded-lg'
         src='/projects/marketpal-moble.webp'
-        width={400}
+        width={250}
         height={400}
         alt='Marketpal'
       />
@@ -351,18 +351,18 @@ export const projectsData: {
     website: 'https://www.medforeldre.no/',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/medforeldre-web.webp'
-        width={400}
+        width={600}
         height={400}
         alt='Medforeldre'
       />
     ),
     icon2: (
       <Image
-        className='h-[650px] w-[370px] object-cover object-top shadow-lg rounded-lg'
+        className=' object-cover object-top shadow-lg rounded-lg'
         src='/projects/medforeldre-mobile.webp'
-        width={400}
+        width={250}
         height={400}
         alt='Medforeldre'
       />
@@ -385,18 +385,18 @@ export const projectsData: {
     website: 'https://wt-blogs.vercel.app/',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/wt-blogs-web-dark-theme.webp'
-        width={400}
+        width={600}
         height={400}
         alt='wt-blogs'
       />
     ),
     icon2: (
       <Image
-        className='h-[650px] w-[370px] object-cover object-top shadow-lg rounded-lg'
+        className=' object-cover object-top shadow-lg rounded-lg'
         src='/projects/wt-blogs-mobile-white-theme.webp'
-        width={400}
+        width={250}
         height={400}
         alt='wt-blogs'
       />
@@ -421,9 +421,9 @@ export const projectsData: {
     website: 'https://chat-me-react.onrender.com/sign-in',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/chat-me-web.webp'
-        width={400}
+        width={600}
         height={400}
         alt='chat-me'
       />
@@ -432,7 +432,7 @@ export const projectsData: {
       <Image
         className='h-[665px] w-[380px] object-cover object-top shadow-lg rounded-lg'
         src='/projects/chat-me-mobile.webp'
-        width={400}
+        width={250}
         height={400}
         alt='chat-me'
       />
@@ -455,18 +455,18 @@ export const projectsData: {
     website: 'https://full-stack-blog-37mi.onrender.com',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/dev-blog-web.webp'
-        width={400}
+        width={600}
         height={400}
         alt='express-blog'
       />
     ),
     icon2: (
       <Image
-        className='h-[650px] w-[370px] object-cover object-top shadow-lg rounded-lg'
+        className=' object-cover object-top shadow-lg rounded-lg'
         src='/projects/dev-blog-mobile.webp'
-        width={400}
+        width={250}
         height={400}
         alt='express-blog'
       />
@@ -489,20 +489,20 @@ export const projectsData: {
     website: 'https://worldwide-everyday-news.netlify.app',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/my-portofolio-web.webp'
-        width={400}
+        width={600}
         height={400}
         alt='W W News'
       />
     ),
     icon2: (
       <Image
-        className='h-[650px] w-[365px] object-cover object-top shadow-lg rounded-lg'
-        src='/projects/my-portofolio-web.webp'
-        width={400}
+        className='object-cover object-top shadow-lg rounded-lg'
+        src='/projects/portfolio-mobile-white-theme.webp'
+        width={250}
         height={400}
-        alt='W W News'
+        alt='world wide news'
       />
     ),
   },
@@ -516,20 +516,20 @@ export const projectsData: {
     website: 'https://worldwide-everyday-news.netlify.app',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/ww-news-web.webp'
-        width={400}
+        width={600}
         height={400}
-        alt='W W News'
+        alt='world-wide-news'
       />
     ),
     icon2: (
       <Image
         className='h-[650px] w-[365px] object-cover object-top shadow-lg rounded-lg'
         src='/projects/ww-news-mobile.webp'
-        width={400}
+        width={250}
         height={400}
-        alt='W W News'
+        alt='world-wide-news'
       />
     ),
   },
@@ -543,18 +543,18 @@ export const projectsData: {
     website: 'https://alex-weather-forecast.netlify.app/',
     icon: (
       <Image
-        className='h-[400px] w-[600px] object-top object-cover shadow-lg'
+        className=' object-top object-cover shadow-lg'
         src='/projects/weather-web.webp'
-        width={400}
+        width={600}
         height={400}
         alt='Weather-forecast'
       />
     ),
     icon2: (
       <Image
-        className='h-[650px] w-[370px] object-cover object-top shadow-lg rounded-lg'
+        className=' object-cover object-top shadow-lg rounded-lg'
         src='/projects/weather-mobile-dark-theme.webp'
-        width={400}
+        width={250}
         height={400}
         alt='Weather-forecast'
       />
