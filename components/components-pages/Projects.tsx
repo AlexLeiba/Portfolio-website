@@ -13,8 +13,12 @@ function Projects() {
       <Row>
         <Col lgOffset={2} lg={8}>
           <div className='flex justify-center '>
-            <h2 className='text-center'>Pro</h2>
-            <h2 className=' text-primary-400'>jects</h2>
+            <h2 className='text-center' data-aos='fade-left'>
+              Pro
+            </h2>
+            <h2 className=' text-primary-400' data-aos='fade-right'>
+              jects
+            </h2>
           </div>
         </Col>
       </Row>
@@ -27,8 +31,14 @@ function Projects() {
               <div className='flex gap-12 justify-between items-center relative'>
                 {index % 2 !== 0 && (
                   <>
-                    <div className=''>{data.icon}</div>
-                    <div className='absolute top-10 left-96'>{data.icon2}</div>
+                    <div data-aos='fade-up'>{data.icon}</div>
+                    <div
+                      data-aos='fade-left'
+                      className=' absolute top-10 left-96'
+                      data-aos-delay={500}
+                    >
+                      {data.icon2}
+                    </div>
                   </>
                 )}
 
@@ -37,6 +47,7 @@ function Projects() {
                     index % 2 !== 0 && ' text-end ',
                     'flex flex-col gap-4'
                   )}
+                  data-aos='fade-up'
                 >
                   <h5 className='font-bold text-primary-400'>
                     {data.id !== 10 ? '0' + data.id : data.id}
@@ -118,8 +129,14 @@ function Projects() {
 
                 {index % 2 === 0 && (
                   <>
-                    <div>{data.icon}</div>{' '}
-                    <div className='absolute top-10 right-96'>{data.icon2}</div>
+                    <div data-aos='fade-up'>{data.icon}</div>
+                    <div
+                      className='absolute top-10 right-96'
+                      data-aos='fade-right'
+                      data-aos-delay={500}
+                    >
+                      {data.icon2}
+                    </div>
                   </>
                 )}
               </div>

@@ -3,8 +3,7 @@ import Contact from '@/components/components-pages/Contact';
 import Hero from '@/components/components-pages/Hero';
 import Projects from '@/components/components-pages/Projects';
 import Skills from '@/components/components-pages/Skills';
-import { Col, Container, Row } from '@/components/UI/Grid';
-import { Spacer } from '@/components/UI/spacer/spacer';
+import { Container, Row } from '@/components/UI/Grid';
 
 export default function Home() {
   return (
@@ -13,13 +12,13 @@ export default function Home() {
 
       <Container variant={'fluid'} spacing='none'>
         <Row>
-          <Container id='about-me'>
+          <Container id='about'>
             <About />
           </Container>
           <Container id='skills'>
             <Skills />
           </Container>
-          <Container id='my-projects'>
+          <Container id='projects'>
             <Projects />
           </Container>
           <Container id='contact'>

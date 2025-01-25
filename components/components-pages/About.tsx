@@ -1,96 +1,16 @@
 'use client';
 import React from 'react';
 import { Spacer } from '../UI/spacer/spacer';
-import { title } from 'process';
-import { Book, ChevronDown, Cog, Languages, MonitorCog } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { Col, Row } from '../UI/Grid';
 import { Button } from '../UI/Button/Button';
 import { cn } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
+import { aboutMeData } from '@/consts/localDB';
 
 function About() {
   const router = useRouter();
   const [showMore, setShowMore] = React.useState(false);
-  const aboutMeData: {
-    title: string;
-    description: { title: string; description: string[] }[];
-    icon: React.JSX.Element;
-    col: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
-  }[] = [
-    {
-      title: 'Education',
-      description: [
-        {
-          title: '',
-          description: [
-            ' • Baccalaureate - 2000-2012',
-            ' • IT school - Front end development - 2021-2022',
-            ' • Udemy courses - JavaScript HTML CSS React.js - 2021',
-          ],
-        },
-      ],
-      icon: <Book width={50} height={50} />,
-      col: 5,
-    },
-    {
-      title: 'Experience',
-      description: [
-        {
-          title: '',
-          description: [
-            '• More than 3 years employed as a front end developer at enovatika, mostly experienced with • React.js • Next.js • Tailwind • styled-components and • Redux.',
-          ],
-        },
-      ],
-      icon: <MonitorCog width={50} height={50} />,
-      col: 7,
-    },
-    // {
-    //   title: 'Skills',
-    //   description: [
-    //     ' • JavaScript',
-    //     ' • TypeScript',
-    //     ' • React.js',
-    //     ' • Next.js',
-    //     ' • React Native',
-    //     ' • Tailwind',
-    //     ' • Redux',
-    //     ' • Zustand',
-    //     ' • HTML',
-    //     ' • CSS',
-    //     ' • Git',
-    //     ' • Github',
-    //     ' • Jira',
-    //   ],
-    //   icon: <Cog width={50} height={50} />,
-    //   col: 8,
-    // },
-    {
-      title: 'Projects Completed',
-      description: [
-        {
-          title: ' • Front end',
-          description: [
-            'More than 10 projects completed as a front end developer.',
-          ],
-        },
-        {
-          title: ' • Full stack',
-          description: ['3 Projects completed as a full stack developer.'],
-        },
-      ],
-      icon: <Cog width={50} height={50} />,
-      col: 8,
-    },
-    {
-      title: 'Languages',
-      description: [
-        { title: '', description: ['• English', '• Russian', '• Romanian'] },
-      ],
-      icon: <Languages width={50} height={50} />,
-      col: 4,
-    },
-  ];
 
   function handleShowMoreOrLess() {
     setShowMore((prev) => !prev);
@@ -100,8 +20,12 @@ function About() {
       <Row>
         <Col lgOffset={2} lg={8}>
           <div className='flex justify-center gap-4'>
-            <h2 className='text-center'>About</h2>
-            <h2 className=' text-primary-400'>me</h2>
+            <h2 className='text-center' data-aos='fade-left'>
+              About
+            </h2>
+            <h2 className=' text-primary-400' data-aos='fade-right'>
+              me
+            </h2>
           </div>
           <Spacer size={16} />
 
@@ -127,6 +51,7 @@ function About() {
             decisions .
           </p>
           <div
+            data-aos='fade-up'
             className='flex gap-1 items-center cursor-pointer'
             onClick={handleShowMoreOrLess}
           >
@@ -151,6 +76,8 @@ function About() {
           return (
             <Col key={index} className='w-full' lg={data.col}>
               <div
+                data-aos-delay={index * 100}
+                data-aos='fade-up'
                 key={index}
                 className='flex gap-4 border mb-4 border-primary-200 pb-4 items-center min-h-56 p-4 rounded-xl flex-wrap overflow-hidden shadow-lg'
               >
@@ -185,11 +112,17 @@ function About() {
         })}
         <Col className='w-full'>
           <div
-            onClick={() => router.push('#my-skills')}
+            data-aos-delay={100}
+            data-aos='fade-left'
+            onClick={() => router.push('#skills')}
             className='cursor-pointer flex justify-center items-center  gap-4 border mb-4 border-primary-200 pb-4  p-4 rounded-xl flex-wrap overflow-hidden shadow-lg'
           >
             <h5 className='text-primary-400'>Skills</h5>
-            <ChevronDown className='text-primary-400' width={50} height={50} />
+            <ChevronDown
+              className='text-primary-400 animate-pulse'
+              width={50}
+              height={50}
+            />
           </div>
         </Col>
       </Row>

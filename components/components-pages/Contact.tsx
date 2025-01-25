@@ -6,32 +6,16 @@ import { Button } from '../UI/Button/Button';
 import Link from 'next/link';
 import { Input } from '../UI/input';
 import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
 import { useForm } from 'react-hook-form';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { Input as InputTextarea } from '../UI/Input/Input';
 import { cn } from '@/lib/utils';
+import { contactSchema, type FormDataType } from '@/lib/schemas';
 
 function Contact() {
-  const schema = z.object({
-    firstName: z
-      .string()
-      .min(2, 'first name must be at least 2 characters')
-      .max(50, 'too long first name'),
-    lastName: z.string().optional(),
-    email: z.string().email('invalid email'),
-    phone: z.string().optional(),
-    message: z
-      .string()
-      .min(5, 'message must be at least 5 characters')
-      .max(500, 'too long Message'),
-  });
-
-  type FormDataType = z.infer<typeof schema>;
-
   const formMethods = useForm<FormDataType>({
-    resolver: zodResolver(schema),
+    resolver: zodResolver(contactSchema),
     defaultValues: {
       firstName: '',
       lastName: '',
@@ -48,17 +32,20 @@ function Contact() {
   } = formMethods;
 
   async function onSubmit(formData: FormDataType) {
+    const url = process.env.NEXT_PUBLIC_FORM_URL;
     try {
-      const response = await fetch('https://getform.io/f/bejjwnra', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      if (url) {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
 
-      if (response.ok) {
-        toast.success('The message was sent successfully!');
+        if (response.ok) {
+          toast.success('The message was sent successfully!');
+        }
       } else {
         toast.error('Error sending the message. Please try again.');
       }
@@ -71,8 +58,12 @@ function Contact() {
       <Row>
         <Col lgOffset={2} lg={8}>
           <div className='flex justify-center '>
-            <h2 className='text-center'>Cont</h2>
-            <h2 className=' text-primary-400'>act</h2>
+            <h2 className='text-center' data-aos='fade-left'>
+              Cont
+            </h2>
+            <h2 className=' text-primary-400' data-aos='fade-right'>
+              act
+            </h2>
           </div>
         </Col>
       </Row>
@@ -81,12 +72,13 @@ function Contact() {
       <Row>
         <Col lg={4} className='flex flex-col justify-between'>
           <Link
+            data-aos='fade-up'
             href='mailto:leiba.alexandru@gmail.com'
-            className='flex gap-2 items-center'
+            className='flex gap-2 items-center animate-pulse'
           >
             <div className='flex flex-col gap-1 items-center'>
               <Mail width={80} height={80} className='shadow-xl rounded-lg' />
-              <p className='body-xs !font-bold text-primary-500'>Gmail:</p>
+              <p className='body-xs !font-bold text-primary-500'>Gmail</p>
             </div>
             <div className='flex gap-4 items-center'>
               <p>leiba.alexandru@gmail.com</p>
@@ -94,7 +86,8 @@ function Contact() {
           </Link>
 
           <Link
-            className='flex gap-2 items-center'
+            data-aos='fade-up'
+            className='flex gap-2 items-center animate-pulse'
             href={
               'https://www.linkedin.com/in/alex-leiba-9205801ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
             }
@@ -106,7 +99,7 @@ function Contact() {
                 className='shadow-xl rounded-lg'
               />
 
-              <p className='body-xs !font-bold text-primary-500'>Linkedin:</p>
+              <p className='body-xs !font-bold text-primary-500'>Linkedin</p>
             </div>
             <div className='flex gap-4 items-center'>
               <p>Alex Leiba</p>
@@ -114,12 +107,13 @@ function Contact() {
           </Link>
 
           <Link
+            data-aos='fade-up'
             href={'https://github.com/AlexLeiba'}
-            className='flex gap-2 items-center'
+            className='flex gap-2 items-center animate-pulse'
           >
             <div className='flex flex-col gap-1 items-center'>
               <Github width={80} height={80} className='shadow-xl rounded-lg' />
-              <p className='body-xs !font-bold text-primary-500'>Github:</p>
+              <p className='body-xs !font-bold text-primary-500'>Github</p>
             </div>
             <div className='flex gap-4 items-center'>
               <p>AlexLeiba</p>
@@ -127,7 +121,10 @@ function Contact() {
           </Link>
         </Col>
         <Col lg={8}>
-          <div className='rounded-lg bg-baseline-100 p-4 dark:bg-baseline-900 shadow-xl'>
+          <div
+            className='rounded-lg bg-baseline-100 p-4 dark:bg-baseline-900 shadow-xl'
+            data-aos='fade-up'
+          >
             <h4 className='inline'>Contact</h4>
             <h4 className='inline text-primary-400'> me</h4>
             <Spacer size={2} />
@@ -193,7 +190,7 @@ function Contact() {
                 <Button
                   onClick={handleSubmit(onSubmit)}
                   variant={'baseline'}
-                  className='w-full'
+                  className='w-full animate-pulse'
                 >
                   Send Message
                 </Button>

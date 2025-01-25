@@ -18,7 +18,7 @@ function Hero() {
       <Row>
         <Col>
           {/* BLACK CIRCLE */}
-          <div className=' z-20 position absolute   w-[3000px] h-full dark:bg-[radial-gradient(closest-side,_#000000_80%,#1c102b)] bg-[radial-gradient(closest-side,_#ffffff_80%,#88d7f6_100%)] top-[730px] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 '></div>
+          <div className=' z-20 position absolute   w-[3000px] h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] top-[730px] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 '></div>
 
           <div className=' flex justify-center flex-col items-center  '>
             <div>
@@ -37,7 +37,7 @@ function Hero() {
                 </p>
                 <Spacer size={6} />
                 <div
-                  className='flex justify-center items-center flex-col cursor-pointer'
+                  className='flex justify-center items-center flex-col cursor-pointer animation-delay-1000 animate-pulse'
                   onClick={handleDownloadPdf}
                 >
                   <FileDown
@@ -89,28 +89,13 @@ export default Hero;
 const floatingIcons = [
   {
     source: '/rocket.svg',
-    width: 40,
-    height: 40,
+    width: 15,
+    height: 15,
     animate: {
-      translateY: 400,
-      transition: { duration: 50 },
-      translateX: 3000,
-      rotate: 40,
-    },
-    className: 'absolute top-[200px] left-[-200px] cursor-move rotate-45',
-    image: {
-      className: 'rotate-45',
-    },
-  },
-  {
-    source: '/rocket.svg',
-    width: 20,
-    height: 20,
-    animate: {
-      translateY: 400,
+      translateY: 500,
       transition: { duration: 100 },
-      translateX: -3000,
-      rotate: -25,
+      translateX: -4000,
+      rotate: -20,
     },
     className: 'absolute top-[100px] right-[-200px] cursor-move rotate-45',
     image: {

@@ -4,10 +4,10 @@ import React from 'react';
 function AuthLinks() {
   return (
     <div className='flex gap-4 dark:text-baseline-200'>
-      <Link href='#about-me'>
+      <Link href='#about'>
         <p className='text-xs'>About me</p>
       </Link>
-      <Link href='#my-projects'>
+      <Link href='#projects'>
         <p className='text-xs'>My projects</p>
       </Link>
       <Link href='#skills'>

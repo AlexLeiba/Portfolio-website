@@ -8,7 +8,7 @@ import AuthLinks from './AuthLinks';
 
 function header() {
   return (
-    <div className='  p-4 bg-baseline-100 dark:bg-black fixed top-0 left-0 right-0  z-50'>
+    <div className='  p-4  dark:bg-black bg-primary-400 fixed top-0 left-0 right-0  z-50'>
       <Container
         spacing='none'
         variant={'fluid'}
