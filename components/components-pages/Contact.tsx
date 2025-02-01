@@ -119,6 +119,7 @@ function Contact() {
               <p>AlexLeiba</p>
             </div>
           </Link>
+          <Spacer md={12} sm={8} />
         </Col>
         <Col lg={8}>
           <div

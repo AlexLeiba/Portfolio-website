@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import Image from 'next/image';
 import { Spacer } from '../UI/spacer/spacer';
 import { FileDown } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 function Hero() {
   function handleDownloadPdf() {
@@ -18,7 +19,23 @@ function Hero() {
       <Row>
         <Col>
           {/* BLACK CIRCLE */}
-          <div className=' z-20 position absolute  w-[3000px]  h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] top-[730px] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 '></div>
+          <div className='absolute lg:top-[450px]  left-[50%] md:top-[450px] sm:top-[calc(100vh-260px)] -translate-x-1/2 '>
+            <div className=' relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[200px] sm:h-[400px]   '>
+              <Image
+                className='object-contain object-top'
+                src={'/hero-illustration.avif'}
+                alt='illustration'
+                draggable='false'
+                fill
+              />
+            </div>
+          </div>
+          <div
+            className={cn(
+              'top-[730px] sm:top-[calc(100vh-100px)]',
+              'z-20 position absolute  w-[3000px]  h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 '
+            )}
+          ></div>
 
           <div className=' flex justify-center flex-col items-center  '>
             <div>
@@ -67,16 +84,7 @@ function Hero() {
                 </motion.div>
               ))}
             </div>
-            <Spacer size={12} />
-
-            <Image
-              className=''
-              src={'/hero-illustration.avif'}
-              width={350}
-              height={200}
-              alt='illustration'
-              draggable='false'
-            />
+            {/* <Spacer lg={12} md={36} sm={28} /> */}
           </div>
         </Col>
       </Row>
@@ -89,39 +97,41 @@ export default Hero;
 const floatingIcons = [
   {
     source: '/rocket.svg',
-    width: 15,
-    height: 15,
+    width: 20,
+    height: 20,
     animate: {
       translateY: 500,
       transition: { duration: 100 },
       translateX: -4000,
       rotate: -20,
+      scale: -1,
     },
     className: 'absolute top-[100px] right-[-200px] cursor-move rotate-45',
     image: {
       className: 'rotate-[220deg]',
     },
   },
-  {
-    source: '/drag-illustrations/laptop-illustration2.webp',
-    width: 120,
-    height: 120,
-    animate: {
-      translateY: 40,
-      transition: { duration: 6 },
-    },
-    className: 'absolute top-0 right-[50%] cursor-move',
-    image: {
-      className: '',
-    },
-  },
+  // {
+  //   source: '/drag-illustrations/laptop-illustration2.webp',
+  //   width: 120,
+  //   height: 120,
+  //   animate: {
+  //     translateY: 40,
+  //     transition: { duration: 6 },
+  //   },
+  //   className: 'absolute top-0 right-[50%] cursor-move ',
+  //   image: {
+  //     className: '',
+  //   },
+  // },
 
   {
     source: '/categories/React.svg',
-    width: 80,
-    height: 80,
+    width: 40,
+    height: 40,
     animate: {
-      translateX: 150,
+      translateX: 250,
+      translateY: 20,
       rotate: 360,
       transition: { duration: 15 },
     },
@@ -132,25 +142,25 @@ const floatingIcons = [
   },
   {
     source: '/categories/NextJS.svg',
-    width: 80,
-    height: 80,
+    width: 50,
+    height: 50,
     animate: {
-      translateY: -300,
+      translateY: -500,
       rotate: 20,
       transition: { duration: 50 },
-      scale: 2,
+      scale: 1,
     },
-    className: 'absolute bottom-[20%] right-0 cursor-move',
+    className: 'absolute bottom-0 right-0 cursor-move',
     image: {
       className: '',
     },
   },
   {
     source: '/categories/tailwind.svg',
-    width: 50,
-    height: 50,
+    width: 30,
+    height: 30,
     animate: {
-      translateX: 150,
+      translateX: 110,
       rotate: 360,
       translateY: 100,
       transition: { duration: 20 },
@@ -162,42 +172,44 @@ const floatingIcons = [
   },
   {
     source: '/categories/TypeScript.svg',
-    width: 70,
-    height: 70,
+    width: 30,
+    height: 30,
     animate: {
-      translateX: -200,
-      rotate: 20,
-      transition: { duration: 30 },
+      translateX: -150,
+      rotate: 30,
+      transition: { duration: 20 },
+      scale: 1,
     },
-    className: 'absolute top-[5%] -right-[100px] cursor-move',
+    className: 'absolute top-[5%] -right-[100px] sm:-right-[150px] cursor-move',
     image: {
       className: '',
     },
   },
   {
     source: '/categories/JavaScript.svg',
-    width: 80,
-    height: 80,
+    width: 40,
+    height: 40,
     animate: {
-      translateX: 90,
+      translateX: 50,
       translateY: 60,
-      transition: { duration: 50 },
+      transition: { duration: 20 },
     },
-    className: 'absolute top-[5%] -left-[50px] cursor-move',
+    className: 'absolute top-[50%] -left-[50px] cursor-move',
     image: {
       className: '',
     },
   },
   {
     source: '/categories/CSS.svg',
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     animate: {
-      translateX: 150,
-      rotate: 380,
+      translateX: 100,
+      rotate: 180,
       translateY: 100,
+
       transition: { duration: 20 },
-      scale: 2,
+      scale: -1,
     },
     className: 'absolute top-[35%] -left-[50px] cursor-move',
     image: {
@@ -206,13 +218,13 @@ const floatingIcons = [
   },
   {
     source: '/categories/HTML.svg',
-    width: 50,
-    height: 50,
+    width: 60,
+    height: 60,
     animate: {
-      translateX: 100,
-      rotate: 20,
-      transition: { duration: 20 },
-      scale: 2,
+      translateX: 60,
+      rotate: 180,
+      transition: { duration: 30 },
+      scale: -1,
     },
     className: 'absolute top-[50%] -left-[50px] cursor-move',
     image: {

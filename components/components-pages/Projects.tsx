@@ -29,17 +29,18 @@ function Projects() {
           return (
             <Col key={index} className='w-full mb-96' lg={12}>
               <div className='flex gap-12 justify-between items-center relative'>
+                {/* DESKTOP */}
                 {index % 2 !== 0 && (
-                  <>
+                  <div className='md:w-[350px] md:hidden sm:hidden'>
                     <div data-aos='fade-up'>{data.icon}</div>
                     <div
                       data-aos='fade-left'
-                      className=' absolute top-16 left-96 '
-                      data-aos-delay={500}
+                      className=' absolute top-20 left-[430px] md:left-[300px]'
+                      data-aos-delay={1000}
                     >
                       {data.icon2}
                     </div>
-                  </>
+                  </div>
                 )}
 
                 <div
@@ -53,7 +54,6 @@ function Projects() {
                     {data.id < 10 ? '0' + data.id : data.id}
                   </h5>
                   <h5 className='text-xl font-bold'>{data.title}</h5>
-
                   <div
                     className={cn(
                       index % 2 !== 0 ? 'justify-end ' : 'justify-start ',
@@ -69,12 +69,11 @@ function Projects() {
                       {data.description}
                     </p>
                   </div>
-
-                  <div className='flex gap-4 flex-col '>
+                  <div className='flex gap-4 flex-col w-[500px] md:w-full'>
                     <div
                       className={cn(
-                        index % 2 !== 0 ? 'justify-end ' : 'justify-start ',
-                        'flex gap-4 flex-wrap w-full '
+                        'flex gap-4 flex-wrap w-full',
+                        index % 2 !== 0 ? 'justify-end ' : 'justify-start '
                       )}
                     >
                       {data.techUsed.map((tech, index) => {
@@ -125,19 +124,31 @@ function Projects() {
                       </Link>
                     </div>
                   </div>
-                </div>
-
-                {index % 2 === 0 && (
-                  <>
+                  {/* TABLET/MOBILE */}
+                  <div className='lg:hidden flex'>
                     <div data-aos='fade-up'>{data.icon}</div>
                     <div
-                      className='absolute top-16 right-96'
                       data-aos='fade-right'
-                      data-aos-delay={500}
+                      className='mt-8'
+                      data-aos-delay={1000}
                     >
                       {data.icon2}
                     </div>
-                  </>
+                  </div>
+                </div>
+
+                {/* DESKTOP */}
+                {index % 2 === 0 && (
+                  <div className='md:w-[350px] md:hidden sm:hidden'>
+                    <div data-aos='fade-up'>{data.icon}</div>
+                    <div
+                      className='absolute top-20 right-[430px] md:right-[300px]'
+                      data-aos='fade-right'
+                      data-aos-delay={1000}
+                    >
+                      {data.icon2}
+                    </div>
+                  </div>
                 )}
               </div>
             </Col>

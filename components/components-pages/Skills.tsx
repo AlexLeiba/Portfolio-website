@@ -28,7 +28,7 @@ function About() {
       <Row>
         {skillsData.map((data, index) => {
           return (
-            <Col key={index} className='w-full mb-6' lg={2}>
+            <Col key={index} className='w-full mb-6' lg={2} md={2}>
               <div
                 data-aos-delay={index * 50}
                 data-aos='fade-up'

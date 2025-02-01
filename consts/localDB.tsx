@@ -229,7 +229,7 @@ export const projectsData: {
     id: 1,
     title: 'Wonderland Essentials',
     description:
-      'Wonderland Essentials is a doTERRA products platform which guides users around the world the benefits of essential oils and other wonderful doTERRA products with weekly live events , monthly blends , articles, support and much more.',
+      'Developed in 2022, Wonderland Essentials is a doTERRA products platform which guides users around the world the benefits of essential oils and other wonderful doTERRA products with weekly live events , monthly blends , articles, support and much more.',
     techUsed: ['React.js', 'Styled-components', 'TypeScript'],
     github: '',
     website: 'https://wonderlandessentials.com/',
@@ -256,10 +256,10 @@ export const projectsData: {
     id: 2,
     title: 'Wonderland Mobile App',
     description:
-      'Wonderland Essentials is a doTERRA products platform which guides users around the world the benefits of essential oils and other wonderful doTERRA products with weekly live events , monthly blends , articles, support and much more. You can download the app for free from App Store and Google play',
+      ' Developed in 2022, Wonderland Essentials is a doTERRA products platform which guides users around the world the benefits of essential oils and other wonderful doTERRA products with weekly live events , monthly blends , articles, support and much more. You can download the app for free from App Store and Google play',
     techUsed: ['React Native', 'Styled components', 'TypeScript'],
     github: '',
-    website: '',
+    website: 'https://apps.apple.com/gb/app/wonderland-essentials/id1635968740',
     icon: (
       <Image
         className=' object-top object-cover shadow-lg'
@@ -283,10 +283,10 @@ export const projectsData: {
     id: 3,
     title: 'Enovatika',
     description:
-      'Enovatika website is a website which shows the company achivements,successful completed projects , benefits ,web and design approaches and much more useful services.',
+      'Developed in 2024, Enovatika website is a website which shows the company achivements,successful completed projects , benefits ,web and design approaches and much more useful services.',
     techUsed: ['Next.js', 'Tailwind', 'TypeScript', 'React hook form', 'zod'],
     github: '',
-    website: 'https://marketpal.com/',
+    website: 'https://enovatika.com/en',
     icon: (
       <Image
         className=' object-top object-cover shadow-lg'
@@ -310,7 +310,7 @@ export const projectsData: {
     id: 4,
     title: 'Marketpal',
     description:
-      'Marketpal is a SaaS Platform which makes it easier to request a quote, find a supplier, and acquire the products and services you need',
+      'In development since 2023, Marketpal is a SaaS Platform which makes it easier to request a quote, find a supplier, and acquire the products and services you need',
     techUsed: [
       'Next.js',
       'Styled components',
@@ -345,7 +345,7 @@ export const projectsData: {
     id: 5,
     title: 'Medforeldre',
     description:
-      'Medforeldre is a web service which offers parenting advice and co-parent matching, and is intended to advise and guide people who are seeking parenthood in safe and stable parenthood.',
+      'Developed in 2022, Medforeldre is a web service which offers parenting advice and co-parent matching, and is intended to advise and guide people who are seeking parenthood in safe and stable parenthood.',
     techUsed: ['React.js', 'AWS Amplify', 'GraphQL'],
     github: '',
     website: 'https://www.medforeldre.no/',
@@ -372,7 +372,7 @@ export const projectsData: {
     id: 6,
     title: 'Web tech blogs',
     description:
-      'This is a blog app focused on web tech topics for sharing the world of the web development the experiences and knowledges useful for the community.',
+      'Developed in 2024, This is a full stack blog app focused on web tech topics for sharing the world of the web development the experiences and knowledges useful for the community.',
     techUsed: [
       'Next.js',
       'Tailwind',
@@ -381,7 +381,7 @@ export const projectsData: {
       'MongoDB',
       'Prisma',
     ],
-    github: '',
+    github: 'https://github.com/AlexLeiba/WT-Blogs-NextJs-fullstack-app',
     website: 'https://wt-blogs.vercel.app/',
     icon: (
       <Image
@@ -406,7 +406,7 @@ export const projectsData: {
     id: 7,
     title: 'Chat me',
     description:
-      'Chat me is a simple realtime chat app which makes it easy to get in touch with your friends and enjoy a large variety of themes and other features provided by the app',
+      'Developed in 2024, Chat me is a full stack simple realtime chat app which makes it easy to get in touch with your friends and enjoy a large variety of themes and other features provided by the app',
     techUsed: [
       'React.js',
       'Tailwind',
@@ -417,7 +417,7 @@ export const projectsData: {
       'MongoDB',
       'Socket.io',
     ],
-    github: '',
+    github: 'https://github.com/AlexLeiba/Chat-me-ReactJs-fullstack-app',
     website: 'https://chat-me-react.onrender.com/sign-in',
     icon: (
       <Image
@@ -442,7 +442,7 @@ export const projectsData: {
     id: 8,
     title: 'Dev blog',
     description:
-      'This is a simple blog app oriented on development technologies, is fully functional with email verification and admin dashboard, which was developed mostly for learning backend purpose',
+      'Developed in 2024, This is a full stack simple blog app oriented on development technologies, is fully functional with email verification and admin dashboard, which was developed mostly for learning backend purpose',
     techUsed: [
       'JavaScript',
       'Node.js',
@@ -451,7 +451,8 @@ export const projectsData: {
       'Nodemailer',
       'JWT',
     ],
-    github: '',
+    github:
+      'https://github.com/AlexLeiba/Dev-Blog-NodeJs-ExpressJS-fullstack-app',
     website: 'https://full-stack-blog-37mi.onrender.com',
     icon: (
       <Image
@@ -476,7 +477,7 @@ export const projectsData: {
     id: 9,
     title: 'My portfolio',
     description:
-      'My portfolio app is a simple portfolio website which shows my currect skills and projects I have worked on.',
+      'Developed in 2025, My portfolio app is a simple portfolio website which shows my currect skills and projects I have worked on.',
     techUsed: [
       'Next.js',
       'Tailwind',
@@ -485,7 +486,7 @@ export const projectsData: {
       'zod',
       'AOS',
     ],
-    github: '',
+    github: 'https://github.com/AlexLeiba/Portfolio',
     website: 'https://worldwide-everyday-news.netlify.app',
     icon: (
       <Image
@@ -510,9 +511,9 @@ export const projectsData: {
     id: 10,
     title: 'WW-News',
     description:
-      'World Wide News is a news app which shows realtime  news from around the world  provided by the Guardian OpenPlatform Api.',
+      'Developed in 2022, World Wide News is a news app which shows realtime  news from around the world  provided by the Guardian OpenPlatform Api.',
     techUsed: ['React.js', 'Bootstrap'],
-    github: '',
+    github: 'https://github.com/AlexLeiba/WW-Everyday-news',
     website: 'https://worldwide-everyday-news.netlify.app',
     icon: (
       <Image
@@ -537,9 +538,9 @@ export const projectsData: {
     id: 11,
     title: 'Weather forecast',
     description:
-      'Weather forecast is a simple forecast app which shows real 5 days forecast of Romanian big cities',
+      'Developed in 2021, Weather forecast is a simple forecast app which shows real 5 days forecast of Romanian big cities',
     techUsed: ['JavaScript'],
-    github: '',
+    github: 'https://github.com/AlexLeiba/Romania-Weather-forecast',
     website: 'https://alex-weather-forecast.netlify.app/',
     icon: (
       <Image
@@ -557,6 +558,33 @@ export const projectsData: {
         width={250}
         height={400}
         alt='Weather-forecast'
+      />
+    ),
+  },
+  {
+    id: 12,
+    title: 'Minesweeper simplified game',
+    description:
+      'Developed in 2023, The minsweeper game is a simplified version of the popular game where you have to identify where are the mines located by putting the flag over that square , the user also has the option to choose between 1 and 25 mines per game ',
+    techUsed: ['React.js', 'Styled components'],
+    github: '',
+    website: 'https://minesweeper-simplified.netlify.app',
+    icon: (
+      <Image
+        className=' object-top object-cover shadow-lg'
+        src='/projects/minesweeper-web.webp'
+        width={600}
+        height={400}
+        alt='minesweeper web'
+      />
+    ),
+    icon2: (
+      <Image
+        className=' object-cover object-top shadow-lg rounded-lg'
+        src='/projects/minesweeper-mobile.webp'
+        width={250}
+        height={400}
+        alt='minesweeper mobile'
       />
     ),
   },
