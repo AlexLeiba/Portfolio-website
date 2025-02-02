@@ -70,14 +70,14 @@ function Contact() {
 
       <Spacer size={16} />
       <Row>
-        <Col lg={4} className='flex flex-col justify-between'>
+        <Col lg={4} className='flex flex-col justify-between sm:gap-4 md:gap-6'>
           <Link
             data-aos='fade-up'
             href='mailto:leiba.alexandru@gmail.com'
             className='flex gap-2 items-center animate-pulse'
           >
             <div className='flex flex-col gap-1 items-center'>
-              <Mail width={80} height={80} className='shadow-xl rounded-lg' />
+              <Mail width={60} height={60} className='shadow-xl rounded-lg' />
               <p className='body-xs !font-bold text-primary-500'>Gmail</p>
             </div>
             <div className='flex gap-4 items-center'>
@@ -94,8 +94,8 @@ function Contact() {
           >
             <div className='flex flex-col gap-1 items-center'>
               <Linkedin
-                width={80}
-                height={80}
+                width={60}
+                height={60}
                 className='shadow-xl rounded-lg'
               />
 
@@ -112,7 +112,7 @@ function Contact() {
             className='flex gap-2 items-center animate-pulse'
           >
             <div className='flex flex-col gap-1 items-center'>
-              <Github width={80} height={80} className='shadow-xl rounded-lg' />
+              <Github width={60} height={60} className='shadow-xl rounded-lg' />
               <p className='body-xs !font-bold text-primary-500'>Github</p>
             </div>
             <div className='flex gap-4 items-center'>
@@ -134,7 +134,7 @@ function Contact() {
             <Spacer size={4} />
 
             <Row>
-              <Col lg={6} className='flex flex-col gap-2'>
+              <Col lg={6} md={2} className='flex flex-col gap-2'>
                 <Input
                   iconHelpText='Your First Name'
                   {...register('firstName')}
@@ -154,7 +154,8 @@ function Contact() {
                   error={errors.lastName?.message}
                 />
               </Col>
-              <Col lg={6} className='flex flex-col gap-2'>
+              <Col lg={6} md={2} className='flex flex-col gap-2'>
+                <Spacer sm={1} />
                 <Input
                   iconHelpText='Your email address'
                   {...register('email')}

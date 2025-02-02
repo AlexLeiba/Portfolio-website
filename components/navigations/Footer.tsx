@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Container, Row } from '../UI/Grid';
-import { Code2 } from 'lucide-react';
 import Link from 'next/link';
 import { format } from 'date-fns';
+import { Spacer } from '../UI/spacer/spacer';
 
 function footer() {
   return (
@@ -16,12 +16,13 @@ function footer() {
           <Col lg={5} md={2}>
             {/* Logo */}
             <div className='flex font-bold flex-col gap-2 '>
-              <div className='flex gap-2'>Portfolio</div>
+              <p className='text-xl font-bold'>Portfolio</p>
 
               <p className='font-bold'>
                 Alexandru Leiba Lapteacru · {format(new Date(), 'yyyy')}
               </p>
             </div>
+            <Spacer sm={4} />
           </Col>
           <Col lg={2} lgOffset={1} md={2}>
             <p className='text-xl font-bold'>Links</p>
@@ -42,6 +43,7 @@ function footer() {
                 <p>Contact</p>
               </Link>
             </div>
+            <Spacer sm={4} md={4} />
           </Col>
           <Col lg={2} md={2}>
             <p className='text-xl font-bold'>Tags</p>
@@ -59,9 +61,11 @@ function footer() {
                 <p>Projects completed</p>
               </Link>
             </div>
+            <Spacer sm={4} />
           </Col>
           <Col lg={2} md={2}>
             <p className='text-xl font-bold'>Social</p>
+
             <div className='dark:text-baseline-200'>
               <Link href={'https://github.com/AlexLeiba'}>
                 <p>Github</p>

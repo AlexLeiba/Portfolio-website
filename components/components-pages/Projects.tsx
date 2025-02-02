@@ -27,15 +27,15 @@ function Projects() {
       <Row>
         {projectsData.map((data, index) => {
           return (
-            <Col key={index} className='w-full mb-96' lg={12}>
+            <Col key={index} className='w-full lg:mb-96 mb-32' lg={12}>
               <div className='flex gap-12 justify-between items-center relative'>
                 {/* DESKTOP */}
                 {index % 2 !== 0 && (
-                  <div className='md:w-[350px] md:hidden sm:hidden'>
+                  <div className=' md:hidden sm:hidden'>
                     <div data-aos='fade-up'>{data.icon}</div>
                     <div
                       data-aos='fade-left'
-                      className=' absolute top-20 left-[430px] md:left-[300px]'
+                      className=' absolute top-20 left-[430px] '
                       data-aos-delay={1000}
                     >
                       {data.icon2}
@@ -45,8 +45,8 @@ function Projects() {
 
                 <div
                   className={cn(
-                    index % 2 !== 0 && ' text-end ',
-                    'flex flex-col gap-4'
+                    'flex flex-col gap-4 sm:w-full',
+                    index % 2 !== 0 && ' text-end '
                   )}
                   data-aos='fade-up'
                 >
@@ -69,7 +69,7 @@ function Projects() {
                       {data.description}
                     </p>
                   </div>
-                  <div className='flex gap-4 flex-col w-[500px] md:w-full'>
+                  <div className='flex gap-4 flex-col lg:w-[500px] w-full'>
                     <div
                       className={cn(
                         'flex gap-4 flex-wrap w-full',
@@ -114,19 +114,21 @@ function Projects() {
                           Website
                         </Button>
                       </Link>
-                      <Link href={data.website} target='_blank'>
-                        <Button
-                          className='text-primary-400 underline'
-                          variant={'link'}
-                        >
-                          Github
-                        </Button>
-                      </Link>
+                      {data.github && (
+                        <Link href={data.github} target='_blank'>
+                          <Button
+                            className='text-primary-400 underline'
+                            variant={'link'}
+                          >
+                            Github
+                          </Button>
+                        </Link>
+                      )}
                     </div>
                   </div>
                   {/* TABLET/MOBILE */}
-                  <div className='lg:hidden flex'>
-                    <div data-aos='fade-up'>{data.icon}</div>
+                  <div className='lg:hidden flex sm:flex-col'>
+                    <div data-aos='fade-up '>{data.icon}</div>
                     <div
                       data-aos='fade-right'
                       className='mt-8'

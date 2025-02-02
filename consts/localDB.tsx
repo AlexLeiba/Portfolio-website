@@ -565,9 +565,9 @@ export const projectsData: {
     id: 12,
     title: 'Minesweeper simplified game',
     description:
-      'Developed in 2023, The minsweeper game is a simplified version of the popular game where you have to identify where are the mines located by putting the flag over that square , the user also has the option to choose between 1 and 25 mines per game ',
+      'Developed in 2023, The minsweeper game is a simplified version of the popular game where you have to identify where are the mines located by putting the flag over that square , the user also has the option to choose between 1 and 20 mines per game ',
     techUsed: ['React.js', 'Styled components'],
-    github: '',
+    github: 'https://github.com/AlexLeiba/Minesweeper-game',
     website: 'https://minesweeper-simplified.netlify.app',
     icon: (
       <Image
