@@ -529,7 +529,7 @@ export const projectsData: {
       'AOS animation',
     ],
     github: 'https://github.com/AlexLeiba/Portfolio',
-    website: 'https://worldwide-everyday-news.netlify.app',
+    website: '/',
     icon: (
       <Image
         className=' object-top object-cover shadow-lg'

@@ -9,7 +9,15 @@ import { cn } from '@/lib/utils';
 
 function Hero() {
   function handleDownloadPdf() {
-    window.open('/Alexandru-Calin-Frontend-Developer.pdf', '_blank');
+    // URL of the PDF file you want to download
+    const pdfUrl =
+      'https://drive.google.com/uc?export=download&id=1lF19PBa8TPFASDku3n0wBoVf75mrQQ4l';
+
+    // Creating an anchor element and triggering the download
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'alexandru-leiba-lapteacru-cv.pdf';
+    link.click();
   }
   return (
     <Container
@@ -62,7 +70,7 @@ function Hero() {
                     height={50}
                     className=' dark:text-white text-black'
                   />
-                  <p>Download pdf</p>
+                  <p>Download my cv pdf</p>
                 </div>
               </div>
 
@@ -84,7 +92,6 @@ function Hero() {
                 </motion.div>
               ))}
             </div>
-            {/* <Spacer lg={12} md={36} sm={28} /> */}
           </div>
         </Col>
       </Row>
@@ -111,19 +118,6 @@ const floatingIcons = [
       className: 'rotate-[220deg]',
     },
   },
-  // {
-  //   source: '/drag-illustrations/laptop-illustration2.webp',
-  //   width: 120,
-  //   height: 120,
-  //   animate: {
-  //     translateY: 40,
-  //     transition: { duration: 6 },
-  //   },
-  //   className: 'absolute top-0 right-[50%] cursor-move ',
-  //   image: {
-  //     className: '',
-  //   },
-  // },
 
   {
     source: '/categories/React.svg',
