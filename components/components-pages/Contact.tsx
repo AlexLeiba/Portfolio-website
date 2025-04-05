@@ -155,7 +155,7 @@ function Contact() {
                 />
               </Col>
               <Col lg={6} md={2} className='flex flex-col gap-2'>
-                <Spacer sm={1} />
+                <div className='sm:h-1 md:hidden lg:hidden'></div>
                 <Input
                   iconHelpText='Your email address'
                   {...register('email')}

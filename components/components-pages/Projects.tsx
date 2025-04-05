@@ -28,6 +28,12 @@ function Projects() {
         {projectsData.map((data, index) => {
           return (
             <Col key={index} className='w-full lg:mb-96 mb-32' lg={12}>
+              {index === 5 && (
+                <div className='my-12'>
+                  <p>My personal projects below</p>
+                  <div className='w-full h-px dark:bg-white bg-black'></div>
+                </div>
+              )}
               <div className='flex gap-12 justify-between items-center relative'>
                 {/* DESKTOP */}
                 {index % 2 !== 0 && (

@@ -35,20 +35,34 @@ function About() {
               showMore ? 'line-clamp-none' : 'line-clamp-2'
             )}
           >
-            My name is Alexandru Leiba Lapteacru, I am a Front end developer
-            driven to develop my programmer development skills and develop tools
-            which will enhance user experience. I am passionate about
-            development because I consider myself a creative person and this
-            field allows me to create tools ,functionalities, different UI’s
-            which brings joy ,benefits and fulfillment not only to me but most
-            important to others. By looking at a particular problem or task from
-            different perspectives I can say that I have a good attention to
-            details, I prefer to test a task one extra time before to move it to
-            done in order to avoid some small inconsistencies (bugs) and saving
-            time on debugging for the future . I have experience working on the
-            same projects with a big team and I can say that I am a team player
-            who can always give a hand when needed and trust my colleagues’s
-            decisions .
+            My name is Alexandru Leiba Lapteacru, and I am a Front-End Developer
+            passionate about improving my programming skills and creating tools
+            that enhance user experience. I’m drawn to development because I
+            consider myself a creative person, and this field allows me to
+            design functionalities, interfaces, and tools that bring joy, value,
+            and fulfillment—not only to myself but, more importantly, to others.
+          </p>
+          <p
+            className={cn(
+              'body-lg text-center line-clamp-2',
+              showMore ? 'block' : 'hidden'
+            )}
+          >
+            I approach problems and tasks from multiple perspectives, which
+            helps me maintain strong attention to detail. I prefer to test a
+            task one extra time before marking it as done to avoid small
+            inconsistencies or bugs, ultimately saving time on debugging in the
+            future.
+          </p>
+          <p
+            className={cn(
+              'body-lg text-center line-clamp-2',
+              showMore ? 'block' : 'hidden'
+            )}
+          >
+            I have experience working on large team projects and consider myself
+            a reliable team player. I`m always ready to lend a hand when needed
+            and trust in my colleagues’ decisions.
           </p>
           <div
             data-aos='fade-up'
@@ -79,11 +93,11 @@ function About() {
                 data-aos-delay={index * 100}
                 data-aos='fade-up'
                 key={index}
-                className='flex gap-4 border mb-4 border-primary-200 pb-4 items-center min-h-56 p-4 rounded-xl flex-wrap overflow-hidden shadow-lg'
+                className='flex gap-4 border mb-4 border-primary-200 pb-6 items-center lg:h-56 min-h-56 p-4 rounded-xl flex-wrap overflow-hidden shadow-lg'
               >
-                <div className='flex items-center  gap-8'>
+                <div className='flex items-center  gap-8 h-full'>
                   <div>{data.icon}</div>
-                  <div className='flex flex-col gap-4'>
+                  <div className='flex flex-col gap-4 justify-between h-full'>
                     <h5 className='text-primary-400 '>{data.title}</h5>
 
                     <div className='flex gap-4 flex-wrap'>
@@ -95,7 +109,7 @@ function About() {
                             </p>
 
                             {description.description.map((desc, index) => (
-                              <p className='body-base' key={index}>
+                              <p className='body-base ml-2' key={index}>
                                 {desc}
                               </p>
                             ))}
