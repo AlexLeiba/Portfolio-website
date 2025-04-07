@@ -11,7 +11,7 @@ function Hero() {
   function handleDownloadPdf() {
     // URL of the PDF file you want to download
     const pdfUrl =
-      'https://drive.google.com/uc?export=download&id=1lF19PBa8TPFASDku3n0wBoVf75mrQQ4l';
+      'https://drive.google.com/uc?export=download&id=1ARmErHI92TJdwiyP0PmCz3_5CGX_odHr';
 
     // Creating an anchor element and triggering the download
     const link = document.createElement('a');
