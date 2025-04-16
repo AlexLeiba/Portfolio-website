@@ -44,7 +44,7 @@ function About() {
               >
                 <div
                   style={{
-                    background: `linear-gradient(to right, #7493f0 ${data.percentage}%, transparent 0%)`,
+                    background: `linear-gradient(to right, #7493f0 ${data.percentage}%, transparent 10%)`,
                   }}
                   key={index}
                   className={cn(
