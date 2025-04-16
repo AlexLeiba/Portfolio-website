@@ -32,6 +32,7 @@ const containerVariants = cva(
 type ContainerProps = {
   id?: string;
   spacing?: 'none' | 'large' | 'medium';
+  style?: React.CSSProperties;
 } & Pick<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   'className' | 'children'
@@ -54,9 +55,11 @@ export const GridContainer = ({
   className,
   spacing,
   variant,
+  style,
 }: ContainerProps) => {
   return (
     <div
+      style={style}
       className={cn(containerVariants({ variant, className, spacing }))}
       id={id || ''}
     >

@@ -6,8 +6,11 @@ import Image from 'next/image';
 import { Spacer } from '../UI/spacer/spacer';
 import { FileDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useTheme } from '@/lib/themeContext';
 
 function Hero() {
+  const { darkMode } = useTheme();
+
   function handleDownloadPdf() {
     // URL of the PDF file you want to download
     const pdfUrl =
@@ -19,10 +22,17 @@ function Hero() {
     link.download = 'alexandru-leiba-lapteacru-cv.pdf';
     link.click();
   }
+  // TODO add increasing procentage number of colors on each render || at each change theme
   return (
+    // bg-[linear-gradient(to_bottom,_#6b8dff_10%,_#c1dbe7_40%,_#89e0ef_90%,_#ffffff_90%)] dark:bg-[linear-gradient(to_bottom,_#000,_#2B1942_35%,_#8F5C55_60%,_#DBAF6E_80%)]
     <Container
       variant={'fluid'}
-      className='relative overflow-hidden h-[100vh] bg-[linear-gradient(to_bottom,_#6b8dff_10%,_#c1dbe7_40%,_#89e0ef_90%,_#ffffff_90%)] dark:bg-[linear-gradient(to_bottom,_#000,_#2B1942_35%,_#8F5C55_60%,_#DBAF6E_80%)] '
+      className='relative overflow-hidden h-[100vh]  '
+      style={{
+        background: darkMode
+          ? `linear-gradient(to bottom, #000, #2B1942 35%, #8F5C55 60%, #DBAF6E 80%)`
+          : `linear-gradient(to bottom, #6b8dff 10%, #c1dbe7 40%, #89e0ef 90%, #ffffff 90%)`,
+      }}
     >
       <Row>
         <Col>

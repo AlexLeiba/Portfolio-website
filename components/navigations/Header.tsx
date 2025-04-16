@@ -5,7 +5,7 @@ import { Col, Container, Row } from '../UI/Grid';
 import Link from 'next/link';
 import AuthLinks from './NavLinks';
 
-function header() {
+function Header() {
   return (
     <div className='  p-4  dark:bg-black bg-[#6b8dff] fixed top-0 left-0 right-0  z-50'>
       <Container
@@ -48,4 +48,4 @@ function header() {
   );
 }
 
-export default header;
+export default Header;

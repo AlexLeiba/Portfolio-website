@@ -1,30 +1,12 @@
 'use client';
 
+import { useTheme } from '@/lib/themeContext';
 import { cn } from '@/lib/utils';
 import { Moon, Sun } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 
 function ThemeToggle() {
-  const [darkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    const storedValue = localStorage.getItem('theme');
-
-    if (storedValue === 'dark') {
-      return setIsDarkMode(true);
-    }
-    setIsDarkMode(false);
-  }, []);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [darkMode]);
+  const { setIsDarkMode, darkMode } = useTheme();
 
   return (
     <div

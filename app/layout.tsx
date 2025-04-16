@@ -10,6 +10,7 @@ import AosInit from '../lib/aosInit';
 
 import { Toaster } from 'react-hot-toast';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import { ThemeProvider } from '@/lib/themeContext';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -32,25 +33,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Toaster />
-        <div className='flex min-h-[100vh] bg-white  flex-col text-black dark:text-white dark:bg-black overflow-hidden'>
-          <header>
-            <Header />
-          </header>
-          <Spacer size={12} /> {/*Header size*/}
-          <main className='flex-grow'>
-            <AosInit>{children}</AosInit>
-            <ScrollToTopButton />
-          </main>
-          <footer>
-            <Footer />
-          </footer>
-        </div>
-      </body>
-    </html>
+    <ThemeProvider>
+      <html lang='en'>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <Toaster />
+
+          <div className='flex min-h-[100vh] bg-white  flex-col text-black dark:text-white dark:bg-black overflow-hidden'>
+            <header>
+              <Header />
+            </header>
+            <Spacer size={12} /> {/*Header size*/}
+            <main className='flex-grow'>
+              <AosInit>{children}</AosInit>
+              <ScrollToTopButton />
+            </main>
+            <footer>
+              <Footer />
+            </footer>
+          </div>
+        </body>
+      </html>
+    </ThemeProvider>
   );
 }
