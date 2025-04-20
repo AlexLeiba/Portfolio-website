@@ -27,12 +27,15 @@ function Hero() {
     // bg-[linear-gradient(to_bottom,_#6b8dff_10%,_#c1dbe7_40%,_#89e0ef_90%,_#ffffff_90%)] dark:bg-[linear-gradient(to_bottom,_#000,_#2B1942_35%,_#8F5C55_60%,_#DBAF6E_80%)]
     <Container
       variant={'fluid'}
-      className='relative overflow-hidden h-[100vh]  '
-      style={{
-        background: darkMode
-          ? `linear-gradient(to bottom, #000, #2B1942 35%, #8F5C55 60%, #DBAF6E 80%)`
-          : `linear-gradient(to bottom, #6b8dff 10%, #c1dbe7 40%, #89e0ef 90%, #ffffff 90%)`,
-      }}
+      className={cn(
+        darkMode ? 'backgroundDarkHero' : 'backgroundLightHero',
+        'relative overflow-hidden h-[100vh]    '
+      )}
+      // style={{
+      //   background: darkMode
+      //     ? `linear-gradient(to bottom, #000, #2B1942 35%, #8F5C55 60%, #DBAF6E 80%)`
+      //     : `linear-gradient(to bottom, #6b8dff 10%, #c1dbe7 40%, #89e0ef 90%, #ffffff 90%)`,
+      // }}
     >
       <Row>
         <Col>
