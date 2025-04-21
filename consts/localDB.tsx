@@ -66,156 +66,6 @@ export const aboutMeData: {
   },
 ];
 
-export const floatingIcons = [
-  {
-    source: '/rocket.svg',
-    width: 40,
-    height: 40,
-    animate: {
-      translateY: 400,
-      transition: { duration: 50 },
-      translateX: 3000,
-      rotate: 40,
-    },
-    className: 'absolute top-[200px] left-[-200px] cursor-move rotate-45',
-    image: {
-      className: 'rotate-45',
-    },
-  },
-  {
-    source: '/rocket.svg',
-    width: 20,
-    height: 20,
-    animate: {
-      translateY: 400,
-      transition: { duration: 100 },
-      translateX: -3000,
-      rotate: -25,
-    },
-    className: 'absolute top-[100px] right-[-200px] cursor-move rotate-45',
-    image: {
-      className: 'rotate-[220deg]',
-    },
-  },
-  {
-    source: '/drag-illustrations/laptop-illustration2.webp',
-    width: 120,
-    height: 120,
-    animate: {
-      translateY: 40,
-      transition: { duration: 6 },
-    },
-    className: 'absolute top-0 right-[50%] cursor-move',
-    image: {
-      className: '',
-    },
-  },
-
-  {
-    source: '/categories/React.svg',
-    width: 80,
-    height: 80,
-    animate: {
-      translateX: 150,
-      rotate: 360,
-      transition: { duration: 15 },
-    },
-    className: 'absolute top-0 left-0 cursor-move',
-    image: {
-      className: '',
-    },
-  },
-  {
-    source: '/categories/NextJS.svg',
-    width: 80,
-    height: 80,
-    animate: {
-      translateY: -300,
-      rotate: 20,
-      transition: { duration: 50 },
-      scale: 2,
-    },
-    className: 'absolute bottom-[20%] right-0 cursor-move',
-    image: {
-      className: '',
-    },
-  },
-  {
-    source: '/categories/tailwind.svg',
-    width: 50,
-    height: 50,
-    animate: {
-      translateX: 150,
-      rotate: 360,
-      translateY: 100,
-      transition: { duration: 20 },
-    },
-    className: 'absolute top-[20%] -left-[100px] cursor-move',
-    image: {
-      className: '',
-    },
-  },
-  {
-    source: '/categories/TypeScript.svg',
-    width: 70,
-    height: 70,
-    animate: {
-      translateX: -200,
-      rotate: 20,
-      transition: { duration: 30 },
-    },
-    className: 'absolute top-[5%] -right-[100px] cursor-move',
-    image: {
-      className: '',
-    },
-  },
-  {
-    source: '/categories/JavaScript.svg',
-    width: 80,
-    height: 80,
-    animate: {
-      translateX: 90,
-      translateY: 60,
-      transition: { duration: 50 },
-    },
-    className: 'absolute top-[5%] -left-[50px] cursor-move',
-    image: {
-      className: '',
-    },
-  },
-  {
-    source: '/categories/CSS.svg',
-    width: 50,
-    height: 50,
-    animate: {
-      translateX: 150,
-      rotate: 380,
-      translateY: 100,
-      transition: { duration: 20 },
-      scale: 2,
-    },
-    className: 'absolute top-[35%] -left-[50px] cursor-move',
-    image: {
-      className: '',
-    },
-  },
-  {
-    source: '/categories/HTML.svg',
-    width: 50,
-    height: 50,
-    animate: {
-      translateX: 100,
-      rotate: 20,
-      transition: { duration: 20 },
-      scale: 2,
-    },
-    className: 'absolute top-[50%] -left-[50px] cursor-move',
-    image: {
-      className: '',
-    },
-  },
-];
-
 export const projectsData: {
   id: number;
   title: string;
@@ -907,5 +757,131 @@ export const skillsData: {
         height={50}
       />
     ),
+  },
+];
+
+export const floatingIcons = [
+  {
+    source: '/rocket.svg',
+    width: 20,
+    height: 20,
+    animate: {
+      translateY: 500,
+      transition: { duration: 100 },
+      translateX: -4000,
+      rotate: -20,
+      scale: -1,
+    },
+    className: 'absolute top-[100px] right-[-200px] cursor-move rotate-45',
+    image: {
+      className: 'rotate-[220deg]',
+    },
+  },
+
+  {
+    source: '/categories/React.svg',
+    width: 40,
+    height: 40,
+    animate: {
+      translateX: 250,
+      translateY: 20,
+      rotate: 360,
+      transition: { duration: 15 },
+    },
+    className: 'absolute top-0 left-0 cursor-move',
+    image: {
+      className: '',
+    },
+  },
+  {
+    source: '/categories/NextJS.svg',
+    width: 50,
+    height: 50,
+    animate: {
+      translateY: -500,
+      rotate: 20,
+      transition: { duration: 50 },
+      scale: 1,
+    },
+    className: 'absolute bottom-0 right-0 cursor-move',
+    image: {
+      className: '',
+    },
+  },
+  {
+    source: '/categories/tailwind.svg',
+    width: 30,
+    height: 30,
+    animate: {
+      translateX: 110,
+      rotate: 360,
+      translateY: 100,
+      transition: { duration: 20 },
+    },
+    className: 'absolute top-[20%] -left-[100px] cursor-move',
+    image: {
+      className: '',
+    },
+  },
+  {
+    source: '/categories/TypeScript.svg',
+    width: 30,
+    height: 30,
+    animate: {
+      translateX: -150,
+      rotate: 30,
+      transition: { duration: 20 },
+      scale: 1,
+    },
+    className: 'absolute top-[5%] -right-[100px] sm:-right-[150px] cursor-move',
+    image: {
+      className: '',
+    },
+  },
+  {
+    source: '/categories/JavaScript.svg',
+    width: 40,
+    height: 40,
+    animate: {
+      translateX: 50,
+      translateY: 60,
+      transition: { duration: 20 },
+    },
+    className: 'absolute top-[50%] -left-[50px] cursor-move',
+    image: {
+      className: '',
+    },
+  },
+  {
+    source: '/categories/CSS.svg',
+    width: 40,
+    height: 40,
+    animate: {
+      translateX: 100,
+      rotate: 180,
+      translateY: 100,
+
+      transition: { duration: 20 },
+      scale: -1,
+    },
+    className: 'absolute top-[35%] -left-[50px] cursor-move',
+    image: {
+      className: '',
+    },
+  },
+  {
+    source: '/categories/HTML.svg',
+    width: 60,
+    height: 60,
+    animate: {
+      translateX: 60,
+      rotate: 180,
+      transition: { duration: 30 },
+      scale: -1,
+    },
+    className: 'absolute top-[50%] -left-[50px] cursor-move',
+    image: {
+      className: '',
+    },
   },
 ];

@@ -19,16 +19,21 @@ function Header() {
               <Col className='relative flex justify-between items-center '>
                 {/* Social Icons */}
                 <div className='flex gap-4 dark:text-white'>
-                  <Link href={'https://github.com/AlexLeiba'}>
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_GITHUB_URL}`}
+                    target='_blank'
+                  >
                     <Github width={20} height={20} cursor={'pointer'} />
                   </Link>
-                  <Link href={'mailto:leiba.alexandru@gmail.com'}>
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_EMAIL_URL}`}
+                    target='_blank'
+                  >
                     <Mail width={20} height={20} cursor={'pointer'} />
                   </Link>
                   <Link
-                    href={
-                      'https://www.linkedin.com/in/alex-leiba-9205801ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-                    }
+                    href={`${process.env.NEXT_PUBLIC_LINKEDIN_URL}`}
+                    target='_blank'
                   >
                     <Linkedin width={20} height={20} cursor={'pointer'} />
                   </Link>

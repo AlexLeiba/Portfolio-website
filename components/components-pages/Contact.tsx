@@ -73,24 +73,27 @@ function Contact() {
         <Col lg={4} className='flex flex-col justify-between sm:gap-4 md:gap-6'>
           <Link
             data-aos='fade-up'
-            href='mailto:leiba.alexandru@gmail.com'
+            href={`${process.env.NEXT_PUBLIC_EMAIL_URL}`}
             className='flex gap-2 items-center animate-pulse'
+            target='_blank'
           >
             <div className='flex flex-col gap-1 items-center'>
               <Mail width={60} height={60} className='shadow-xl rounded-lg' />
               <p className='body-xs !font-bold text-primary-500'>Gmail</p>
             </div>
             <div className='flex gap-4 items-center'>
-              <p>leiba.alexandru@gmail.com</p>
+              <p>{`${process.env.NEXT_PUBLIC_EMAIL_URL?.replace(
+                'mailto:',
+                ''
+              )}`}</p>
             </div>
           </Link>
 
           <Link
             data-aos='fade-up'
             className='flex gap-2 items-center animate-pulse'
-            href={
-              'https://www.linkedin.com/in/alex-leiba-9205801ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-            }
+            href={`${process.env.NEXT_PUBLIC_LINKEDIN_URL}`}
+            target='_blank'
           >
             <div className='flex flex-col gap-1 items-center'>
               <Linkedin
@@ -108,8 +111,9 @@ function Contact() {
 
           <Link
             data-aos='fade-up'
-            href={'https://github.com/AlexLeiba'}
+            href={`${process.env.NEXT_PUBLIC_GITHUB_URL}`}
             className='flex gap-2 items-center animate-pulse'
+            target='_blank'
           >
             <div className='flex flex-col gap-1 items-center'>
               <Github width={60} height={60} className='shadow-xl rounded-lg' />
