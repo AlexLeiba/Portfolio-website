@@ -309,7 +309,7 @@ select:focus {
     #dbaf6e 80%
   );
   transition: height 5s linear;
-  animation: heightOfContainerHero 5s ease-in-out;
+  /* animation: heightOfContainerHero 5s ease-in-out; */
   height: 100vh;
 }
 .backgroundLightHero {
@@ -322,7 +322,7 @@ select:focus {
   );
 
   transition: height 5s linear;
-  animation: heightOfContainerHero 5s ease-in-out;
+  /* animation: heightOfContainerHero 5s ease-in-out; */
   height: 100vh;
 }
 
