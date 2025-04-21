@@ -301,87 +301,36 @@ select:focus {
 }
 
 .backgroundDarkHero {
-  animation: backgriundColorDark 5s linear;
-  transition: background-color 5s linear;
+  background: linear-gradient(
+    to bottom,
+    #000,
+    #2b1942 35%,
+    #8f5c55 60%,
+    #dbaf6e 80%
+  );
+  transition: height 5s linear;
+  animation: heightOfContainerHero 5s ease-in-out;
+  height: 100vh;
 }
 .backgroundLightHero {
-  animation: backgriundColorLight 5s linear;
-  transition: background-color 5s linear;
+  background: linear-gradient(
+    to bottom,
+    #6b8dff 10%,
+    #ffffff 40%,
+    #ffffff 90%,
+    #ffffff 90%
+  );
+
+  transition: height 5s linear;
+  animation: heightOfContainerHero 5s ease-in-out;
+  height: 100vh;
 }
 
-@keyframes backgriundColorDark {
+@keyframes heightOfContainerHero {
   0% {
-    background: linear-gradient(
-      to bottom,
-      #666666,
-      #6c3ea8 35%,
-      #f59c91 60%,
-      #ffcc7f 80%
-    );
-  }
-  30% {
-    background: linear-gradient(
-      to bottom,
-      #9f9e9e,
-      #7142af 35%,
-      #c67e75 60%,
-      #ffcc80 80%
-    );
-  }
-  70% {
-    background: linear-gradient(
-      to bottom,
-      #dbd5d5,
-      #7243ae 35%,
-      #c88077 60%,
-      #dbaf6e 80%
-    );
+    height: 135vh;
   }
   100% {
-    background: linear-gradient(
-      to bottom,
-      #000,
-      #2b1942 35%,
-      #8f5c55 60%,
-      #dbaf6e 80%
-    );
-  }
-}
-@keyframes backgriundColorLight {
-  0% {
-    background: linear-gradient(
-      to bottom,
-      #6b8dff 10%,
-      #c1dbe7 40%,
-      #89e0ef 90%,
-      #ffffff 90%
-    );
-  }
-  30% {
-    background: linear-gradient(
-      to bottom,
-      #6b8dff 10%,
-      #c1dbe7 40%,
-      #89e0ef 90%,
-      #ffffff 90%
-    );
-  }
-  70% {
-    background: linear-gradient(
-      to bottom,
-      #6b8dff 10%,
-      #c1dbe7 40%,
-      #89e0ef 90%,
-      #ffffff 90%
-    );
-  }
-  100% {
-    background: linear-gradient(
-      to bottom,
-      #6b8dff 10%,
-      #c1dbe7 40%,
-      #89e0ef 90%,
-      #ffffff 90%
-    );
+    height: 100vh;
   }
 }

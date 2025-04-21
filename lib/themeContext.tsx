@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext({
-  darkMode: false,
+  darkMode: true,
   setIsDarkMode: (value: boolean) => {},
 });
 
@@ -12,6 +12,11 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const stored = localStorage.getItem('theme');
+
+    if (stored === null) {
+      setIsDarkMode(true);
+      return localStorage.setItem('theme', 'dark');
+    }
     setIsDarkMode(stored === 'dark');
   }, []);
 
