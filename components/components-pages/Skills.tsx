@@ -30,7 +30,7 @@ function About() {
           return (
             <Col key={index} className='w-full mb-6' lg={2} md={2}>
               <div
-                data-aos-delay={index * 50}
+                data-aos-delay={index * 10}
                 data-aos='fade-up'
                 onClick={() =>
                   data.title === 'Projects'

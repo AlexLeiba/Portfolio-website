@@ -95,7 +95,7 @@ function About() {
                 key={index}
                 className='flex  border mb-4 border-primary-200 pb-6 items-center lg:h-56 min-h-56 p-4 rounded-xl flex-wrap overflow-hidden shadow-lg'
               >
-                <div className='flex items-center  lg:gap-8 md:gap-6 gap-2  h-full w-full'>
+                <div className='flex items-center  lg:gap-8 md:gap-6 gap-2  h-full w-full lg:flex-row md:flex-row flex-col'>
                   <div>{data.icon}</div>
                   <div className='flex flex-col gap-4 justify-between h-full'>
                     <h5 className='text-primary-400 '>{data.title}</h5>

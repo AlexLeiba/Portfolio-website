@@ -31,7 +31,7 @@ export const aboutMeData: {
       {
         title: '',
         description: [
-          ' • 4 years as a front end developer,',
+          ' • 4+ years as a front end developer.',
           ' • Mostly experienced with: ',
           'React.js • Next.js • Typescript • Tailwind • styled-components and • Redux.',
         ],

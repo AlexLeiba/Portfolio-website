@@ -42,7 +42,7 @@ function Projects() {
                     <div
                       data-aos='fade-left'
                       className=' absolute top-20 left-[430px] '
-                      data-aos-delay={1000}
+                      data-aos-delay={500}
                     >
                       {data.icon2}
                     </div>
@@ -138,7 +138,7 @@ function Projects() {
                     <div
                       data-aos='fade-right'
                       className='mt-8'
-                      data-aos-delay={1000}
+                      data-aos-delay={500}
                     >
                       {data.icon2}
                     </div>
@@ -152,7 +152,7 @@ function Projects() {
                     <div
                       className='absolute top-20 right-[430px] md:right-[300px]'
                       data-aos='fade-right'
-                      data-aos-delay={1000}
+                      data-aos-delay={500}
                     >
                       {data.icon2}
                     </div>
