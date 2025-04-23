@@ -306,9 +306,10 @@ select:focus {
     #000,
     #2b1942 35%,
     #8f5c55 60%,
-    #dbaf6e 80%
+    #dbaf6e 80%,
+    #dbaf6e 100%
   );
-  transition: height 5s linear;
+  transition: height 3s linear;
 
   height: 150vh;
   position: absolute;
@@ -325,7 +326,7 @@ select:focus {
     #ffffff 90%
   );
 
-  transition: height 5s linear;
+  transition: height 3s linear;
 
   height: 100vh;
   position: absolute;
@@ -347,19 +348,19 @@ select:focus {
   animation: glowAnimation 2s ease-in-out infinite;
 }
 .floating-icons-glow-hovered:hover {
-  filter: drop-shadow(0 0 1rem #ffffff);
+  filter: brightness(10) drop-shadow(0 0 10rem #ffffff);
   transition: all 0.5s ease-in-out;
 }
 
 @keyframes glowAnimation {
   0% {
-    filter: drop-shadow(0 0 1rem rgb(0, 0, 0.5));
+    filter: brightness(1) drop-shadow(0 0 1rem rgb(0, 0, 0.5));
   }
   50% {
-    filter: drop-shadow(0 0 1rem #ffffff);
+    filter: brightness(1.5) drop-shadow(0 0 1rem #ffffff);
   }
 
   100% {
-    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
+    filter: brightness(1) drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
   }
 }
