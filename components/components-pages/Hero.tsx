@@ -158,7 +158,7 @@ export const floatingIcons = [
     width: 50,
     height: 50,
     animate: {
-      translateY: 600,
+      translateY: 500,
       rotate: 20,
       transition: { duration: 20 },
       scale: 1,
