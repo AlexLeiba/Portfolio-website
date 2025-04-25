@@ -24,7 +24,7 @@ function Hero() {
   return (
     <Container
       variant={'fluid'}
-      className={cn('relative overflow-hidden min-h-screen')}
+      className={cn('relative overflow-hidden min-h-[calc(100vh+200px)]')}
     >
       <Row>
         <Col>
@@ -34,7 +34,7 @@ function Hero() {
               darkMode ? 'backgroundDarkHero' : 'backgroundLightHero'
             )}
           ></div>
-          {/* BLACK CIRCLE */}
+
           <div className='absolute lg:top-[450px]  left-[50%] md:top-[450px] sm:top-[calc(100vh-260px)] -translate-x-1/2 '>
             <div className=' relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[200px] sm:h-[400px]   '>
               <Image
@@ -46,9 +46,10 @@ function Hero() {
               />
             </div>
           </div>
+          {/* BLACK CIRCLE */}
           <div
             className={cn(
-              'top-[730px] sm:top-[calc(100vh-100px)]  ',
+              'top-[730px] sm:top-[calc(100vh-100px)]',
               'z-20 position absolute  w-[3000px]  h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 '
             )}
           ></div>
