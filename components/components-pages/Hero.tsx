@@ -86,7 +86,7 @@ function Hero() {
                       height={50}
                       className=' dark:text-white text-black'
                     />
-                    <p>Download my cv pdf</p>
+                    <p>Download My pdf</p>
                   </div>
                 </div>
               </div>
