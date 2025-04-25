@@ -121,8 +121,8 @@ export default Hero;
 export const floatingIcons = [
   {
     source: '/rocket.svg',
-    width: 20,
-    height: 20,
+    width: 15,
+    height: 15,
     animate: {
       translateY: 500,
       transition: { duration: 100 },
@@ -131,9 +131,9 @@ export const floatingIcons = [
       scale: -1,
     },
     className:
-      'absolute top-[100px] right-[-200px] cursor-move rotate-45   transition-all floating-icon-glow-animated ',
+      'absolute top-[100px] right-[-200px]  rotate-10 animation-delay-1000 animate-pulse   transition-all  floating-icon-glow-animated ',
     image: {
-      className: 'rotate-[220deg]',
+      className: 'rotate-[225deg]',
     },
   },
 
@@ -158,21 +158,21 @@ export const floatingIcons = [
     width: 50,
     height: 50,
     animate: {
-      translateY: -500,
+      translateY: 600,
       rotate: 20,
-      transition: { duration: 50 },
+      transition: { duration: 20 },
       scale: 1,
     },
     className:
-      'absolute bottom-0 right-0 cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
+      'absolute top-0 right-0 cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
     image: {
       className: '',
     },
   },
   {
     source: '/categories/tailwind.svg',
-    width: 30,
-    height: 30,
+    width: 25,
+    height: 25,
     animate: {
       translateX: 110,
       rotate: 360,
@@ -187,8 +187,8 @@ export const floatingIcons = [
   },
   {
     source: '/categories/TypeScript.svg',
-    width: 30,
-    height: 30,
+    width: 25,
+    height: 25,
     animate: {
       translateX: -150,
       rotate: 30,
@@ -203,8 +203,8 @@ export const floatingIcons = [
   },
   {
     source: '/categories/JavaScript.svg',
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
     animate: {
       translateX: 50,
       translateY: 60,
@@ -218,8 +218,8 @@ export const floatingIcons = [
   },
   {
     source: '/categories/CSS.svg',
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
     animate: {
       translateX: 100,
       rotate: 180,
@@ -236,8 +236,8 @@ export const floatingIcons = [
   },
   {
     source: '/categories/HTML.svg',
-    width: 60,
-    height: 60,
+    width: 30,
+    height: 30,
     animate: {
       translateX: 60,
       rotate: 180,
