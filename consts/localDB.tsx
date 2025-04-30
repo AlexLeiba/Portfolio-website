@@ -332,6 +332,41 @@ export const projectsData: {
   },
   {
     id: 9,
+    title: 'Spend or keep',
+    description:
+      'Developed in 2025, Spend or Keep is a full-stack project that helps users track their expenses and budget. It offers a user-friendly interface and provides features  to help users save money and stay on track with their finances.',
+    techUsed: [
+      'React.js',
+      'Next.js',
+      'Tailwind',
+      'TypeScript',
+      'Prisma',
+      'Clerk',
+      'Shadcn',
+    ],
+    github: 'https://github.com/AlexLeiba/SpendAndKeep',
+    website: 'https://spend-or-keep.vercel.app/',
+    icon: (
+      <Image
+        className=' object-top object-cover shadow-lg'
+        src='/projects/spend-and-keep-web.webp'
+        width={600}
+        height={400}
+        alt='chat-me'
+      />
+    ),
+    icon2: (
+      <Image
+        className='h-[665px] w-[380px] object-cover object-top shadow-lg rounded-lg'
+        src='/projects/spend-and-keep-mobile.webp'
+        width={250}
+        height={400}
+        alt='chat-me'
+      />
+    ),
+  },
+  {
+    id: 10,
     title: 'Dev blog',
     description:
       'Developed in 2024, this is a simple full-stack blog app focused on development technologies. It is fully functional, featuring email verification and an admin dashboard. The project was primarily built for the purpose of learning backend development.',
@@ -366,7 +401,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 10,
+    id: 11,
     title: 'My portfolio',
     description:
       'Developed in 2025, My Portfolio App is a simple website that showcases my current skills and the projects I have worked on.',
@@ -400,7 +435,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 11,
+    id: 12,
     title: 'WW-News',
     description:
       'Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API.',
@@ -427,7 +462,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 12,
+    id: 13,
     title: 'Weather forecast',
     description:
       'Developed in 2021, Weather Forecast is a simple app that displays a real 5-day weather forecast for major cities in Romania.',
