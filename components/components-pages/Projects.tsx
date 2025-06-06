@@ -147,10 +147,21 @@ function Projects() {
 
                 {/* DESKTOP */}
                 {index % 2 === 0 && (
-                  <div className='md:w-[350px] md:hidden sm:hidden'>
+                  <div
+                    className={cn(
+                      data.id === 11 && 'mb-64',
+                      'md:w-[350px] md:hidden sm:hidden '
+                    )}
+                  >
                     <div data-aos='fade-up'>{data.icon}</div>
                     <div
-                      className='absolute top-20 right-[430px] md:right-[300px]'
+                      // className='absolute '
+                      className={cn(
+                        data.id === 11
+                          ? 'right-0 top-[412px]'
+                          : 'top-20 right-[430px] md:right-[300px]',
+                        'absolute'
+                      )}
                       data-aos='fade-right'
                       data-aos-delay={500}
                     >

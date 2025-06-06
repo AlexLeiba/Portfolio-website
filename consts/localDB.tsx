@@ -367,6 +367,70 @@ export const projectsData: {
   },
   {
     id: 10,
+    title: 'eShop',
+    description:
+      'Developed in 2025, this is a full-stack e-commerce app that allows users to browse and purchase products. It features a user-friendly interface, secure payment processing with Stripe, and a robust backend system.',
+    techUsed: [
+      'React.js',
+      'TypeScript',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Nodemailer',
+      'JWT',
+      'Custom components',
+      'Stripe',
+    ],
+    github: 'https://github.com/AlexLeiba/eShop',
+    website: 'https://eshop-global.onrender.com/',
+    icon: (
+      <Image
+        className=' object-top object-cover shadow-lg'
+        src='/projects/eshop-desktop.webp'
+        width={600}
+        height={400}
+        alt='eshop-desktop'
+      />
+    ),
+    icon2: (
+      <Image
+        className=' object-cover object-top shadow-lg rounded-lg'
+        src='/projects/eshop-mobile.webp'
+        width={250}
+        height={400}
+        alt='eshop-mobile'
+      />
+    ),
+  },
+  {
+    id: 11,
+    title: 'eShop Admin Dashboard',
+    description:
+      'Developed in 2025, this is a full-stack admin dashboard for the eShop app. It provides an intuitive interface for managing products, orders, and customers, also provides a dashboard for tracking sales , revenue, and active users.',
+    techUsed: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
+    github: 'https://github.com/AlexLeiba/eShop',
+    website: 'https://eshop-admin-uvel.onrender.com/',
+    icon: (
+      <Image
+        className=' object-top object-cover shadow-lg'
+        src='/projects/eshop-admin-dashboard.webp'
+        width={600}
+        height={400}
+        alt='eshop-admin-dashboard'
+      />
+    ),
+    icon2: (
+      <Image
+        className=' object-cover object-top shadow-lg rounded-lg'
+        src='/projects/eshop-admin-products.webp'
+        width={600}
+        height={400}
+        alt='eshop-admin-products'
+      />
+    ),
+  },
+  {
+    id: 12,
     title: 'Dev blog',
     description:
       'Developed in 2024, this is a simple full-stack blog app focused on development technologies. It is fully functional, featuring email verification and an admin dashboard. The project was primarily built for the purpose of learning backend development.',
@@ -401,7 +465,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 11,
+    id: 13,
     title: 'My portfolio',
     description:
       'Developed in 2025, My Portfolio App is a simple website that showcases my current skills and the projects I have worked on.',
@@ -435,7 +499,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 12,
+    id: 14,
     title: 'WW-News',
     description:
       'Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API.',
@@ -462,7 +526,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 13,
+    id: 15,
     title: 'Weather forecast',
     description:
       'Developed in 2021, Weather Forecast is a simple app that displays a real 5-day weather forecast for major cities in Romania.',
