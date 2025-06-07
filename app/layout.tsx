@@ -10,7 +10,7 @@ import AosInit from '../lib/aosInit';
 
 import { Toaster } from 'react-hot-toast';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
-import { ThemeProvider } from '@/lib/themeContext';
+import { ThemeProvider } from '@/lib/useThemeContext';
 import { ProgressBar } from '@/components/ProgressBar';
 
 const geistSans = Geist({

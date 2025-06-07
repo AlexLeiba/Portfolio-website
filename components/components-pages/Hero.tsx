@@ -3,10 +3,9 @@ import React from 'react';
 import { Col, Container, Row } from '@/components/UI/Grid';
 import { motion } from 'motion/react';
 import Image from 'next/image';
-import { Spacer } from '../UI/spacer/spacer';
 import { FileDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { useTheme } from '@/lib/themeContext';
+import { useTheme } from '@/lib/useThemeContext';
 
 function Hero() {
   const { darkMode } = useTheme();

@@ -8,8 +8,9 @@ const ThemeContext = createContext({
 });
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [darkMode, setIsDarkMode] = useState(false);
+  const [darkMode, setIsDarkMode] = useState(false); //false is white theme
 
+  // FOR INITIAL STATE
   useEffect(() => {
     const stored = localStorage.getItem('theme');
 
@@ -20,6 +21,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     setIsDarkMode(stored === 'dark');
   }, []);
 
+  // FOR THEME CHANGE IN CLASSNAME
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');

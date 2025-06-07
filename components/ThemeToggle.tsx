@@ -1,9 +1,9 @@
 'use client';
 
-import { useTheme } from '@/lib/themeContext';
+import React from 'react';
+import { useTheme } from '@/lib/useThemeContext';
 import { cn } from '@/lib/utils';
 import { Moon, Sun } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
 
 function ThemeToggle() {
   const { setIsDarkMode, darkMode } = useTheme();
