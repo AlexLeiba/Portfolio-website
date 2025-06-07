@@ -11,6 +11,7 @@ import AosInit from '../lib/aosInit';
 import { Toaster } from 'react-hot-toast';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { ThemeProvider } from '@/lib/themeContext';
+import { ProgressBar } from '@/components/ProgressBar';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -39,7 +40,7 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <Toaster />
-
+          <ProgressBar />
           <div className='flex min-h-[100vh] bg-white  flex-col text-black dark:text-white dark:bg-black overflow-hidden'>
             <header>
               <Header />
