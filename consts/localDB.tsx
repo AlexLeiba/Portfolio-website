@@ -46,11 +46,11 @@ export const aboutMeData: {
     description: [
       {
         title: ' • Front end',
-        description: ['10 + projects completed as a front end developer.'],
+        description: ['15 + projects completed as a front end developer.'],
       },
       {
         title: ' • Full stack',
-        description: ['5 + Projects completed as a full stack developer.'],
+        description: ['6 + Projects completed as a full stack developer.'],
       },
     ],
     icon: <Cog width={50} height={50} />,
@@ -201,6 +201,33 @@ export const projectsData: {
   },
   {
     id: 5,
+    title: 'The Scaleup fest',
+    description:
+      'Designed for companies that have moved past the early stage , Scaleup Fest is built for scaleups actively navigating growth, market entry, expansion, investment-readiness, and exits. It’s also relevant for mid-sized companies and mature startups looking to learn from others, sharpen their growth strategy, or meet potential partners and investors.',
+    techUsed: ['HTML', 'JavaScript', 'SCSS'],
+    github: '',
+    website: 'https://scaleupfest.netinteraction.biz/',
+    icon: (
+      <Image
+        src='/projects/scaleup-web.webp'
+        width={600}
+        height={400}
+        alt='Scaleup Fest'
+        className=' object-cover shadow-lg'
+      />
+    ),
+    icon2: (
+      <Image
+        src='/projects/scaleup-mobile.webp'
+        width={250}
+        height={400}
+        alt='Scaleup Fest'
+        className=' object-cover object-top shadow-lg rounded-lg '
+      />
+    ),
+  },
+  {
+    id: 6,
     title: 'Medforeldre',
     description:
       'Developed in 2022, Medforeldre is a web service which offers parenting advice and co-parent matching, and is intended to advise and guide people who are seeking parenthood in safe and stable parenthood.',
@@ -227,7 +254,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 6,
+    id: 7,
     title: 'TaskMate',
     description:
       'Developed in 2025, TaskMate is a simple to-do list app that allows users to create, manage, and prioritize tasks and many more. It features a clean and intuitive interface, making it easy for users to stay organized and focused.',
@@ -261,7 +288,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 7,
+    id: 8,
     title: 'Web tech blogs',
     description:
       'Developed in 2024, this is a full-stack blog app focused on web technology topics, created to share experiences and knowledge about web development that are valuable to the community.',
@@ -295,7 +322,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 8,
+    id: 9,
     title: 'Chat me',
     description:
       'Developed in 2024, Chat Me is a full-stack, real-time chat app designed to make it easy to connect with friends. It offers a wide variety of themes and additional features to enhance the user experience.',
@@ -331,7 +358,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 9,
+    id: 10,
     title: 'Spend or keep',
     description:
       'Developed in 2025, Spend or Keep is a full-stack project that helps users track their expenses and budget. It offers a user-friendly interface and provides features  to help users save money and stay on track with their finances.',
@@ -366,7 +393,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 10,
+    id: 11,
     title: 'eShop',
     description:
       'Developed in 2025, this is a full-stack e-commerce app that allows users to browse and purchase products. It features a user-friendly interface, secure payment processing with Stripe, and a robust backend system.',
@@ -403,7 +430,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 11,
+    id: 12,
     title: 'eShop Admin Dashboard',
     description:
       'Developed in 2025, this is a full-stack admin dashboard for the eShop app. It provides an intuitive interface for managing products, orders, and customers, also provides a dashboard for tracking sales , revenue, and active users.',
@@ -430,7 +457,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 12,
+    id: 13,
     title: 'Dev blog',
     description:
       'Developed in 2024, this is a simple full-stack blog app focused on development technologies. It is fully functional, featuring email verification and an admin dashboard. The project was primarily built for the purpose of learning backend development.',
@@ -465,7 +492,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 13,
+    id: 14,
     title: 'My portfolio',
     description:
       'Developed in 2025, My Portfolio App is a simple website that showcases my current skills and the projects I have worked on.',
@@ -499,7 +526,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 14,
+    id: 15,
     title: 'WW-News',
     description:
       'Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API.',
@@ -526,7 +553,7 @@ export const projectsData: {
     ),
   },
   {
-    id: 15,
+    id: 16,
     title: 'Weather forecast',
     description:
       'Developed in 2021, Weather Forecast is a simple app that displays a real 5-day weather forecast for major cities in Romania.',

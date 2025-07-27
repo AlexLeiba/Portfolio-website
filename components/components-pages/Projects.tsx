@@ -28,7 +28,7 @@ function Projects() {
         {projectsData.map((data, index) => {
           return (
             <Col key={index} className='w-full lg:mb-96 mb-32' lg={12}>
-              {index === 5 && (
+              {index === 6 && (
                 <div className='my-12'>
                   <p>My personal projects below</p>
                   <div className='w-full h-px dark:bg-white bg-black'></div>
@@ -37,11 +37,21 @@ function Projects() {
               <div className='flex gap-12 justify-between items-center relative'>
                 {/* DESKTOP */}
                 {index % 2 !== 0 && (
-                  <div className=' md:hidden sm:hidden'>
+                  <div
+                    className={cn(
+                      data.id === 12 && 'mb-64',
+                      'md:w-[350px] md:hidden sm:hidden '
+                    )}
+                  >
                     <div data-aos='fade-up'>{data.icon}</div>
                     <div
                       data-aos='fade-left'
-                      className=' absolute top-20 left-[430px] '
+                      className={cn(
+                        data.id === 12
+                          ? 'left-0 top-[412px]'
+                          : 'top-20 right-[430px] md:right-[300px]',
+                        'absolute'
+                      )}
                       data-aos-delay={500}
                     >
                       {data.icon2}
@@ -149,7 +159,7 @@ function Projects() {
                 {index % 2 === 0 && (
                   <div
                     className={cn(
-                      data.id === 11 && 'mb-64',
+                      data.id === 12 && 'mb-64',
                       'md:w-[350px] md:hidden sm:hidden '
                     )}
                   >
@@ -157,7 +167,7 @@ function Projects() {
                     <div
                       // className='absolute '
                       className={cn(
-                        data.id === 11
+                        data.id === 12
                           ? 'right-0 top-[412px]'
                           : 'top-20 right-[430px] md:right-[300px]',
                         'absolute'

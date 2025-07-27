@@ -23,7 +23,7 @@ function Hero() {
   return (
     <Container
       variant={'fluid'}
-      className={cn('relative overflow-hidden min-h-[calc(100vh+200px)]')}
+      className={cn('relative overflow-hidden min-h-[calc(100vh)]')}
     >
       <Row>
         <Col>
@@ -86,7 +86,7 @@ function Hero() {
                       height={50}
                       className=' dark:text-white text-black'
                     />
-                    <p>Download My pdf</p>
+                    <p>Download my Resume</p>
                   </div>
                 </div>
               </div>
@@ -119,24 +119,6 @@ function Hero() {
 export default Hero;
 
 export const floatingIcons = [
-  {
-    source: '/rocket.svg',
-    width: 15,
-    height: 15,
-    animate: {
-      translateY: 500,
-      transition: { duration: 100 },
-      translateX: -4000,
-      rotate: -20,
-      scale: -1,
-    },
-    className:
-      'absolute top-[100px] right-[-200px]  rotate-10 animation-delay-1000 animate-pulse   transition-all  floating-icon-glow-animated ',
-    image: {
-      className: 'rotate-[225deg]',
-    },
-  },
-
   {
     source: '/categories/React.svg',
     width: 40,

@@ -328,21 +328,21 @@ select:focus {
 
   transition: height 3s linear;
 
-  height: 100vh;
+  height: 200vh;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
 
-@keyframes heightOfContainerHero {
+/* @keyframes heightOfContainerHero {
   0% {
     height: 135vh;
   }
   100% {
     height: 100vh;
   }
-}
+} */
 
 .floating-icon-glow-animated {
   animation: glowAnimation 2s ease-in-out infinite;
