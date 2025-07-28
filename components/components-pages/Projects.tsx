@@ -49,7 +49,7 @@ function Projects() {
                       className={cn(
                         data.id === 12
                           ? 'left-0 top-[412px]'
-                          : 'top-20 right-[430px] md:right-[300px]',
+                          : 'top-20 right-[500px] md:right-[300px]',
                         'absolute'
                       )}
                       data-aos-delay={500}
