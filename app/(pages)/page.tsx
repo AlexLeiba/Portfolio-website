@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
 
       <Container variant={'fluid'} spacing='none'>
-        <Row>
+        <Row className='flex flex-col'>
           <Container id='about'>
             <About />
           </Container>

@@ -8,6 +8,7 @@ const rowVariants = cva(
     'lg:-mx-3',
     'md:-mx-3',
     '-mx-3',
+
     // 'lg:gap-y-12 md:gap-y-6 gap-y-6',
   ],
   {
