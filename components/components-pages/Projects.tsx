@@ -6,6 +6,7 @@ import { Button } from '../UI/Button/Button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { projectsData } from '@/consts/localDB';
+import { ArrowDown } from 'lucide-react';
 
 function Projects() {
   return (
@@ -29,9 +30,14 @@ function Projects() {
           return (
             <Col key={index} className='w-full lg:mb-96 mb-32' lg={12}>
               {index === 6 && (
-                <div className='my-12'>
-                  <p>My personal projects below</p>
+                <div id='personal-projects'>
+                  <Spacer size={16} />
+                  <div className='flex gap-4  items-center'>
+                    <h4>My personal projects below</h4>
+                    <ArrowDown />
+                  </div>
                   <div className='w-full h-px dark:bg-white bg-black'></div>
+                  <Spacer size={16} />
                 </div>
               )}
               <div className='flex gap-12 justify-between items-center relative'>

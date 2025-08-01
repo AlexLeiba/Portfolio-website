@@ -49,7 +49,10 @@ function AuthLinks() {
               <p className='text-sm'>About me</p>
             </Link>
             <Link href='#projects'>
-              <p className='text-sm'>My projects</p>
+              <p className='text-sm'>Projects</p>
+            </Link>
+            <Link href='#personal-projects'>
+              <p className='text-sm'>Personal projects</p>
             </Link>
             <Link href='#skills'>
               <p className='text-sm'>Skills</p>
@@ -63,19 +66,22 @@ function AuthLinks() {
         //  MOBILE NABAR
         <div
           className={cn(
-            'mt-14 h-full backdrop-blur-lg  w-full z-10 fixed top-0 right-0 left-0 bottom-0 text-black dark:text-white font-bold',
+            'mt-14 h-full backdrop-blur-lg backdrop-brightness-90  w-full z-10 fixed top-0 right-0 left-0 bottom-0 text-black dark:text-white font-bold',
             [
               'transition-all duration-200 ease-in-out ',
               openBurgerMenu ? 'translate-x-0' : 'translate-x-full',
             ]
           )}
         >
-          <div className='flex  flex-col z-20  justify-center items-center gap-12  pt-24'>
+          <div className='flex  flex-col z-20  justify-center items-center gap-12  pt-24 '>
             <Link href='#about' onClick={handleNavLinkClick}>
-              <p className='text-xl'>About me</p>
+              <p className='text-xl '>About me</p>
             </Link>
             <Link href='#projects' onClick={handleNavLinkClick}>
               <p className='text-xl'>My projects</p>
+            </Link>
+            <Link href='#personal-projects' onClick={handleNavLinkClick}>
+              <p className='text-xl'>Personal projects</p>
             </Link>
             <Link href='#skills' onClick={handleNavLinkClick}>
               <p className='text-xl'>Skills</p>

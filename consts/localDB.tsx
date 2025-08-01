@@ -46,7 +46,7 @@ export const aboutMeData: {
     description: [
       {
         title: ' • Front end',
-        description: ['15 + projects completed as a front end developer.'],
+        description: ['20 + projects completed as a front end developer.'],
       },
       {
         title: ' • Full stack',
@@ -257,7 +257,7 @@ export const projectsData: {
     id: 7,
     title: 'TaskMate',
     description:
-      'Developed in 2025, TaskMate is a simple to-do list app that allows users to create, manage, and prioritize tasks and many more. It features a clean and intuitive interface, making it easy for users to stay organized and focused.',
+      '"Developed in 2025, TaskMate is an agile to-do list app that allows users to create, manage, assign, and prioritize tasks, among other features. It offers a clean and intuitive interface, drag-and-drop functionality for lists and tasks, and customizable backgrounds, making it easy for users to stay organized and focused while enjoying the beautiful design."',
     techUsed: [
       'Next.js',
       'Tailwind',
@@ -291,7 +291,7 @@ export const projectsData: {
     id: 8,
     title: 'Web tech blogs',
     description:
-      'Developed in 2024, this is a full-stack blog app focused on web technology topics, created to share experiences and knowledge about web development that are valuable to the community.',
+      '"Developed in 2024, this is a full-stack blog app focused on web technology topics, created to share experiences and knowledge about web development that are valuable to the community."',
     techUsed: [
       'Next.js',
       'Tailwind',
@@ -325,7 +325,7 @@ export const projectsData: {
     id: 9,
     title: 'Chat me',
     description:
-      'Developed in 2024, Chat Me is a full-stack, real-time chat app designed to make it easy to connect with friends. It offers a wide variety of themes and additional features to enhance the user experience.',
+      '"Developed in 2024, Chat Me is a full-stack, real-time chat app designed to make connecting with friends easy. It offers a wide variety of themes and additional features to enhance the user experience."',
     techUsed: [
       'React.js',
       'Tailwind',
@@ -361,7 +361,7 @@ export const projectsData: {
     id: 10,
     title: 'Spend or keep',
     description:
-      'Developed in 2025, Spend or Keep is a full-stack project that helps users track their expenses and budget. It offers a user-friendly interface and provides features  to help users save money and stay on track with their finances.',
+      '"Developed in 2025, Spend or Keep is a full-stack application designed to help users track expenses and manage their budgets. It features a user-friendly interface and tools that encourage saving and staying on top of personal finances."',
     techUsed: [
       'React.js',
       'Next.js',
@@ -396,16 +396,17 @@ export const projectsData: {
     id: 11,
     title: 'eShop',
     description:
-      'Developed in 2025, this is a full-stack e-commerce app that allows users to browse and purchase products. It features a user-friendly interface, secure payment processing with Stripe, and a robust backend system.',
+      '"Developed in 2025, this is a full-stack e-commerce app that allows users to browse and purchase products. It features a user-friendly interface, sortings ,pagination, global search, secure payment processing with Stripe, and a robust backend system."',
     techUsed: [
       'React.js',
       'TypeScript',
+      'Redux Toolkit',
+      'Custom components',
       'Node.js',
       'Express.js',
       'MongoDB',
       'Nodemailer',
       'JWT',
-      'Custom components',
       'Stripe',
     ],
     github: 'https://github.com/AlexLeiba/eShop',
@@ -433,7 +434,7 @@ export const projectsData: {
     id: 12,
     title: 'eShop Admin Dashboard',
     description:
-      'Developed in 2025, this is a full-stack admin dashboard for the eShop app. It provides an intuitive interface for managing products, orders, and customers, also provides a dashboard for tracking sales , revenue, and active users.',
+      '"Developed in 2025, this is a full-stack admin dashboard for the eShop app. It provides an intuitive interface for managing products, orders, and customers, also provides a dashboard for tracking sales , revenue, and active users."',
     techUsed: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
     github: 'https://github.com/AlexLeiba/eShop',
     website: 'https://eshop-admin-uvel.onrender.com/',
@@ -460,7 +461,7 @@ export const projectsData: {
     id: 13,
     title: 'Dev blog',
     description:
-      'Developed in 2024, this is a simple full-stack blog app focused on development technologies. It is fully functional, featuring email verification and an admin dashboard. The project was primarily built for the purpose of learning backend development.',
+      '"Developed in 2024, this is a simple full-stack blog app focused on development technologies. It is fully functional, featuring email verification and an admin dashboard. The project was primarily built for the purpose of learning backend development."',
     techUsed: [
       'JavaScript',
       'Node.js',
@@ -495,7 +496,7 @@ export const projectsData: {
     id: 14,
     title: 'My portfolio',
     description:
-      'Developed in 2025, My Portfolio App is a simple website that showcases my current skills and the projects I have worked on.',
+      '"Developed in 2025, My Portfolio App is a simple website that showcases my current skills and the projects I have worked on."',
     techUsed: [
       'Next.js',
       'Tailwind',
@@ -529,7 +530,7 @@ export const projectsData: {
     id: 15,
     title: 'WW-News',
     description:
-      'Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API.',
+      '"Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API."',
     techUsed: ['React.js', 'Bootstrap'],
     github: 'https://github.com/AlexLeiba/WW-Everyday-news',
     website: 'https://worldwide-everyday-news.netlify.app',
@@ -556,7 +557,7 @@ export const projectsData: {
     id: 16,
     title: 'Weather forecast',
     description:
-      'Developed in 2021, Weather Forecast is a simple app that displays a real 5-day weather forecast for major cities in Romania.',
+      '"Developed in 2021, Weather Forecast is a simple app that displays a real 5-day weather forecast for major cities in Romania."',
     techUsed: ['JavaScript'],
     github: 'https://github.com/AlexLeiba/Romania-Weather-forecast',
     website: 'https://alex-weather-forecast.netlify.app/',
