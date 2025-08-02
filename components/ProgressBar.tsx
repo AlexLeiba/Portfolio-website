@@ -6,7 +6,7 @@ export function ProgressBar() {
   const [progress, setProgress] = React.useState(0);
 
   useEffect(() => {
-    document.addEventListener('scroll', () => {
+    function handleScroll() {
       const progressScrollValue = window.scrollY;
       const allAvailableScrollValue =
         window.document.documentElement.scrollHeight;
@@ -14,7 +14,10 @@ export function ProgressBar() {
       const scrollProgressPercentage =
         (progressScrollValue / allAvailableScrollValue) * 100 + 6;
       setProgress(Math.floor(scrollProgressPercentage));
-    });
+    }
+    document.addEventListener('scroll', handleScroll);
+
+    return () => document.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (

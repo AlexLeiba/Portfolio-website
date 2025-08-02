@@ -32,9 +32,12 @@ function Projects() {
               {index === 6 && (
                 <div id='personal-projects'>
                   <Spacer size={16} />
-                  <div className='flex gap-4  items-center'>
+                  <div
+                    className='flex gap-4  items-center justify-center'
+                    data-aos='fade-up'
+                  >
                     <h4>My personal projects below</h4>
-                    <ArrowDown />
+                    <ArrowDown data-aos='fade-up' className='animate-pulse' />
                   </div>
                   <div className='w-full h-px dark:bg-white bg-black'></div>
                   <Spacer size={16} />
@@ -67,7 +70,7 @@ function Projects() {
 
                 <div
                   className={cn(
-                    'flex flex-col gap-4 sm:w-full',
+                    'flex flex-col gap-4 sm:w-full md:w-full',
                     index % 2 !== 0 && ' text-end '
                   )}
                   data-aos='fade-up'
@@ -149,7 +152,7 @@ function Projects() {
                     </div>
                   </div>
                   {/* TABLET/MOBILE */}
-                  <div className='lg:hidden flex sm:flex-col'>
+                  <div className='lg:hidden flex sm:flex-col w-full'>
                     <div data-aos='fade-up '>{data.icon}</div>
                     <div
                       data-aos='fade-right'

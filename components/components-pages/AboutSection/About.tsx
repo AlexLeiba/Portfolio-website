@@ -1,12 +1,13 @@
 'use client';
 import React from 'react';
-import { Spacer } from '../UI/spacer/spacer';
+import { Spacer } from '../../UI/spacer/spacer';
 import { ChevronDown } from 'lucide-react';
-import { Col, Row } from '../UI/Grid';
-import { Button } from '../UI/Button/Button';
+import { Col, Row } from '../../UI/Grid';
+import { Button } from '../../UI/Button/Button';
 import { cn } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
 import { aboutMeData } from '@/consts/localDB';
+import { AboutCard } from './AboutCard';
 
 function About() {
   const router = useRouter();
@@ -89,37 +90,8 @@ function About() {
         {aboutMeData.map((data, index) => {
           return (
             <Col key={index} className='w-full' lg={data.col}>
-              <div
-                data-aos-delay={index * 100}
-                data-aos='fade-up'
-                key={index}
-                className='flex  border mb-4 border-primary-200 pb-6 items-center lg:h-56 min-h-56 p-4 rounded-xl flex-wrap overflow-hidden shadow-lg'
-              >
-                <div className='flex items-center  lg:gap-8 md:gap-6 gap-2  h-full w-full lg:flex-row md:flex-row flex-col'>
-                  <div>{data.icon}</div>
-                  <div className='flex flex-col gap-4 justify-between h-full'>
-                    <h5 className='text-primary-400 '>{data.title}</h5>
-
-                    <div className='flex gap-4 flex-wrap lg:h-[115px] md:h-[80px] items-center'>
-                      {data.description.map((description, index) => {
-                        return (
-                          <div key={index}>
-                            <p className='body-base font-bold'>
-                              {description.title}
-                            </p>
-
-                            {description.description.map((desc, index) => (
-                              <p className='body-base ml-2' key={index}>
-                                {desc}
-                              </p>
-                            ))}
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </div>
-                <></>
+              <div data-aos-delay={index * 100} data-aos='fade-up'>
+                <AboutCard data={data} />
               </div>
             </Col>
           );

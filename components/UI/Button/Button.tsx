@@ -16,7 +16,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: ['bg-tertiary-500 text-white ', 'lg:hover:bg-tertiary-600'],
-        baseline: ['bg-baseline-950', 'lg:hover:bg-baseline-900', 'text-white'],
+        baseline: [
+          'bg-baseline-950',
+          'lg:hover:bg-black',
+          'text-white',
+          'dark:hover:bg-black',
+        ],
         secondary: [
           'bg-baseline-100 text-baseline-950 dark:text-white hover:bg-baseline-200 ',
           'dark:bg-baseline-900 dark:hover:bg-baseline-200 dark:hover:text-black ',
@@ -118,7 +123,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(buttonVariants({ variant, size, className }))}
-        disabled={disabled}
+        disabled={disabled || loading}
         ref={ref}
         {...props}
       >

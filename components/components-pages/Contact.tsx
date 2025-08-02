@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { Spacer } from '../UI/spacer/spacer';
 import { Col, Row } from '../UI/Grid';
 import { Button } from '../UI/Button/Button';
@@ -14,6 +14,7 @@ import { cn } from '@/lib/utils';
 import { contactSchema, type FormDataType } from '@/lib/schemas';
 
 function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const formMethods = useForm<FormDataType>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -29,11 +30,13 @@ function Contact() {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = formMethods;
 
   async function onSubmit(formData: FormDataType) {
     const url = process.env.NEXT_PUBLIC_FORM_URL;
     try {
+      setIsSubmitting(true);
       if (url) {
         const response = await fetch(url, {
           method: 'POST',
@@ -45,12 +48,15 @@ function Contact() {
 
         if (response.ok) {
           toast.success('The message was sent successfully!');
+          reset();
         }
       } else {
         toast.error('Error sending the message. Please try again.');
       }
     } catch (error) {
       toast.error('An unexpected error occurred.');
+    } finally {
+      setIsSubmitting(false);
     }
   }
   return (
@@ -194,9 +200,13 @@ function Contact() {
 
                 <Spacer size={8} />
                 <Button
+                  loading={isSubmitting}
                   onClick={handleSubmit(onSubmit)}
                   variant={'baseline'}
-                  className='w-full animate-pulse'
+                  className={cn(
+                    'w-full',
+                    isSubmitting ? 'opacity-60' : 'animate-pulse'
+                  )}
                 >
                   Send Message
                 </Button>

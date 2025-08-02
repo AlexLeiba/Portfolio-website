@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
 import { cva } from 'class-variance-authority';
+import { Loader2 } from 'lucide-react';
 import React from 'react';
 
 const loaderVariants = cva(
@@ -74,9 +75,7 @@ type LoaderProps = {
 export function Loader({ variant, disabled, size }: LoaderProps) {
   return (
     <div className='flex  items-center justify-center'>
-      <div className={cn(loaderSizes({ size }))}>
-        <div className={cn(loaderVariants({ variant, disabled }))}></div>
-      </div>
+      <Loader2 className='animate-spin' />
     </div>
   );
 }

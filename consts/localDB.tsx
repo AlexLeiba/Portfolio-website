@@ -3,6 +3,8 @@ import React from 'react';
 import { Book, ChevronDown, Cog, Languages, MonitorCog } from 'lucide-react';
 import Image from 'next/image';
 
+export type AboutMeType = (typeof aboutMeData)[number];
+
 export const aboutMeData: {
   title: string;
   description: { title: string; description: string[] }[];
@@ -97,7 +99,7 @@ export const projectsData: {
         width={600}
         height={400}
         alt='Wonderland'
-        className=' object-cover shadow-lg'
+        className='w-full object-cover shadow-lg'
       />
     ),
     icon2: (
@@ -120,7 +122,7 @@ export const projectsData: {
     website: 'https://apps.apple.com/gb/app/wonderland-essentials/id1635968740',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/wes-app.webp'
         width={600}
         height={400}
@@ -147,7 +149,7 @@ export const projectsData: {
     website: 'https://enovatika.com/en',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/enovatika-web.webp'
         width={600}
         height={400}
@@ -182,7 +184,7 @@ export const projectsData: {
     website: 'https://marketpal.com/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/marketpal-web.webp'
         width={600}
         height={400}
@@ -213,7 +215,7 @@ export const projectsData: {
         width={600}
         height={400}
         alt='Scaleup Fest'
-        className=' object-cover shadow-lg'
+        className='w-full object-cover shadow-lg'
       />
     ),
     icon2: (
@@ -236,7 +238,7 @@ export const projectsData: {
     website: 'https://www.medforeldre.no/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/medforeldre-web.webp'
         width={600}
         height={400}
@@ -257,7 +259,7 @@ export const projectsData: {
     id: 7,
     title: 'TaskMate',
     description:
-      '"Developed in 2025, TaskMate is an agile to-do list app that allows users to create, manage, assign, and prioritize tasks, among other features. It offers a clean and intuitive interface, drag-and-drop functionality for lists and tasks, and customizable backgrounds, making it easy for users to stay organized and focused while enjoying the beautiful design."',
+      '"Developed in 2025, TaskMate is an Agile Task Manager app that allows users to create, manage, assign, prioritize tasks and many other features. It offers a clean , intuitive and customizable interface, drag-and-drop functionality for lists and cards, and customizable backgrounds, making it easy for users to stay organized and focused while enjoying the beautiful design."',
     techUsed: [
       'Next.js',
       'Tailwind',
@@ -265,12 +267,13 @@ export const projectsData: {
       'React hook form',
       'zod',
       'Shadcn',
+      'Clerk',
     ],
     github: 'https://github.com/AlexLeiba/TaskMate',
     website: 'https://task-mate-five.vercel.app/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/task-mate-desktop.webp'
         width={600}
         height={400}
@@ -304,7 +307,7 @@ export const projectsData: {
     website: 'https://wt-blogs.vercel.app/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/wt-blogs-web-dark-theme.webp'
         width={600}
         height={400}
@@ -340,7 +343,7 @@ export const projectsData: {
     website: 'https://chat-me-react.onrender.com/sign-in',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/chat-me-web.webp'
         width={600}
         height={400}
@@ -375,7 +378,7 @@ export const projectsData: {
     website: 'https://spend-or-keep.vercel.app/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/spend-and-keep-web.webp'
         width={600}
         height={400}
@@ -413,7 +416,7 @@ export const projectsData: {
     website: 'https://eshop-global.onrender.com/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/eshop-desktop.webp'
         width={600}
         height={400}
@@ -440,7 +443,7 @@ export const projectsData: {
     website: 'https://eshop-admin-uvel.onrender.com/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/eshop-admin-dashboard.webp'
         width={600}
         height={400}
@@ -449,7 +452,7 @@ export const projectsData: {
     ),
     icon2: (
       <Image
-        className=' object-cover object-top shadow-lg rounded-lg'
+        className='w-full object-cover object-top shadow-lg '
         src='/projects/eshop-admin-products.webp'
         width={600}
         height={400}
@@ -475,7 +478,7 @@ export const projectsData: {
     website: 'https://full-stack-blog-37mi.onrender.com',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/dev-blog-web.webp'
         width={600}
         height={400}
@@ -509,7 +512,7 @@ export const projectsData: {
     website: '/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/my-portofolio-web.webp'
         width={600}
         height={400}
@@ -536,7 +539,7 @@ export const projectsData: {
     website: 'https://worldwide-everyday-news.netlify.app',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/ww-news-web.webp'
         width={600}
         height={400}
@@ -563,7 +566,7 @@ export const projectsData: {
     website: 'https://alex-weather-forecast.netlify.app/',
     icon: (
       <Image
-        className=' object-top object-cover shadow-lg'
+        className='w-full object-top object-cover shadow-lg'
         src='/projects/weather-web.webp'
         width={600}
         height={400}
