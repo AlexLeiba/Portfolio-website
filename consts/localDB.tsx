@@ -169,8 +169,9 @@ export const projectsData: {
   {
     id: 4,
     title: 'Marketpal',
-    description:
-      'In development since 2023, Marketpal is a SaaS platform designed to simplify the process of requesting quotes, finding suppliers, and acquiring the products and services you need.',
+    description: `Marketpal is a SaaS Web app platform designed to simplify the process of requesting quotes, finding suppliers, and acquiring the products and services you need.
+    I have been working and maintaining the project on front end part from the beginning. 
+    This web app consists of Landing page , Dashboard, and Custome Admin CMS.`,
     techUsed: [
       'Next.js',
       'Styled components',
@@ -258,8 +259,8 @@ export const projectsData: {
   {
     id: 7,
     title: 'TaskMate',
-    description:
-      '"Developed in 2025, TaskMate is an Agile Task Manager app that allows users to create, manage, assign, prioritize tasks and many other features. It offers a clean , intuitive and customizable interface, drag-and-drop functionality for lists and cards, and customizable backgrounds, making it easy for users to stay organized and focused while enjoying the beautiful design."',
+    description: `" TaskMate is an Agile Task Manager Web App that allows users to create, manage, assign, add attachments , comments and prioritize tasks and many other useful features. 
+    It offers a clean ,intuitive and customizable interface, drag-and-drop functionality for lists and cards, and a large variety of beautiful backgrounds, making it easy for users to stay organized and focused while enjoying the beautiful design. "`,
     techUsed: [
       'Next.js',
       'Tailwind',
@@ -292,79 +293,10 @@ export const projectsData: {
   },
   {
     id: 8,
-    title: 'Web tech blogs',
-    description:
-      '"Developed in 2024, this is a full-stack blog app focused on web technology topics, created to share experiences and knowledge about web development that are valuable to the community."',
-    techUsed: [
-      'Next.js',
-      'Tailwind',
-      'TypeScript',
-      'NextAuth',
-      'MongoDB',
-      'Prisma',
-    ],
-    github: 'https://github.com/AlexLeiba/WT-Blogs-NextJs-fullstack-app',
-    website: 'https://wt-blogs.vercel.app/',
-    icon: (
-      <Image
-        className='w-full object-top object-cover shadow-lg'
-        src='/projects/wt-blogs-web-dark-theme.webp'
-        width={600}
-        height={400}
-        alt='wt-blogs'
-      />
-    ),
-    icon2: (
-      <Image
-        className=' object-cover object-top shadow-lg rounded-lg'
-        src='/projects/wt-blogs-mobile-white-theme.webp'
-        width={250}
-        height={400}
-        alt='wt-blogs'
-      />
-    ),
-  },
-  {
-    id: 9,
-    title: 'Chat me',
-    description:
-      '"Developed in 2024, Chat Me is a full-stack, real-time chat app designed to make connecting with friends easy. It offers a wide variety of themes and additional features to enhance the user experience."',
-    techUsed: [
-      'React.js',
-      'Tailwind',
-      'TypeScript',
-      'Zustand',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'Socket.io',
-    ],
-    github: 'https://github.com/AlexLeiba/Chat-me-ReactJs-fullstack-app',
-    website: 'https://chat-me-react.onrender.com/sign-in',
-    icon: (
-      <Image
-        className='w-full object-top object-cover shadow-lg'
-        src='/projects/chat-me-web.webp'
-        width={600}
-        height={400}
-        alt='chat-me'
-      />
-    ),
-    icon2: (
-      <Image
-        className='h-[665px] w-[380px] object-cover object-top shadow-lg rounded-lg'
-        src='/projects/chat-me-mobile.webp'
-        width={250}
-        height={400}
-        alt='chat-me'
-      />
-    ),
-  },
-  {
-    id: 10,
     title: 'Spend or keep',
-    description:
-      '"Developed in 2025, Spend or Keep is a full-stack application designed to help users track expenses and manage their budgets. It features a user-friendly interface and tools that encourage saving and staying on top of personal finances."',
+    description: `" Spend or Keep is a full-stack Web App application designed to help users track expenses and manage their budgets. 
+    It provides a user-friendly interface and tools that encourage saving and staying on top of personal finances.
+    It features a dashboard that displays all the expenses and incomes, a chart that shows the user's spending habits with sorting options by date, table view for expenses and incomes, sortings, create and edit categories. "`,
     techUsed: [
       'React.js',
       'Next.js',
@@ -396,10 +328,76 @@ export const projectsData: {
     ),
   },
   {
-    id: 11,
+    id: 9,
     title: 'eShop',
-    description:
-      '"Developed in 2025, this is a full-stack e-commerce app that allows users to browse and purchase products. It features a user-friendly interface, sortings ,pagination, global search, secure payment processing with Stripe, and a robust backend system."',
+    description: `" eShop is a full-stack e-commerce Web App that allows users to browse and purchase products. 
+      It features a user-friendly interface, sortings ,pagination, global search, secure payment processing with Stripe, and a robust backend system. "`,
+    techUsed: [
+      'React.js',
+      'TypeScript',
+      'Redux Toolkit',
+      'Custom components',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Nodemailer',
+      'JWT',
+      'Stripe',
+    ],
+    github: 'https://github.com/AlexLeiba/eShop',
+    website: 'https://eshop-global.onrender.com/',
+    icon: (
+      <Image
+        className='w-full object-top object-cover shadow-lg'
+        src='/projects/eshop-desktop.webp'
+        width={600}
+        height={400}
+        alt='eshop-desktop'
+      />
+    ),
+    icon2: (
+      <Image
+        className=' object-cover object-top shadow-lg rounded-lg'
+        src='/projects/eshop-mobile.webp'
+        width={250}
+        height={400}
+        alt='eshop-mobile'
+      />
+    ),
+  },
+
+  {
+    id: 10,
+    title: 'eShop Admin Dashboard',
+    description: `" eShop Admin Dashboard is a full-stack Web App admin dashboard for the eShop app. 
+      It provides an intuitive interface for managing products, orders, and customers, also provides a dashboard for tracking sales , revenue, and active users. "`,
+    techUsed: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
+    github: 'https://github.com/AlexLeiba/eShop',
+    website: 'https://eshop-admin-uvel.onrender.com/',
+    icon: (
+      <Image
+        className='w-full object-top object-cover shadow-lg'
+        src='/projects/eshop-admin-dashboard.webp'
+        width={600}
+        height={400}
+        alt='eshop-admin-dashboard'
+      />
+    ),
+    icon2: (
+      <Image
+        className='w-full object-cover object-top shadow-lg '
+        src='/projects/eshop-admin-products.webp'
+        width={600}
+        height={400}
+        alt='eshop-admin-products'
+      />
+    ),
+  },
+  {
+    id: 11,
+    title: 'Travel-Plan',
+    description: `" eShop is a full-stack e-commerce Web App that allows users to browse and purchase products. 
+      It features a user-friendly interface, sortings ,pagination, global search, secure payment processing with Stripe, and a robust backend system. "`,
     techUsed: [
       'React.js',
       'TypeScript',
@@ -435,36 +433,81 @@ export const projectsData: {
   },
   {
     id: 12,
-    title: 'eShop Admin Dashboard',
-    description:
-      '"Developed in 2025, this is a full-stack admin dashboard for the eShop app. It provides an intuitive interface for managing products, orders, and customers, also provides a dashboard for tracking sales , revenue, and active users."',
-    techUsed: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
-    github: 'https://github.com/AlexLeiba/eShop',
-    website: 'https://eshop-admin-uvel.onrender.com/',
+    title: 'Web tech blogs',
+    description: `" Web Tech Blogs is a full-stack Web App focused on web technology topics, created to share experiences and knowledge about web development that are valuable to the community.
+    It features a user-frienfly interface where you can create your own blogs using a rich text editor or just browse through the existing ones. The app also has a built-in search function and other useful informations about the selected article, allowing you to easily find the content you're looking for. "`,
+    techUsed: [
+      'Next.js',
+      'Tailwind',
+      'TypeScript',
+      'NextAuth',
+      'MongoDB',
+      'Prisma',
+    ],
+    github: 'https://github.com/AlexLeiba/WT-Blogs-NextJs-fullstack-app',
+    website: 'https://wt-blogs.vercel.app/',
     icon: (
       <Image
         className='w-full object-top object-cover shadow-lg'
-        src='/projects/eshop-admin-dashboard.webp'
+        src='/projects/wt-blogs-web-dark-theme.webp'
         width={600}
         height={400}
-        alt='eshop-admin-dashboard'
+        alt='wt-blogs'
       />
     ),
     icon2: (
       <Image
-        className='w-full object-cover object-top shadow-lg '
-        src='/projects/eshop-admin-products.webp'
-        width={600}
+        className=' object-cover object-top shadow-lg rounded-lg'
+        src='/projects/wt-blogs-mobile-white-theme.webp'
+        width={250}
         height={400}
-        alt='eshop-admin-products'
+        alt='wt-blogs'
       />
     ),
   },
   {
     id: 13,
+    title: 'Chat me',
+    description: `" Chat Me is a full-stack Web App.
+      It features a real-time chat and notifications which was designed to make connecting with your friends easy. 
+      It provides a wide variety of themes which changes the entire aspect of the app and makes the chat experience unique, edit personal profile data, share images and emoji. "`,
+    techUsed: [
+      'React.js',
+      'Tailwind',
+      'TypeScript',
+      'Material UI',
+      'Zustand',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Socket.io',
+    ],
+    github: 'https://github.com/AlexLeiba/Chat-me-ReactJs-fullstack-app',
+    website: 'https://chat-me-react.onrender.com/sign-in',
+    icon: (
+      <Image
+        className='w-full object-top object-cover shadow-lg'
+        src='/projects/chat-me-web.webp'
+        width={600}
+        height={400}
+        alt='chat-me'
+      />
+    ),
+    icon2: (
+      <Image
+        className='h-[665px] w-[380px] object-cover object-top shadow-lg rounded-lg'
+        src='/projects/chat-me-mobile.webp'
+        width={250}
+        height={400}
+        alt='chat-me'
+      />
+    ),
+  },
+
+  {
+    id: 14,
     title: 'Dev blog',
-    description:
-      '"Developed in 2024, this is a simple full-stack blog app focused on development technologies. It is fully functional, featuring email verification and an admin dashboard. The project was primarily built for the purpose of learning backend development."',
+    description: `" Developed in 2024, this is a simple full-stack blog app focused on development technologies. It is fully functional, featuring email verification and an admin dashboard. The project was primarily built for the purpose of learning backend development. "`,
     techUsed: [
       'JavaScript',
       'Node.js',
@@ -496,10 +539,9 @@ export const projectsData: {
     ),
   },
   {
-    id: 14,
+    id: 15,
     title: 'My portfolio',
-    description:
-      '"Developed in 2025, My Portfolio App is a simple website that showcases my current skills and the projects I have worked on."',
+    description: `" Developed in 2025, My Portfolio App is a simple website that showcases my current skills and the projects I have worked on. "`,
     techUsed: [
       'Next.js',
       'Tailwind',
@@ -530,10 +572,9 @@ export const projectsData: {
     ),
   },
   {
-    id: 15,
+    id: 16,
     title: 'WW-News',
-    description:
-      '"Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API."',
+    description: `" Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API. "`,
     techUsed: ['React.js', 'Bootstrap'],
     github: 'https://github.com/AlexLeiba/WW-Everyday-news',
     website: 'https://worldwide-everyday-news.netlify.app',
@@ -557,10 +598,9 @@ export const projectsData: {
     ),
   },
   {
-    id: 16,
+    id: 17,
     title: 'Weather forecast',
-    description:
-      '"Developed in 2021, Weather Forecast is a simple app that displays a real 5-day weather forecast for major cities in Romania."',
+    description: `" Developed in 2021, Weather Forecast is a simple app that displays a real 5-day weather forecast for major cities in Romania. "`,
     techUsed: ['JavaScript'],
     github: 'https://github.com/AlexLeiba/Romania-Weather-forecast',
     website: 'https://alex-weather-forecast.netlify.app/',

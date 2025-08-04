@@ -48,7 +48,7 @@ function Projects() {
                 {index % 2 !== 0 && (
                   <div
                     className={cn(
-                      data.id === 12 && 'mb-64',
+                      data.id === 10 && 'mb-64',
                       'md:w-[350px] md:hidden sm:hidden '
                     )}
                   >
@@ -56,7 +56,7 @@ function Projects() {
                     <div
                       data-aos='fade-left'
                       className={cn(
-                        data.id === 12
+                        data.id === 10
                           ? 'left-0 top-[412px]'
                           : 'top-20 right-[500px] md:right-[300px]',
                         'absolute'
@@ -88,7 +88,7 @@ function Projects() {
                     <p
                       className={cn(
                         index % 2 !== 0 ? 'mr-4' : 'ml-4',
-                        'w-[450px]  text-sm  dark:text-baseline-100 '
+                        'w-[450px]  text-sm  dark:text-baseline-100 whitespace-pre-wrap'
                       )}
                     >
                       {data.description}
@@ -168,7 +168,7 @@ function Projects() {
                 {index % 2 === 0 && (
                   <div
                     className={cn(
-                      data.id === 12 && 'mb-64',
+                      data.id === 10 && 'mb-64',
                       'md:w-[350px] md:hidden sm:hidden '
                     )}
                   >
@@ -176,7 +176,7 @@ function Projects() {
                     <div
                       // className='absolute '
                       className={cn(
-                        data.id === 12
+                        data.id === 10
                           ? 'right-0 top-[412px]'
                           : 'top-20 right-[430px] md:right-[300px]',
                         'absolute'
