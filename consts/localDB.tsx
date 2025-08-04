@@ -396,38 +396,34 @@ export const projectsData: {
   {
     id: 11,
     title: 'Travel-Plan',
-    description: `" eShop is a full-stack e-commerce Web App that allows users to browse and purchase products. 
-      It features a user-friendly interface, sortings ,pagination, global search, secure payment processing with Stripe, and a robust backend system. "`,
+    description: `" Travel-Plan is a full-stack Web App that allows users to keep track and re enjoy the visited places or to plan a future trip. 
+    This Web app is basically a travel album where you can keep all your travel memories , photos and other useful informations.
+      It features creating or planning a trip, adding and reviewing the trip photo gallery , star rate , globe view of all your visited and created trips, links, paginations, sortings , gallery slider."`,
     techUsed: [
       'React.js',
+      'Next.js',
       'TypeScript',
-      'Redux Toolkit',
-      'Custom components',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'Nodemailer',
-      'JWT',
+      'Custom Components',
       'Stripe',
     ],
-    github: 'https://github.com/AlexLeiba/eShop',
-    website: 'https://eshop-global.onrender.com/',
+    github: 'https://github.com/AlexLeiba/travel-plan',
+    website: 'https://travel-plan-zeta.vercel.app/',
     icon: (
       <Image
         className='w-full object-top object-cover shadow-lg'
-        src='/projects/eshop-desktop.webp'
+        src='/projects/travel-plan-web.webp'
         width={600}
         height={400}
-        alt='eshop-desktop'
+        alt='travel-plan-web'
       />
     ),
     icon2: (
       <Image
         className=' object-cover object-top shadow-lg rounded-lg'
-        src='/projects/eshop-mobile.webp'
+        src='/projects/travel-plan-mobile.webp'
         width={250}
         height={400}
-        alt='eshop-mobile'
+        alt='travel-plan-mobile'
       />
     ),
   },
