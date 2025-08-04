@@ -398,7 +398,7 @@ export const projectsData: {
     title: 'Travel-Plan',
     description: `" Travel-Plan is a full-stack Web App that allows users to keep track and enjoy again the visited places or to plan a future trip. 
     This Web app is basically a travel album where you can keep all your travel memories , photos and other useful informations.
-      It features creating or planning a trip, adding and reviewing the trip photo gallery , star rate , globe view of all your visited and created trips, links, paginations, sortings , gallery slider."`,
+      It features creating or planning a trip, adding and reviewing the trip photo gallery , star rate , globe view of all your visited and created trips, links, paginations, sortings , gallery slider, white and dark theme which is adopted to your browser theme"`,
     techUsed: [
       'React.js',
       'Next.js',
