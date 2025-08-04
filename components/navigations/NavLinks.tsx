@@ -43,7 +43,7 @@ function AuthLinks() {
 
       {/* DESKTOP NAVBAR */}
       {windowWidth > MOBILE_MAX_BREAKPOINT ? (
-        <div className='flex gap-8'>
+        <div className='flex gap-8 text-white font-bold'>
           <>
             <Link href='#about'>
               <p className='text-sm'>About me</p>
