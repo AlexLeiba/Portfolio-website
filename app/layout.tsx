@@ -23,9 +23,29 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const baseUrl = 'https://alex-leiba-portfolio.netlify.app/';
+
 export const metadata: Metadata = {
   title: 'Portfolio',
-  description: 'My portfolio',
+  description:
+    'Portfolio website which showcases skills , education , projects , contact details',
+  openGraph: {
+    title: 'Portfolio',
+    description:
+      'Portfolio website which showcases skills , education , projects , contact details',
+    url: baseUrl,
+    siteName: 'alex-leiba-portfolio.netlify.app',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/deixj28ym/image/upload/v1754379930/travel-plan/qamzwu6szygpu8wcpdsc.webp', // Full URL required
+        width: 1200,
+        height: 630,
+        alt: 'Portfolio',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
