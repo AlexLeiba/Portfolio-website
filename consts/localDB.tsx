@@ -331,7 +331,7 @@ export const projectsData: {
     id: 9,
     title: "eShop",
     description: `" eShop is a full-stack e-commerce Web App that allows users to browse and purchase products. 
-      It features a user-friendly interface, sortings ,pagination, global search, secure payment processing with Stripe, and a robust backend system. "`,
+      It features a user-friendly interface ,white and dark mode based on your browser theme, star rating, lightbox view, sortings ,pagination, global search, secure payment processing with Stripe and other e-commerce basic features. "`,
     techUsed: [
       "React.js",
       "TypeScript",
@@ -368,8 +368,8 @@ export const projectsData: {
 
   {
     id: 10,
-    title: "eShop Admin Dashboard",
-    description: `" eShop Admin Dashboard is a full-stack Web App admin dashboard for the eShop app. 
+    title: "eShop Admin CMS",
+    description: `" eShop Admin Dashboard is a full-stack CMS Web App  for handling eShop app data. 
       It provides an intuitive interface for managing products, orders, and customers, also provides a dashboard for tracking sales , revenue, and active users. "`,
     techUsed: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/AlexLeiba/eShop",
