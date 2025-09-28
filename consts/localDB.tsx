@@ -1,13 +1,22 @@
 "use client";
 import React from "react";
-import { Book, ChevronDown, Cog, Languages, MonitorCog } from "lucide-react";
+import {
+  Book,
+  ChevronDown,
+  Cog,
+  CreativeCommons,
+  FileBadge2,
+  FolderKanban,
+  Languages,
+  MonitorCog,
+} from "lucide-react";
 import Image from "next/image";
 
 export type AboutMeType = (typeof aboutMeData)[number];
 
 export const aboutMeData: {
   title: string;
-  description: { title: string; description: string[] }[];
+  description: { title: string; description: string[]; link?: string }[];
   icon: React.JSX.Element;
   col: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 }[] = [
@@ -18,29 +27,56 @@ export const aboutMeData: {
         title: "",
         description: [
           " • Baccalaureate - 2000-2012",
-          " • IT school - Front end development - 2021-2022",
-          " • Udemy courses - JavaScript HTML CSS React.js - 2021",
+          " • IT school - Front end development school - 2021-2022",
+          " • Meta - Front end development course - 2025",
           " • Burlington english school -  2022",
         ],
       },
     ],
     icon: <Book width={50} height={50} />,
-    col: 5,
+    col: 6,
+  },
+  {
+    title: "Certifications",
+    description: [
+      {
+        title: "",
+        description: [
+          " • IT School - Web development",
+          " • Meta - Front end development ",
+          " • Meta - HTML CSS and JS in depth",
+          " • Meta - React Advanced",
+          " • Burlington english certificate",
+        ],
+      },
+    ],
+    icon: <FileBadge2 width={50} height={50} />,
+    col: 6,
   },
   {
     title: "Experience",
     description: [
       {
-        title: "",
+        title: "5 + years as a front end developer.",
+        description: [],
+      },
+      {
+        title: "Mostly experienced with tech: ",
         description: [
-          " • 4+ years as a front end developer.",
-          " • Mostly experienced with: ",
-          "React.js • Next.js • Typescript • Tailwind • styled-components and • Redux.",
+          "React.js • Next.js • Typescript • Tailwind • Styled-components • Redux • Zustand.",
         ],
       },
     ],
     icon: <MonitorCog width={50} height={50} />,
-    col: 7,
+    col: 8,
+  },
+  {
+    title: "Languages",
+    description: [
+      { title: "", description: ["• English", "• Russian", "• Romanian"] },
+    ],
+    icon: <Languages width={50} height={50} />,
+    col: 4,
   },
 
   {
@@ -56,15 +92,25 @@ export const aboutMeData: {
       },
     ],
     icon: <Cog width={50} height={50} />,
-    col: 8,
+    col: 7,
   },
   {
-    title: "Languages",
+    title: "My Projects",
     description: [
-      { title: "", description: ["• English", "• Russian", "• Romanian"] },
+      {
+        title: "Check my projects developed in company.",
+        description: [],
+        link: "#projects",
+      },
+      {
+        title: "Check My Personal Projects.",
+        description: [],
+        link: "#personal-projects",
+      },
     ],
-    icon: <Languages width={50} height={50} />,
-    col: 4,
+
+    icon: <FolderKanban width={50} height={50} />,
+    col: 5,
   },
 ];
 
@@ -666,7 +712,7 @@ export const skillsData: {
 }[] = [
   {
     title: "JavaScript",
-    percentage: 80,
+    percentage: 90,
     icon: (
       <Image
         src="/categories/JavaScript.svg"
@@ -679,7 +725,7 @@ export const skillsData: {
   },
   {
     title: "TypeScript",
-    percentage: 70,
+    percentage: 90,
     icon: (
       <Image
         src="/categories/TypeScript.svg"
@@ -705,7 +751,7 @@ export const skillsData: {
   },
   {
     title: "Next.js",
-    percentage: 70,
+    percentage: 80,
     icon: (
       <Image
         src="/categories/NextJS.svg"
@@ -718,7 +764,7 @@ export const skillsData: {
   },
   {
     title: "React Native",
-    percentage: 50,
+    percentage: 70,
     icon: (
       <Image
         src="/categories/React.svg"
@@ -783,7 +829,7 @@ export const skillsData: {
   },
   {
     title: "SCSS",
-    percentage: 60,
+    percentage: 90,
     icon: (
       <Image
         src="/categories/scss.svg"
@@ -809,7 +855,7 @@ export const skillsData: {
   },
   {
     title: "Zustand",
-    percentage: 60,
+    percentage: 80,
     icon: (
       <Image
         src="/categories/zustand.svg"
