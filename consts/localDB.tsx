@@ -4,7 +4,6 @@ import {
   Book,
   ChevronDown,
   Cog,
-  CreativeCommons,
   FileBadge2,
   FolderKanban,
   Languages,
@@ -92,13 +91,13 @@ export const aboutMeData: {
       },
     ],
     icon: <Cog width={50} height={50} />,
-    col: 7,
+    col: 6,
   },
   {
     title: "My Projects",
     description: [
       {
-        title: "Check my projects developed in company.",
+        title: "Check the projects I developed in company.",
         description: [],
         link: "#projects",
       },
@@ -110,11 +109,11 @@ export const aboutMeData: {
     ],
 
     icon: <FolderKanban width={50} height={50} />,
-    col: 5,
+    col: 6,
   },
 ];
 
-export const projectsData: {
+export type ProjectsType = {
   id: number;
   title: string;
   description: string;
@@ -123,7 +122,9 @@ export const projectsData: {
   website: string;
   icon: React.JSX.Element;
   icon2: React.JSX.Element;
-}[] = [
+};
+
+export const projectsData: ProjectsType[] = [
   {
     id: 1,
     title: "Wonderland Essentials",

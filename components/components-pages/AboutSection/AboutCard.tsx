@@ -22,7 +22,7 @@ export function AboutCard({ data }: AboutCardProps) {
                   <div key={index} className="flex flex-col gap-2">
                     {description.link ? (
                       <Link href={description.link}>
-                        <p className="body-base font-bold text-primary-200 underline-offset-4 underline">
+                        <p className="body-base font-bold  underline-offset-4 underline text-xl">
                           {description.title}
                         </p>
                       </Link>
@@ -42,7 +42,6 @@ export function AboutCard({ data }: AboutCardProps) {
           </div>
         </div>
       </div>
-      <></>
     </div>
   );
 }
