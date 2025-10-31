@@ -457,7 +457,7 @@ export const projectsData: ProjectsType[] = [
       "Stripe",
     ],
     github: "https://github.com/AlexLeiba/travel-plan",
-    website: "https://travel-plan-zeta.vercel.app/",
+    website: "https://travel-plan-enjoy.vercel.app/",
     icon: (
       <Image
         className="w-full object-top object-cover shadow-lg"
