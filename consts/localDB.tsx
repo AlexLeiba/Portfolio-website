@@ -216,17 +216,20 @@ export const projectsData: ProjectsType[] = [
   {
     id: 4,
     title: "Marketpal",
-    description: `Marketpal is a SaaS Web app platform designed to simplify the process of requesting quotes, finding suppliers, and acquiring the products and services you need.
-    I have been working and maintaining the project on front end part from the beginning. 
-    This web app consists of Landing page , Dashboard, and Custome Admin CMS.`,
+    description:
+      //  `Marketpal is a SaaS Web app platform designed to simplify the process of requesting quotes, finding suppliers, and acquiring the products and services you need.
+      // I have been working and maintaining the project on front end part from the beginning.
+      // This web app consists of Landing page , Dashboard, and Custome Admin CMS.`
+      "Marketpal brings customers and suppliers together, streamlining the entire sourcing process and infusing it with a healthy blend of simplicity, ease, and efficiency.",
     techUsed: [
-      "Next.js",
-      "Styled components",
-      "GraphQL",
-      "Redux",
-      "TypeScript",
-      "React hook form",
-      "zod",
+      "",
+      // "Next.js",
+      // "Styled components",
+      // "GraphQL",
+      // "Redux",
+      // "TypeScript",
+      // "React hook form",
+      // "zod",
     ],
     github: "",
     website: "https://marketpal.com/",
@@ -256,7 +259,7 @@ export const projectsData: ProjectsType[] = [
       "Designed for companies that have moved past the early stage , Scaleup Fest is built for scaleups actively navigating growth, market entry, expansion, investment-readiness, and exits. It’s also relevant for mid-sized companies and mature startups looking to learn from others, sharpen their growth strategy, or meet potential partners and investors.",
     techUsed: ["HTML", "JavaScript", "SCSS"],
     github: "",
-    website: "https://scaleupfest.netinteraction.biz/",
+    website: "https://thescaleupfest.com/",
     icon: (
       <Image
         src="/projects/scaleup-web.webp"
