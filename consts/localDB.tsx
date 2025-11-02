@@ -213,45 +213,45 @@ export const projectsData: ProjectsType[] = [
       />
     ),
   },
-  {
-    id: 4,
-    title: "Marketpal",
-    description:
-      //  `Marketpal is a SaaS Web app platform designed to simplify the process of requesting quotes, finding suppliers, and acquiring the products and services you need.
-      // I have been working and maintaining the project on front end part from the beginning.
-      // This web app consists of Landing page , Dashboard, and Custome Admin CMS.`
-      "Marketpal brings customers and suppliers together, streamlining the entire sourcing process and infusing it with a healthy blend of simplicity, ease, and efficiency.",
-    techUsed: [
-      "",
-      // "Next.js",
-      // "Styled components",
-      // "GraphQL",
-      // "Redux",
-      // "TypeScript",
-      // "React hook form",
-      // "zod",
-    ],
-    github: "",
-    website: "https://marketpal.com/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/marketpal-web.webp"
-        width={600}
-        height={400}
-        alt="Marketpal"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/marketpal-moble.webp"
-        width={250}
-        height={400}
-        alt="Marketpal"
-      />
-    ),
-  },
+  // {
+  //   id: 4,
+  //   title: "Marketpal",
+  //   description:
+  //     //  `Marketpal is a SaaS Web app platform designed to simplify the process of requesting quotes, finding suppliers, and acquiring the products and services you need.
+  //     // I have been working and maintaining the project on front end part from the beginning.
+  //     // This web app consists of Landing page , Dashboard, and Custome Admin CMS.`
+  //     "Marketpal brings customers and suppliers together, streamlining the entire sourcing process and infusing it with a healthy blend of simplicity, ease, and efficiency.",
+  //   techUsed: [
+  //     "",
+  //     // "Next.js",
+  //     // "Styled components",
+  //     // "GraphQL",
+  //     // "Redux",
+  //     // "TypeScript",
+  //     // "React hook form",
+  //     // "zod",
+  //   ],
+  //   github: "",
+  //   website: "https://marketpal.com/",
+  //   icon: (
+  //     <Image
+  //       className="w-full object-top object-cover shadow-lg"
+  //       src="/projects/marketpal-web.webp"
+  //       width={600}
+  //       height={400}
+  //       alt="Marketpal"
+  //     />
+  //   ),
+  //   icon2: (
+  //     <Image
+  //       className=" object-cover object-top shadow-lg rounded-lg"
+  //       src="/projects/marketpal-moble.webp"
+  //       width={250}
+  //       height={400}
+  //       alt="Marketpal"
+  //     />
+  //   ),
+  // },
   {
     id: 5,
     title: "The Scaleup fest",
