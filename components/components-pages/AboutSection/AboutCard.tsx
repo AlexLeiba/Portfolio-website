@@ -6,7 +6,7 @@ type AboutCardProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 export function AboutCard({ data }: AboutCardProps) {
   return (
-    <div className="flex border mb-4 border-primary-200 pb-6 lg:items-center lg:h-56 min-h-64 p-4 rounded-xl flex-wrap overflow-hidden shadow-lg">
+    <div className="flex border mb-4 border-primary-200  lg:items-center lg:h-56 min-h-72 p-4 rounded-xl flex-wrap overflow-hidden shadow-lg">
       <div className="flex items-start  lg:gap-6 md:gap-6 gap-2  h-full w-full lg:flex-row md:flex-row  flex-col">
         {/* Icon */}
         <div>{data.icon}</div>

@@ -33,7 +33,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
   //   }
   return (
     <div>
-      {index === 6 && (
+      {index === 5 && (
         <div id="personal-projects">
           <Spacer size={16} />
           <div data-aos="fade-up" className="flex flex-col gap-4">

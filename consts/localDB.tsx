@@ -42,8 +42,9 @@ export const aboutMeData: {
         title: "",
         description: [
           " • IT School - Web development",
-          " • Meta - Front end development ",
-          " • Meta - HTML CSS and JS in depth",
+          " • Meta - Front-end development specialisation ",
+          " • IBM - Developing Back-End Apps with Node.js and Express.js",
+          " • Skillup online - React Native: Developing Android and iOS Apps ",
           " • Meta - React Advanced",
           " • Burlington english certificate",
         ],
@@ -720,8 +721,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/JavaScript.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="JavaScript"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -733,8 +734,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/TypeScript.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="TypeScript"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -746,8 +747,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/React.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="React.js"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -759,8 +760,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/NextJS.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="NextJS"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -768,12 +769,12 @@ export const skillsData: {
   },
   {
     title: "React Native",
-    percentage: 70,
+    percentage: 60,
     icon: (
       <Image
         src="/categories/React.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="React Native"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -781,12 +782,12 @@ export const skillsData: {
   },
   {
     title: "HTML",
-    percentage: 80,
+    percentage: 90,
     icon: (
       <Image
         src="/categories/HTML.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="HTML"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -794,12 +795,12 @@ export const skillsData: {
   },
   {
     title: "CSS",
-    percentage: 80,
+    percentage: 90,
     icon: (
       <Image
         src="/categories/CSS.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="CSS"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -811,8 +812,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/Tailwind.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="Tailwind"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -820,12 +821,12 @@ export const skillsData: {
   },
   {
     title: "Styled components",
-    percentage: 70,
+    percentage: 90,
     icon: (
       <Image
         src="/categories/styled.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="styled-components"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -837,8 +838,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/scss.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="scss"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -846,12 +847,12 @@ export const skillsData: {
   },
   {
     title: "Redux",
-    percentage: 70,
+    percentage: 80,
     icon: (
       <Image
-        src="/categories/redux.svg"
-        width={50}
-        height={50}
+        src="/categories/redux.webp"
+        width={40}
+        height={40}
         alt="Redux"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover "
       />
@@ -876,8 +877,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/GraphQL.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="Git"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -885,12 +886,12 @@ export const skillsData: {
   },
   {
     title: "Node.js",
-    percentage: 40,
+    percentage: 50,
     icon: (
       <Image
         src="/categories/NodeJS.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="NodeJS"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -902,8 +903,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/prisma.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="prisma"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -911,12 +912,12 @@ export const skillsData: {
   },
   {
     title: "MongoDB",
-    percentage: 30,
+    percentage: 40,
     icon: (
       <Image
         src="/categories/mongodb.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="mongodb"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -924,12 +925,12 @@ export const skillsData: {
   },
   {
     title: "Express.js",
-    percentage: 30,
+    percentage: 70,
     icon: (
       <Image
         src="/categories/ExpressJS.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="ExpressJS"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -937,13 +938,39 @@ export const skillsData: {
   },
   {
     title: "React hook form",
-    percentage: 70,
+    percentage: 80,
     icon: (
       <Image
         src="/categories/react-hook-form.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="react hook form"
+        className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover"
+      />
+    ),
+  },
+  {
+    title: "Formik",
+    percentage: 70,
+    icon: (
+      <Image
+        src="/categories/formik.webp"
+        width={40}
+        height={40}
+        alt="Formik"
+        className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover"
+      />
+    ),
+  },
+  {
+    title: "Zod",
+    percentage: 80,
+    icon: (
+      <Image
+        src="/categories/zod.webp"
+        width={40}
+        height={40}
+        alt="Zod"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover"
       />
     ),
@@ -954,8 +981,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/jest.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="Jest"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover"
       />
@@ -968,8 +995,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/GIT.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="Git"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -981,8 +1008,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/github.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="Github"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -994,8 +1021,8 @@ export const skillsData: {
     icon: (
       <Image
         src="/categories/jira.svg"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="Jira"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
@@ -1007,8 +1034,8 @@ export const skillsData: {
     icon: (
       <ChevronDown
         className="cursor-pointer animate-pulse"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
       />
     ),
   },

@@ -29,7 +29,7 @@ function Projects() {
       <Row>
         {projectsData.map((data, index) => {
           return (
-            <Col key={data.id} className="w-full lg:mb-96 mb-32" lg={12}>
+            <Col key={data.id} className="w-full lg:mb-72 mb-24" lg={12}>
               <ProjectCard data={data} index={index} />
             </Col>
           );

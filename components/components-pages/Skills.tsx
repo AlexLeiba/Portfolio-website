@@ -28,7 +28,7 @@ function About() {
       <Row>
         {skillsData.map((data, index) => {
           return (
-            <Col key={index} className="w-full mb-6" lg={2} md={2}>
+            <Col key={index} className="w-full lg:mb-6 mb-3 " lg={2} md={2}>
               <div
                 data-aos-delay={index * 10}
                 data-aos="fade-up"
@@ -39,16 +39,16 @@ function About() {
                 }
                 className={cn(
                   data.title === "Projects" && "cursor-pointer",
-                  "dark:bg-baseline-900 bg-baseline-50 w-full h-24 rounded-xl mb-2 gap-4 shadow-lg"
+                  "dark:bg-baseline-900 bg-baseline-50 w-full lg:h-24 rounded-xl mb-2 gap-4 shadow-lg"
                 )}
               >
                 <div
                   style={{
-                    background: `linear-gradient(to right, #7493f0 ${data.percentage}%, transparent 10%)`,
+                    background: `linear-gradient(to right, #7493f0 ${data.percentage}% , transparent 10%)`,
                   }}
                   key={index}
                   className={cn(
-                    " flex justify-center items-center gap-4 border mb-2 border-primary-200  h-full p-4 rounded-xl flex-wrap overflow-hidden"
+                    " flex justify-center items-center gap-4 border mb-2 border-primary-200  h-full p-2 rounded-xl flex-wrap overflow-hidden"
                   )}
                 >
                   <div className="flex items-center  gap-2">

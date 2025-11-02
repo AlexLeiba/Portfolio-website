@@ -1,41 +1,41 @@
-import * as React from 'react';
-import { VariantProps, cva } from 'class-variance-authority';
-import { cn } from '@/lib/utils';
+import * as React from "react";
+import { VariantProps, cva } from "class-variance-authority";
+import { cn } from "@/lib/utils";
 
 const containerVariants = cva(
   [
-    'mx-auto w-full',
-    'lg:max-w-[1296px] lg:px-8',
-    'md:max-w-[calc(100vw_-_128px)] md:px-4',
-    'max-w-full px-8',
+    "mx-auto w-full",
+    "lg:max-w-[1296px] lg:px-8",
+    "md:max-w-[calc(100vw_-_128px)] md:px-4",
+    "max-w-full px-8",
   ],
   {
     variants: {
       variant: {
-        default: '',
-        fluid: '!max-w-full lg:px-8 md:px-8 px-4',
+        default: "",
+        fluid: "!max-w-full lg:px-8 md:px-8 px-4",
       },
       spacing: {
-        none: 'lg:py-0 md:py-0 py-0',
-        default: 'lg:py-24 md:py-12 py-12',
-        large: 'lg:py-48 md:py-24 py-24',
-        medium: 'lg:py-12 md:py-6 py-6',
+        none: "lg:py-0 md:py-0 py-0",
+        default: "lg:py-16 md:py-12 py-12",
+        large: "lg:py-48 md:py-24 py-24",
+        medium: "lg:py-12 md:py-6 py-6",
       },
     },
     defaultVariants: {
-      spacing: 'default',
-      variant: 'default',
+      spacing: "default",
+      variant: "default",
     },
   }
 );
 
 type ContainerProps = {
   id?: string;
-  spacing?: 'none' | 'large' | 'medium';
+  spacing?: "none" | "large" | "medium";
   style?: React.CSSProperties;
 } & Pick<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  'className' | 'children'
+  "className" | "children"
 > &
   VariantProps<typeof containerVariants>;
 
@@ -61,7 +61,7 @@ export const GridContainer = ({
     <div
       style={style}
       className={cn(containerVariants({ variant, className, spacing }))}
-      id={id || ''}
+      id={id || ""}
     >
       {children}
     </div>
