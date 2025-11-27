@@ -131,14 +131,7 @@ export const projectsData: ProjectsType[] = [
     title: "Wonderland Essentials",
     description:
       "Developed in 2022 and updated in 2025, Wonderland Essentials is a doTERRA products platform which guides users around the world the benefits of essential oils and other wonderful doTERRA products with weekly live events , monthly blends , articles, support and much more.",
-    techUsed: [
-      "Next.js",
-      "Tailwind",
-      "TypeScript",
-      "React hook form",
-      "zod",
-      "Shadcn",
-    ],
+    techUsed: [""],
     github: "",
     website: "https://wonderlandessentials.com/",
     icon: (
@@ -165,7 +158,7 @@ export const projectsData: ProjectsType[] = [
     title: "Wonderland Mobile App",
     description:
       "Developed in 2022 and updated in 2025, Wonderland Essentials is a platform dedicated to doTERRA products that guides users around the world through the benefits of essential oils and other amazing offerings. The platform features weekly live events, monthly blends, informative articles, dedicated support, and much more. You can download the app for free from the App Store and Google Play.",
-    techUsed: ["React Native", "StyleSheets", "TypeScript"],
+    techUsed: [""],
     github: "",
     website: "https://apps.apple.com/gb/app/wonderland-essentials/id1635968740",
     icon: (
@@ -192,7 +185,7 @@ export const projectsData: ProjectsType[] = [
     title: "Enovatika",
     description:
       "Developed in 2024, the Enovatika website showcases the company`s achievements, successfully completed projects, benefits, web and design approaches, and many other valuable services.",
-    techUsed: ["Next.js", "Tailwind", "TypeScript", "React hook form", "zod"],
+    techUsed: [""],
     github: "",
     website: "https://enovatika.com/en",
     icon: (
@@ -258,7 +251,7 @@ export const projectsData: ProjectsType[] = [
     title: "The Scaleup fest",
     description:
       "Designed for companies that have moved past the early stage , Scaleup Fest is built for scaleups actively navigating growth, market entry, expansion, investment-readiness, and exits. It’s also relevant for mid-sized companies and mature startups looking to learn from others, sharpen their growth strategy, or meet potential partners and investors.",
-    techUsed: ["HTML", "JavaScript", "SCSS"],
+    techUsed: [""],
     github: "",
     website: "https://thescaleupfest.com/",
     icon: (
@@ -285,7 +278,7 @@ export const projectsData: ProjectsType[] = [
     title: "Medforeldre",
     description:
       "Developed in 2022, Medforeldre is a web service which offers parenting advice and co-parent matching, and is intended to advise and guide people who are seeking parenthood in safe and stable parenthood.",
-    techUsed: ["React.js", "AWS Amplify", "GraphQL"],
+    techUsed: [""],
     github: "",
     website: "https://www.medforeldre.no/",
     icon: (
