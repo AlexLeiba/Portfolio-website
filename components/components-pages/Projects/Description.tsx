@@ -10,20 +10,22 @@ export function Description({
   const [expnded, setExpanded] = useState(false);
   return (
     <div {...rest}>
-      <div className="">
+      <button
+        onClick={() => setExpanded(!expnded)}
+        className="dark:bg-black bg-white shadow-md  dark:ring-1 dark:outline-gray-100 p-2 rounded-md hover:shadow-xl group"
+      >
         <p>
           {description.substring(0, expnded ? description.length : 100) +
             (expnded ? "" : "...")}
         </p>
-        <Button
-          variant={"link"}
-          className="text-primary-400 "
+        <div
+          className="text-primary-400 flex justify-end group-hover:underline"
           onClick={() => setExpanded(!expnded)}
         >
           <p>{expnded ? "Read less" : "Read more"}</p>
           {expnded ? <ChevronUp /> : <ChevronDown />}
-        </Button>
-      </div>
+        </div>
+      </button>
     </div>
   );
 }

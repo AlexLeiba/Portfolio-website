@@ -1,11 +1,11 @@
-'use client';
-import React from 'react';
-import { Col, Container, Row } from '@/components/UI/Grid';
-import { motion } from 'motion/react';
-import Image from 'next/image';
-import { FileDown } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { useTheme } from '@/lib/useThemeContext';
+"use client";
+import React from "react";
+import { Col, Container, Row } from "@/components/UI/Grid";
+import { motion } from "motion/react";
+import Image from "next/image";
+import { FileDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useTheme } from "@/hooks/useThemeContext";
 
 function Hero() {
   const { darkMode } = useTheme();
@@ -14,77 +14,83 @@ function Hero() {
     // pdf link
     const pdfUrl = process.env.NEXT_PUBLIC_PDF_LINK;
 
-    const link = document.createElement('a');
-    link.href = pdfUrl ? pdfUrl : '';
-    link.download = 'alexandru-leiba-lapteacru-cv.pdf';
+    const link = document.createElement("a");
+    link.href = pdfUrl ? pdfUrl : "";
+    link.download = "alexandru-leiba-lapteacru-cv.pdf";
     link.click();
+
+    document.body.removeChild(link);
   }
 
   return (
     <Container
-      variant={'fluid'}
-      className={cn('relative overflow-hidden min-h-[calc(100vh)]')}
+      variant={"fluid"}
+      className={cn(
+        "relative overflow-hidden h-[calc(100vh)] flex flex-col justify-between items-center pb-0 lg:pb-0 md:pb-0"
+      )}
     >
       <Row>
-        <Col>
+        <Col className="flex flex-col justify-between items-center">
           {/* Background */}
           <div
             className={cn(
-              darkMode ? 'backgroundDarkHero' : 'backgroundLightHero'
+              darkMode ? "backgroundDarkHero" : "backgroundLightHero"
             )}
-          ></div>
+          />
 
-          <div className='absolute lg:top-[450px]  left-[50%] md:top-[450px] sm:top-[calc(100vh-260px)] -translate-x-1/2 '>
-            <div className=' relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[200px] sm:h-[400px]   '>
-              <Image
-                className='object-contain object-top'
-                src={'/hero-illustration.avif'}
-                alt='illustration'
-                draggable='false'
-                fill
-              />
-            </div>
-          </div>
-          {/* BLACK CIRCLE */}
           <div
             className={cn(
-              'top-[730px] sm:top-[calc(100vh-100px)]',
-              'z-20 position absolute  w-[3000px]  h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 '
+              "top-[680px] sm:top-[calc(100vh-100px)]",
+              "z-20 position absolute  w-[3000px]  h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 ",
+              "md:block lg:block hidden planetClassName"
+              // windowHeight < 700 ? "hidden" : "md:block lg:block hidden"
             )}
-          ></div>
+          >
+            <div className="absolute z-10 bottom-[100%]  left-[50%]  -translate-x-1/2 ">
+              <div className=" relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[200px] sm:h-[400px]   ">
+                <Image
+                  className="object-contain object-top"
+                  src={"/hero-illustration.avif"}
+                  alt="illustration"
+                  draggable="false"
+                  fill
+                />
+              </div>
+            </div>
+          </div>
 
-          <div className=' flex justify-center flex-col items-center'>
+          <div className=" flex justify-center flex-col items-center">
             <div>
-              <div className='font-bold text-center z-10 '>
-                <div className='flex justify-center items-center gap-4'>
-                  <h1 className=' text-white z-10'>Hello </h1>
-                  <h1 className=' dark:text-primary-400 text-black z-10'>
+              <div className="font-bold text-center z-10 ">
+                <div className="flex justify-center items-center gap-4">
+                  <h1 className=" text-white z-10">Hello </h1>
+                  <h1 className=" dark:text-primary-400 text-black z-10">
                     there,
                   </h1>
                 </div>
-                <div className='flex justify-center items-center gap-4 flex-col'>
-                  <div className='flex gap-2'>
-                    <h2 className=' text-white z-10'>I am </h2>
-                    <h2 className=' dark:text-primary-400 text-black z-10'>
+                <div className="flex justify-center items-center gap-4 flex-col">
+                  <div className="flex gap-2">
+                    <h2 className=" text-white z-10">I am </h2>
+                    <h2 className=" dark:text-primary-400 text-black z-10">
                       Alex
                     </h2>
                   </div>
 
-                  <p className=' body-lg z-10'>
+                  <p className=" body-lg z-10">
                     I am a Front end developer driven to deliver software tools
                     that provide best experiences for users.
                   </p>
                 </div>
 
-                <div className='flex justify-center items-center flex-col  animation-delay-1000 animate-pulse mt-4'>
+                <div className="flex justify-center items-center flex-col  animation-delay-1000 animate-pulse mt-4">
                   <div
-                    className='flex flex-col justify-center items-center cursor-pointer drop-shadow-[#434242_0px_2px_15px] hover:drop-shadow-[white_0px_4px_10px] transition-all'
+                    className="flex flex-col justify-center items-center cursor-pointer drop-shadow-[#434242_0px_2px_15px] hover:drop-shadow-[white_0px_4px_10px] transition-all"
                     onClick={handleDownloadPdf}
                   >
                     <FileDown
                       width={50}
                       height={50}
-                      className=' dark:text-white text-black'
+                      className=" dark:text-white text-black"
                     />
                     <p>Download my Resume</p>
                   </div>
@@ -102,8 +108,8 @@ function Hero() {
                     src={iconData.source}
                     width={iconData.width}
                     height={iconData.height}
-                    alt='illustration'
-                    draggable='false'
+                    alt="illustration"
+                    draggable="false"
                     className={iconData.image.className}
                   />
                 </motion.div>
@@ -112,6 +118,21 @@ function Hero() {
           </div>
         </Col>
       </Row>
+
+      <div
+        className={cn(
+          " relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[200px] sm:h-[200px]   ",
+          "lg:hidden md:hidden block heroImageClassName"
+        )}
+      >
+        <Image
+          className="object-contain object-top"
+          src={"/hero-illustration.avif"}
+          alt="illustration"
+          draggable="false"
+          fill
+        />
+      </div>
     </Container>
   );
 }
@@ -120,7 +141,7 @@ export default Hero;
 
 export const floatingIcons = [
   {
-    source: '/categories/React.svg',
+    source: "/categories/React.svg",
     width: 40,
     height: 40,
     animate: {
@@ -130,13 +151,13 @@ export const floatingIcons = [
       transition: { duration: 15 },
     },
     className:
-      'absolute top-0 left-0 cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
+      "absolute top-0 left-0 cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
-      className: '',
+      className: "",
     },
   },
   {
-    source: '/categories/NextJS.svg',
+    source: "/categories/NextJS.svg",
     width: 50,
     height: 50,
     animate: {
@@ -146,13 +167,13 @@ export const floatingIcons = [
       scale: 1,
     },
     className:
-      'absolute top-0 right-0 cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
+      "absolute top-0 right-0 cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
-      className: '',
+      className: "",
     },
   },
   {
-    source: '/categories/tailwind.svg',
+    source: "/categories/tailwind.svg",
     width: 25,
     height: 25,
     animate: {
@@ -162,13 +183,13 @@ export const floatingIcons = [
       transition: { duration: 20 },
     },
     className:
-      'absolute top-[20%] -left-[100px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
+      "absolute top-[20%] -left-[100px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
-      className: '',
+      className: "",
     },
   },
   {
-    source: '/categories/TypeScript.svg',
+    source: "/categories/TypeScript.svg",
     width: 25,
     height: 25,
     animate: {
@@ -178,13 +199,13 @@ export const floatingIcons = [
       scale: 1,
     },
     className:
-      'absolute top-[5%] -right-[100px] sm:-right-[150px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
+      "absolute top-[5%] -right-[100px] sm:-right-[150px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
-      className: '',
+      className: "",
     },
   },
   {
-    source: '/categories/JavaScript.svg',
+    source: "/categories/JavaScript.svg",
     width: 30,
     height: 30,
     animate: {
@@ -193,13 +214,13 @@ export const floatingIcons = [
       transition: { duration: 20 },
     },
     className:
-      'absolute top-[50%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
+      "absolute top-[50%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
-      className: '',
+      className: "",
     },
   },
   {
-    source: '/categories/CSS.svg',
+    source: "/categories/CSS.svg",
     width: 30,
     height: 30,
     animate: {
@@ -211,13 +232,13 @@ export const floatingIcons = [
       scale: -1,
     },
     className:
-      'absolute top-[35%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
+      "absolute top-[35%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
-      className: '',
+      className: "",
     },
   },
   {
-    source: '/categories/HTML.svg',
+    source: "/categories/HTML.svg",
     width: 30,
     height: 30,
     animate: {
@@ -227,9 +248,9 @@ export const floatingIcons = [
       scale: -1,
     },
     className:
-      'absolute top-[50%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all',
+      "absolute top-[50%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
-      className: '',
+      className: "",
     },
   },
 ];

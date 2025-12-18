@@ -60,7 +60,7 @@ export const GridContainer = ({
   return (
     <div
       style={style}
-      className={cn(containerVariants({ variant, className, spacing }))}
+      className={cn(containerVariants({ variant, spacing }), className)}
       id={id || ""}
     >
       {children}

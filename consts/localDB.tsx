@@ -121,8 +121,15 @@ export type ProjectsType = {
   techUsed: string[];
   github: string;
   website: string;
-  icon: React.JSX.Element;
-  icon2: React.JSX.Element;
+
+  icon: {
+    src: string;
+    alt: string;
+  };
+  icon2: {
+    src: string;
+    alt: string;
+  };
 };
 
 export const projectsData: ProjectsType[] = [
@@ -134,24 +141,17 @@ export const projectsData: ProjectsType[] = [
     techUsed: [""],
     github: "",
     website: "https://wonderlandessentials.com/",
-    icon: (
-      <Image
-        src="/projects/wes-desktop.webp"
-        width={600}
-        height={400}
-        alt="Wonderland"
-        className="w-full object-cover shadow-lg"
-      />
-    ),
-    icon2: (
-      <Image
-        src="/projects/wes-mobile.webp"
-        width={250}
-        height={400}
-        alt="Wonderland"
-        className=" object-cover object-top shadow-lg rounded-lg "
-      />
-    ),
+
+    icon: {
+      src: "/projects/wes-desktop.webp",
+
+      alt: "Wonderland",
+    },
+    icon2: {
+      src: "/projects/wes-mobile.webp",
+
+      alt: "Wonderland",
+    },
   },
   {
     id: 2,
@@ -161,24 +161,14 @@ export const projectsData: ProjectsType[] = [
     techUsed: [""],
     github: "",
     website: "https://apps.apple.com/gb/app/wonderland-essentials/id1635968740",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/wes-app.webp"
-        width={600}
-        height={400}
-        alt="Wonderland-mobile"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/wes-app-2.webp"
-        width={250}
-        height={400}
-        alt="Wonderland-mobile"
-      />
-    ),
+    icon: {
+      src: "/projects/wes-app.webp",
+      alt: "Wonderland-desktop",
+    },
+    icon2: {
+      src: "/projects/wes-app-2.webp",
+      alt: "Wonderland-mobile",
+    },
   },
   {
     id: 3,
@@ -188,24 +178,14 @@ export const projectsData: ProjectsType[] = [
     techUsed: [""],
     github: "",
     website: "https://enovatika.com/en",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/enovatika-web.webp"
-        width={600}
-        height={400}
-        alt="Enovatika"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/enovatika-mobile.webp"
-        width={250}
-        height={400}
-        alt="Enovatika"
-      />
-    ),
+    icon: {
+      src: "/projects/enovatika-web.webp",
+      alt: "Enovatika",
+    },
+    icon2: {
+      src: "/projects/enovatika-mobile.webp",
+      alt: "Enovatika mobile",
+    },
   },
   // {
   //   id: 4,
@@ -254,24 +234,14 @@ export const projectsData: ProjectsType[] = [
     techUsed: [""],
     github: "",
     website: "https://thescaleupfest.com/",
-    icon: (
-      <Image
-        src="/projects/scaleup-web.webp"
-        width={600}
-        height={400}
-        alt="Scaleup Fest"
-        className="w-full object-cover shadow-lg"
-      />
-    ),
-    icon2: (
-      <Image
-        src="/projects/scaleup-mobile.webp"
-        width={250}
-        height={400}
-        alt="Scaleup Fest"
-        className=" object-cover object-top shadow-lg rounded-lg "
-      />
-    ),
+    icon: {
+      src: "/projects/scaleup-web.webp",
+      alt: "Scaleup Fest",
+    },
+    icon2: {
+      src: "/projects/scaleup-mobile.webp",
+      alt: "Scaleup Fest mobile",
+    },
   },
   {
     id: 6,
@@ -281,24 +251,14 @@ export const projectsData: ProjectsType[] = [
     techUsed: [""],
     github: "",
     website: "https://www.medforeldre.no/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/medforeldre-web.webp"
-        width={600}
-        height={400}
-        alt="Medforeldre"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/medforeldre-mobile.webp"
-        width={250}
-        height={400}
-        alt="Medforeldre"
-      />
-    ),
+    icon: {
+      src: "/projects/medforeldre-web.webp",
+      alt: "Medforeldre",
+    },
+    icon2: {
+      src: "/projects/medforeldre-mobile.webp",
+      alt: "Medforeldre mobile",
+    },
   },
   {
     id: 7,
@@ -316,24 +276,14 @@ export const projectsData: ProjectsType[] = [
     ],
     github: "https://github.com/AlexLeiba/TaskMate",
     website: "https://task-mate-five.vercel.app/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/task-mate-desktop.webp"
-        width={600}
-        height={400}
-        alt="taskmate"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/task-mate-mobile.webp"
-        width={250}
-        height={400}
-        alt="taskmate"
-      />
-    ),
+    icon: {
+      src: "/projects/task-mate-desktop.webp",
+      alt: "taskmate",
+    },
+    icon2: {
+      src: "/projects/task-mate-mobile.webp",
+      alt: "taskmate mobile",
+    },
   },
   {
     id: 8,
@@ -352,24 +302,14 @@ export const projectsData: ProjectsType[] = [
     ],
     github: "https://github.com/AlexLeiba/SpendAndKeep",
     website: "https://spend-or-keep.vercel.app/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/spend-and-keep-web.webp"
-        width={600}
-        height={400}
-        alt="chat-me"
-      />
-    ),
-    icon2: (
-      <Image
-        className="h-[665px] w-[380px] object-cover object-top shadow-lg rounded-lg"
-        src="/projects/spend-and-keep-mobile.webp"
-        width={250}
-        height={400}
-        alt="chat-me"
-      />
-    ),
+    icon: {
+      src: "/projects/spend-and-keep-web.webp",
+      alt: "spend and keep",
+    },
+    icon2: {
+      src: "/projects/spend-and-keep-mobile.webp",
+      alt: "spend and keep mobile",
+    },
   },
   {
     id: 9,
@@ -390,24 +330,14 @@ export const projectsData: ProjectsType[] = [
     ],
     github: "https://github.com/AlexLeiba/eShop",
     website: "https://eshop-global.onrender.com/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/eshop-desktop.webp"
-        width={600}
-        height={400}
-        alt="eshop-desktop"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/eshop-mobile.webp"
-        width={250}
-        height={400}
-        alt="eshop-mobile"
-      />
-    ),
+    icon: {
+      src: "/projects/eshop-desktop.webp",
+      alt: "eshop-desktop",
+    },
+    icon2: {
+      src: "/projects/eshop-mobile.webp",
+      alt: "eshop-mobile",
+    },
   },
 
   {
@@ -418,24 +348,14 @@ export const projectsData: ProjectsType[] = [
     techUsed: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/AlexLeiba/eShop",
     website: "https://eshop-admin-uvel.onrender.com/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/eshop-admin-dashboard.webp"
-        width={600}
-        height={400}
-        alt="eshop-admin-dashboard"
-      />
-    ),
-    icon2: (
-      <Image
-        className="w-full object-cover object-top shadow-lg "
-        src="/projects/eshop-admin-products.webp"
-        width={600}
-        height={400}
-        alt="eshop-admin-products"
-      />
-    ),
+    icon: {
+      src: "/projects/eshop-admin-dashboard.webp",
+      alt: "eshop-admin-dashboard",
+    },
+    icon2: {
+      src: "/projects/eshop-admin-products.webp",
+      alt: "eshop-admin-products",
+    },
   },
   {
     id: 11,
@@ -452,24 +372,15 @@ export const projectsData: ProjectsType[] = [
     ],
     github: "https://github.com/AlexLeiba/travel-plan",
     website: "https://travel-plan-enjoy.vercel.app/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/travel-plan-web.webp"
-        width={600}
-        height={400}
-        alt="travel-plan-web"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/travel-plan-mobile.webp"
-        width={250}
-        height={400}
-        alt="travel-plan-mobile"
-      />
-    ),
+
+    icon: {
+      src: "/projects/travel-plan-web.webp",
+      alt: "travel-plan-web",
+    },
+    icon2: {
+      src: "/projects/travel-plan-mobile.webp",
+      alt: "travel-plan-mobile",
+    },
   },
   {
     id: 12,
@@ -490,24 +401,14 @@ export const projectsData: ProjectsType[] = [
     ],
     github: "https://github.com/AlexLeiba/SyncPoint",
     website: "https://sync-point.vercel.app/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/sync-point-desktop.webp"
-        width={600}
-        height={400}
-        alt="wt-blogs"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/sync-point-mobile.webp"
-        width={250}
-        height={400}
-        alt="wt-blogs"
-      />
-    ),
+    icon: {
+      src: "/projects/sync-point-desktop.webp",
+      alt: "wt-blogs",
+    },
+    icon2: {
+      src: "/projects/sync-point-mobile.webp",
+      alt: "wt-blogs mobile",
+    },
   },
   {
     id: 13,
@@ -524,24 +425,14 @@ export const projectsData: ProjectsType[] = [
     ],
     github: "https://github.com/AlexLeiba/WT-Blogs-NextJs-fullstack-app",
     website: "https://wt-blogs.vercel.app/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/wt-blogs-web-dark-theme.webp"
-        width={600}
-        height={400}
-        alt="wt-blogs"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/wt-blogs-mobile-white-theme.webp"
-        width={250}
-        height={400}
-        alt="wt-blogs"
-      />
-    ),
+    icon: {
+      src: "/projects/wt-blogs-web-dark-theme.webp",
+      alt: "wt-blogs",
+    },
+    icon2: {
+      src: "/projects/wt-blogs-mobile-white-theme.webp",
+      alt: "wt-blogs mobile",
+    },
   },
   {
     id: 14,
@@ -562,24 +453,14 @@ export const projectsData: ProjectsType[] = [
     ],
     github: "https://github.com/AlexLeiba/Chat-me-ReactJs-fullstack-app",
     website: "https://chat-me-react.onrender.com/sign-in",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/chat-me-web.webp"
-        width={600}
-        height={400}
-        alt="chat-me"
-      />
-    ),
-    icon2: (
-      <Image
-        className="h-[665px] w-[380px] object-cover object-top shadow-lg rounded-lg"
-        src="/projects/chat-me-mobile.webp"
-        width={250}
-        height={400}
-        alt="chat-me"
-      />
-    ),
+    icon: {
+      src: "/projects/chat-me-web.webp",
+      alt: "chat-me",
+    },
+    icon2: {
+      src: "/projects/chat-me-mobile.webp",
+      alt: "chat-me mobile",
+    },
   },
 
   {
@@ -597,24 +478,15 @@ export const projectsData: ProjectsType[] = [
     github:
       "https://github.com/AlexLeiba/Dev-Blog-NodeJs-ExpressJS-fullstack-app",
     website: "https://full-stack-blog-37mi.onrender.com",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/dev-blog-web.webp"
-        width={600}
-        height={400}
-        alt="express-blog"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/dev-blog-mobile.webp"
-        width={250}
-        height={400}
-        alt="express-blog"
-      />
-    ),
+
+    icon: {
+      src: "/projects/dev-blog-web.webp",
+      alt: "express-blog",
+    },
+    icon2: {
+      src: "/projects/dev-blog-mobile.webp",
+      alt: "express-blog mobile",
+    },
   },
   {
     id: 16,
@@ -628,26 +500,16 @@ export const projectsData: ProjectsType[] = [
       "zod",
       "AOS animation",
     ],
-    github: "https://github.com/AlexLeiba/Portfolio",
     website: "/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/my-portofolio-web.webp"
-        width={600}
-        height={400}
-        alt="W W News"
-      />
-    ),
-    icon2: (
-      <Image
-        className="object-cover object-top shadow-lg rounded-lg"
-        src="/projects/portfolio-mobile-white-theme.webp"
-        width={250}
-        height={400}
-        alt="world wide news"
-      />
-    ),
+    github: "https://github.com/AlexLeiba/Portfolio",
+    icon: {
+      src: "/projects/my-portofolio-web.webp",
+      alt: "My portfolio",
+    },
+    icon2: {
+      src: "/projects/portfolio-mobile-white-theme.webp",
+      alt: "My portfolio mobile",
+    },
   },
   {
     id: 17,
@@ -656,24 +518,14 @@ export const projectsData: ProjectsType[] = [
     techUsed: ["React.js", "Bootstrap"],
     github: "https://github.com/AlexLeiba/WW-Everyday-news",
     website: "https://worldwide-everyday-news.netlify.app",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/ww-news-web.webp"
-        width={600}
-        height={400}
-        alt="world-wide-news"
-      />
-    ),
-    icon2: (
-      <Image
-        className="h-[650px] w-[365px] object-cover object-top shadow-lg rounded-lg"
-        src="/projects/ww-news-mobile.webp"
-        width={250}
-        height={400}
-        alt="world-wide-news"
-      />
-    ),
+    icon: {
+      src: "/projects/ww-news-web.webp",
+      alt: "world-wide-news",
+    },
+    icon2: {
+      src: "/projects/ww-news-mobile.webp",
+      alt: "world-wide-news mobile",
+    },
   },
   {
     id: 18,
@@ -682,35 +534,31 @@ export const projectsData: ProjectsType[] = [
     techUsed: ["JavaScript"],
     github: "https://github.com/AlexLeiba/Romania-Weather-forecast",
     website: "https://alex-weather-forecast.netlify.app/",
-    icon: (
-      <Image
-        className="w-full object-top object-cover shadow-lg"
-        src="/projects/weather-web.webp"
-        width={600}
-        height={400}
-        alt="Weather-forecast"
-      />
-    ),
-    icon2: (
-      <Image
-        className=" object-cover object-top shadow-lg rounded-lg"
-        src="/projects/weather-mobile-dark-theme.webp"
-        width={250}
-        height={400}
-        alt="Weather-forecast"
-      />
-    ),
+    icon: {
+      src: "/projects/weather-web.webp",
+      alt: "Weather-forecast",
+    },
+    icon2: {
+      src: "/projects/weather-mobile-dark-theme.webp",
+      alt: "Weather-forecast mobile",
+    },
   },
 ];
 
-export const skillsData: {
+export type SkillsType = {
   title: string;
   percentage?: number;
   icon: React.JSX.Element;
-}[] = [
+  link: string;
+  linkTitle: string;
+};
+
+export const skillsData: SkillsType[] = [
   {
     title: "JavaScript",
     percentage: 90,
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    linkTitle: "Learn more about JavaScript",
     icon: (
       <Image
         src="/categories/JavaScript.svg"
@@ -724,6 +572,8 @@ export const skillsData: {
   {
     title: "TypeScript",
     percentage: 90,
+    link: "https://www.typescriptlang.org/",
+    linkTitle: "Learn more about TypeScript",
     icon: (
       <Image
         src="/categories/TypeScript.svg"
@@ -737,6 +587,8 @@ export const skillsData: {
   {
     title: "React.js",
     percentage: 90,
+    link: "https://react.dev/",
+    linkTitle: "Learn more about React.js",
     icon: (
       <Image
         src="/categories/React.svg"
@@ -750,6 +602,8 @@ export const skillsData: {
   {
     title: "Next.js",
     percentage: 80,
+    link: "https://nextjs.org/",
+    linkTitle: "Learn more about Next.js",
     icon: (
       <Image
         src="/categories/NextJS.svg"
@@ -763,6 +617,8 @@ export const skillsData: {
   {
     title: "React Native",
     percentage: 60,
+    link: "https://reactnative.dev/",
+    linkTitle: "Learn more about React Native",
     icon: (
       <Image
         src="/categories/React.svg"
@@ -776,6 +632,8 @@ export const skillsData: {
   {
     title: "HTML",
     percentage: 90,
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    linkTitle: "Learn more about HTML",
     icon: (
       <Image
         src="/categories/HTML.svg"
@@ -789,6 +647,8 @@ export const skillsData: {
   {
     title: "CSS",
     percentage: 90,
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    linkTitle: "Learn more about CSS",
     icon: (
       <Image
         src="/categories/CSS.svg"
@@ -802,6 +662,8 @@ export const skillsData: {
   {
     title: "Tailwind",
     percentage: 80,
+    link: "https://tailwindcss.com/",
+    linkTitle: "Learn more about Tailwind",
     icon: (
       <Image
         src="/categories/Tailwind.svg"
@@ -815,6 +677,8 @@ export const skillsData: {
   {
     title: "Styled components",
     percentage: 90,
+    link: "https://styled-components.com/",
+    linkTitle: "Learn more about styled-components",
     icon: (
       <Image
         src="/categories/styled.svg"
@@ -828,6 +692,8 @@ export const skillsData: {
   {
     title: "SCSS",
     percentage: 90,
+    link: "https://sass-lang.com/",
+    linkTitle: "Learn more about SCSS",
     icon: (
       <Image
         src="/categories/scss.svg"
@@ -841,6 +707,8 @@ export const skillsData: {
   {
     title: "Redux",
     percentage: 80,
+    link: "https://redux.js.org/",
+    linkTitle: "Learn more about Redux",
     icon: (
       <Image
         src="/categories/redux.webp"
@@ -854,6 +722,8 @@ export const skillsData: {
   {
     title: "Zustand",
     percentage: 80,
+    link: "https://zustand-demo.pmnd.rs/",
+    linkTitle: "Learn more about Zustand",
     icon: (
       <Image
         src="/categories/zustand.svg"
@@ -866,7 +736,9 @@ export const skillsData: {
   },
   {
     title: "GraphQL",
-    percentage: 50,
+    percentage: 60,
+    link: "https://graphql.org/",
+    linkTitle: "Learn more about GraphQL",
     icon: (
       <Image
         src="/categories/GraphQL.svg"
@@ -879,7 +751,9 @@ export const skillsData: {
   },
   {
     title: "Node.js",
-    percentage: 50,
+    percentage: 60,
+    link: "https://nodejs.org/",
+    linkTitle: "Learn more about Node.js",
     icon: (
       <Image
         src="/categories/NodeJS.svg"
@@ -893,6 +767,8 @@ export const skillsData: {
   {
     title: "Prisma",
     percentage: 30,
+    link: "https://www.prisma.io/",
+    linkTitle: "Learn more about Prisma",
     icon: (
       <Image
         src="/categories/prisma.svg"
@@ -906,6 +782,8 @@ export const skillsData: {
   {
     title: "MongoDB",
     percentage: 40,
+    link: "https://www.mongodb.com/",
+    linkTitle: "Learn more about MongoDB",
     icon: (
       <Image
         src="/categories/mongodb.svg"
@@ -919,6 +797,8 @@ export const skillsData: {
   {
     title: "Express.js",
     percentage: 70,
+    link: "https://expressjs.com/",
+    linkTitle: "Learn more about Express.js",
     icon: (
       <Image
         src="/categories/ExpressJS.svg"
@@ -932,6 +812,8 @@ export const skillsData: {
   {
     title: "React hook form",
     percentage: 80,
+    link: "https://react-hook-form.com/",
+    linkTitle: "Learn more about React Hook Form",
     icon: (
       <Image
         src="/categories/react-hook-form.svg"
@@ -945,6 +827,8 @@ export const skillsData: {
   {
     title: "Formik",
     percentage: 70,
+    link: "https://formik.org/",
+    linkTitle: "Learn more about Formik",
     icon: (
       <Image
         src="/categories/formik.webp"
@@ -958,6 +842,8 @@ export const skillsData: {
   {
     title: "Zod",
     percentage: 80,
+    link: "https://zod.dev/",
+    linkTitle: "Learn more about Zod",
     icon: (
       <Image
         src="/categories/zod.webp"
@@ -971,6 +857,8 @@ export const skillsData: {
   {
     title: "Jest",
     percentage: 50,
+    link: "https://jestjs.io/",
+    linkTitle: "Learn more about Jest",
     icon: (
       <Image
         src="/categories/jest.svg"
@@ -985,6 +873,8 @@ export const skillsData: {
   {
     title: "Git",
     percentage: 70,
+    link: "https://git-scm.com/",
+    linkTitle: "Learn more about Git",
     icon: (
       <Image
         src="/categories/GIT.svg"
@@ -998,6 +888,8 @@ export const skillsData: {
   {
     title: "Github",
     percentage: 70,
+    link: "https://github.com/",
+    linkTitle: "Learn more about Github",
     icon: (
       <Image
         src="/categories/github.svg"
@@ -1011,6 +903,8 @@ export const skillsData: {
   {
     title: "Jira",
     percentage: 70,
+    link: "https://www.atlassian.com/software/jira",
+    linkTitle: "Learn more about Jira",
     icon: (
       <Image
         src="/categories/jira.svg"
@@ -1024,6 +918,8 @@ export const skillsData: {
   {
     title: "Projects",
     percentage: 100,
+    link: "#projects",
+    linkTitle: "Check out my projects",
     icon: (
       <ChevronDown
         className="cursor-pointer animate-pulse"

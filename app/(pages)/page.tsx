@@ -2,7 +2,7 @@ import About from "@/components/components-pages/AboutSection/About";
 import Contact from "@/components/components-pages/Contact";
 import Hero from "@/components/components-pages/Hero";
 import Projects from "@/components/components-pages/Projects/Projects";
-import Skills from "@/components/components-pages/Skills";
+import Skills from "@/components/components-pages/Skills/Skills";
 import { Container, Row } from "@/components/UI/Grid";
 import { Spacer } from "@/components/UI/spacer/spacer";
 

@@ -1,6 +1,6 @@
-'use client';
-import { cn } from '@/lib/utils';
-import React, { useEffect } from 'react';
+"use client";
+import { cn } from "@/lib/utils";
+import React, { useEffect } from "react";
 
 export function ProgressBar() {
   const [progress, setProgress] = React.useState(0);
@@ -15,16 +15,16 @@ export function ProgressBar() {
         (progressScrollValue / allAvailableScrollValue) * 100 + 6;
       setProgress(Math.floor(scrollProgressPercentage));
     }
-    document.addEventListener('scroll', handleScroll);
+    document.addEventListener("scroll", handleScroll);
 
-    return () => document.removeEventListener('scroll', handleScroll);
+    return () => document.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className={cn('fixed top-14 right-0 left-0 z-50')}>
+    <div className={cn("absolute bottom-0 right-0 left-0 z-50")}>
       <div
         style={{ width: `${progress < 10 ? 0 : progress}%` }}
-        className={` dark:bg-[#7493f0] bg-black h-px transition-all  ease-in-out`}
+        className={` dark:bg-[linear-gradient(to_right,var(--secondary-700),var(--secondary-500),var(--error-400),var(--error-200),var(--error-50))] bg-black h-[1px] transition-all  `}
       ></div>
     </div>
   );

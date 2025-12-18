@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 :root {
+  /* gradient color variables */
+  --yellow: #ffcc00;
+  /* colors */
+
   --background: #ffffff;
   --foreground: #171717;
   --softBg: #f0f0f0;
@@ -363,4 +367,41 @@ select:focus {
   100% {
     filter: brightness(1) drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
   }
+}
+
+@media (max-height: 700px) {
+  .planetClassName {
+    display: none !important;
+  }
+  .heroImageClassName {
+    display: block !important;
+  }
+}
+
+@property --fill {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+.skillCard:hover .conic-gradient {
+  --fill: 100%;
+  background: conic-gradient(
+    var(--secondary-900),
+    var(--secondary-700),
+    var(--error-400),
+    var(--yellow),
+    var(--yellow),
+    transparent var(--fill)
+  );
+}
+
+.conic-gradient {
+  z-index: -1;
+  transition: --fill 1s ease-in-out;
+  --fill: 0%;
+}
+
+.skillCard p {
+  text-shadow: #3c3c3c 0px 0px 10px;
 }
