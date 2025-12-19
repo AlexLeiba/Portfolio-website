@@ -1,4 +1,6 @@
+import { BackgroundGradientAnimation } from "@/components/UI/BackgroundGradientAnimation";
 import { AboutMeType } from "@/consts/localDB";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 type AboutCardProps = {
@@ -6,13 +8,23 @@ type AboutCardProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 export function AboutCard({ data }: AboutCardProps) {
   return (
-    <div className="flex border mb-4 border-primary-200  lg:items-center lg:h-56 min-h-72 p-4 rounded-xl flex-wrap overflow-hidden shadow-lg">
-      <div className="flex items-start  lg:gap-6 md:gap-6 gap-2  h-full w-full lg:flex-row md:flex-row  flex-col">
+    <div
+      className={cn([
+        "bg-black flex border mb-4 border-primary-200 z-20  lg:items-center lg:h-56 min-h-72 p-4 rounded-xl flex-wrap  shadow-lg ",
+        "conic-gradient-parent relative",
+      ])}
+    >
+      <div className=" flex items-start   lg:gap-6 md:gap-6 gap-2  h-full w-full lg:flex-row md:flex-row  flex-col ">
         {/* Icon */}
         <div>{data.icon}</div>
+        {/* GRADIENT */}
+        <BackgroundGradientAnimation
+          className="-inset-[2px] rounded-xl"
+          classNameBackground="rounded-[10px] dark:rounded-[12px]"
+        />
 
         {/* Content */}
-        <div className="flex justify-start w-full">
+        <div className="flex justify-start w-full z-20">
           <div className="flex flex-col gap-2 justify-between h-full">
             <h5 className="text-primary-400 ">{data.title}</h5>
 

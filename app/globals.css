@@ -384,7 +384,7 @@ select:focus {
   initial-value: 0%;
 }
 
-.skillCard:hover .conic-gradient {
+.conic-gradient-parent:hover .conic-gradient {
   --fill: 100%;
   background: conic-gradient(
     var(--secondary-900),
@@ -397,11 +397,11 @@ select:focus {
 }
 
 .conic-gradient {
-  z-index: -1;
+  z-index: -10;
   transition: --fill 1s ease-in-out;
   --fill: 0%;
 }
 
-.skillCard p {
-  text-shadow: #3c3c3c 0px 0px 10px;
+.skillsCard p {
+  text-shadow: #2c2c2c 0px 0px 10px;
 }

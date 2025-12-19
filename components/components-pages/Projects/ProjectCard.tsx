@@ -26,6 +26,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
           <Spacer size={16} />
         </div>
       )}
+
       <div className="flex gap-12 justify-between items-center relative">
         {/* DESKTOP */}
         {index % 2 !== 0 && (

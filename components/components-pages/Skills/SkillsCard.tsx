@@ -1,4 +1,5 @@
 "use client";
+import { BackgroundGradientAnimation } from "@/components/UI/BackgroundGradientAnimation";
 import { Col } from "@/components/UI/Grid";
 import { COLORS } from "@/consts/colors";
 import { SkillsType } from "@/consts/localDB";
@@ -21,9 +22,13 @@ export function SkillsCard({ data, index }: Props) {
         data-aos="fade-up"
         className={cn(
           data.title === "Projects" && "cursor-pointer",
-          "dark:bg-baseline-900 bg-baseline-50 z-10 w-full lg:h-24 rounded-xl mb-2 gap-4 shadow-lg  transition-transform duration-200 ease-out will-change-transform  group relative skillCard "
+          "dark:bg-baseline-900 bg-baseline-50 z-20 w-full lg:h-24 rounded-xl mb-2 gap-4 shadow-lg  transition-transform duration-200 ease-out will-change-transform  group relative conic-gradient-parent dark:skillsCard "
         )}
       >
+        {/* GRADIENT */}
+        <BackgroundGradientAnimation classNameBackground="bg-transparent" />
+        {/*  */}
+
         <Link
           href={data.link}
           target={data.title === "Projects" ? "_self" : "_blank"}
@@ -35,18 +40,14 @@ export function SkillsCard({ data, index }: Props) {
             }}
             key={index}
             className={cn([
-              " flex justify-center items-center gap-4 border mb-2  border-primary-200  h-full p-2 rounded-xl flex-wrap overflow-hidden",
-              "",
+              " flex justify-center items-center gap-4 border mb-2  border-primary-200  h-full p-2 rounded-xl flex-wrap overflow-hidden z-20 relative",
+              ,
             ])}
           >
-            {/* GRADIENT */}
-            <div className="absolute  -inset-[2px] rounded-[14px]   conic-gradient"></div>
-            {/*  */}
-
             {/* CONTENT */}
             <div className="flex items-center  ">
               <div className="flex md:flex-col lg:flex-col items-center justify-center gap-2">
-                <p className="text-white  body-base  font-bold font-mono shadow-text-base">
+                <p className="dark:text-white text-baseline-900  body-base  font-bold font-mono ">
                   {data.title}
                 </p>
                 <div className="gap-2 group-hover:scale-125 transition-transform duration-1000 ease-out ">

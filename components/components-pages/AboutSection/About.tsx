@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import { aboutMeData } from "@/consts/localDB";
 import { AboutCard } from "./AboutCard";
+import { BackgroundGradientAnimation } from "@/components/UI/BackgroundGradientAnimation";
 
 function About() {
   const router = useRouter();
@@ -82,11 +83,19 @@ function About() {
             data-aos-delay={100}
             data-aos="fade-left"
             onClick={() => router.push("#skills")}
-            className="cursor-pointer flex justify-center items-center  gap-4 border mb-4 border-primary-200 pb-4  p-4 rounded-xl flex-wrap overflow-hidden shadow-lg"
+            className={cn([
+              "cursor-pointer flex justify-center items-center  gap-4 border mb-4 border-primary-200 pb-4  p-4 rounded-xl flex-wrap  shadow-lg  ",
+              "conic-gradient-parent relative z-20 ",
+            ])}
           >
-            <h5 className="text-primary-400">Skills</h5>
+            {/* GRADIENT */}
+            <BackgroundGradientAnimation
+              className="-inset-[2px] "
+              // classNameBackground="bg-black"
+            />
+            <h5 className="text-primary-400 z-20">Skills</h5>
             <ChevronDown
-              className="text-primary-400 animate-pulse"
+              className="text-primary-400 animate-pulse z-20"
               width={50}
               height={50}
             />
