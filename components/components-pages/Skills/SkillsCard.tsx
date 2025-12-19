@@ -40,7 +40,7 @@ export function SkillsCard({ data, index }: Props) {
             }}
             key={index}
             className={cn([
-              " flex justify-center items-center gap-4 border mb-2  border-primary-200  h-full p-2 rounded-xl flex-wrap overflow-hidden z-20 relative",
+              " flex justify-center items-center gap-4 dark:border mb-2  border-primary-200  h-full p-2 rounded-xl flex-wrap overflow-hidden z-20 relative",
               ,
             ])}
           >

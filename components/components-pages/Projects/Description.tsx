@@ -15,7 +15,7 @@ export function Description({
       onClick={() => setExpanded(!expnded)}
       className={cn(
         [
-          "dark:bg-black bg-white shadow-md  dark:ring-1 dark:outline-gray-100 p-2 rounded-md hover:shadow-xl group",
+          "dark:bg-black bg-white shadow-md  dark:ring-1 dark:outline-gray-100 p-2 rounded-md hover:shadow-xl group transition-all",
           "conic-gradient-parent relative  bg-black z-20",
         ],
         rest.className
@@ -23,8 +23,8 @@ export function Description({
     >
       {/* GRADIENT */}
       <BackgroundGradientAnimation
-        className="-inset-[2px] rounded-[8px]"
-        classNameBackground="dark:bg-black bg-white rounded-[5px]"
+        className="-inset-[2px] rounded-[6px]"
+        classNameBackground="dark:bg-black bg-white rounded-[5px] dark:rounded-[6px]"
       />
       <div className="relative z-20">
         <p className="z-20">

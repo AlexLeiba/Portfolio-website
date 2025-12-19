@@ -84,14 +84,14 @@ function About() {
             data-aos="fade-left"
             onClick={() => router.push("#skills")}
             className={cn([
-              "cursor-pointer flex justify-center items-center  gap-4 border mb-4 border-primary-200 pb-4  p-4 rounded-xl flex-wrap  shadow-lg  ",
+              "cursor-pointer flex justify-center items-center  gap-4 dark:border mb-4 border-primary-200 pb-4  p-4 rounded-xl flex-wrap  shadow-lg  ",
               "conic-gradient-parent relative z-20 ",
             ])}
           >
             {/* GRADIENT */}
             <BackgroundGradientAnimation
               className="-inset-[2px] "
-              // classNameBackground="bg-black"
+              classNameBackground=" rounded-[10px] dark:rounded-[12px]"
             />
             <h5 className="text-primary-400 z-20">Skills</h5>
             <ChevronDown

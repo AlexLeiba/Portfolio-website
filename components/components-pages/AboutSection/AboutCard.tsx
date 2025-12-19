@@ -10,7 +10,7 @@ export function AboutCard({ data }: AboutCardProps) {
   return (
     <div
       className={cn([
-        "bg-black flex border mb-4 border-primary-200 z-20  lg:items-center lg:h-56 min-h-72 p-4 rounded-xl flex-wrap  shadow-lg ",
+        "bg-black flex dark:border-[0.2px] mb-4 border-primary-200 z-20  lg:items-center lg:h-56 min-h-72 p-4 rounded-xl flex-wrap  shadow-lg ",
         "conic-gradient-parent relative",
       ])}
     >
