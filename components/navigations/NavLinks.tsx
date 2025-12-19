@@ -37,10 +37,10 @@ function AuthLinks() {
 
       {/* DESKTOP NAVBAR */}
 
-      <div className=" gap-8 text-white font-bold md:flex lg:flex hidden">
+      <div className=" gap-8 font-bold md:flex lg:flex hidden dark:text-baseline-100 navigation-links ">
         <>
           <Link href="#about" title="About me">
-            <p className="text-sm">About me</p>
+            <p className="text-sm dark:text-baseline-200 ">About me</p>
           </Link>
           <Link href="#projects" title="Projects">
             <p className="text-sm">Projects</p>

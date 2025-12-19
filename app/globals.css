@@ -405,3 +405,17 @@ select:focus {
 .skillsCard p {
   text-shadow: #2c2c2c 0px 0px 10px;
 }
+
+.navigation-links p {
+  transition: all 0.3s ease-in-out;
+}
+.navigation-links p:hover {
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--secondary-700),
+    var(--error-400),
+    var(--yellow)
+  );
+  background-clip: text;
+}
