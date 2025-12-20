@@ -10,7 +10,7 @@ import { useTheme } from "@/hooks/useThemeContext";
 function Hero() {
   const { darkMode } = useTheme();
   const [lightBulb, setLightBulb] = useState(false);
-  console.log("🚀 ~ Hero ~ lightBulb:", lightBulb);
+
   function handleDownloadPdf() {
     // pdf link
     const pdfUrl = process.env.NEXT_PUBLIC_PDF_LINK;
