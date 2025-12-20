@@ -83,6 +83,7 @@ function Hero() {
                     height={30}
                     fetchPriority="high"
                     loading="lazy"
+                    unoptimized
                   />
                 ) : (
                   <Image
@@ -94,6 +95,7 @@ function Hero() {
                     height={30}
                     fetchPriority="high"
                     loading="lazy"
+                    unoptimized
                   />
                 )}
               </button>
@@ -105,6 +107,7 @@ function Hero() {
                   alt="illustration"
                   draggable="false"
                   fill
+                  unoptimized
                 />
                 {!lightBulb ? (
                   <Image
