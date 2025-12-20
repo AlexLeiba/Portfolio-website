@@ -93,7 +93,7 @@ function About() {
               className="-inset-[2px] "
               classNameBackground=" rounded-[10px] dark:rounded-[12px]"
             />
-            <h5 className="text-primary-400 z-20">Skills</h5>
+            <p className="text-primary-400 z-20 text-xl">Skills</p>
             <ChevronDown
               className="text-primary-400 animate-pulse z-20"
               width={50}

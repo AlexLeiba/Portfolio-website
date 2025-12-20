@@ -9,29 +9,18 @@ import Link from "next/link";
 import { Description } from "./Description";
 import Image from "next/image";
 import { DesktopImage, MobileImage } from "./ProjectImages";
+import { PersonalProjectsIndicator } from "./PersonalProjectsIndicator";
 
 function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
   return (
     <div>
-      {index === 5 && (
-        <div id="personal-projects">
-          <Spacer size={16} />
-          <div data-aos="fade-up" className="flex flex-col gap-4">
-            <div className="flex gap-4  items-center justify-end">
-              <p className="text-xl ">Personal projects</p>
-              <ArrowDown data-aos="fade-up" className="animate-pulse" />
-            </div>
-            <div className="w-full h-px dark:bg-white bg-black"></div>
-          </div>
-          <Spacer size={16} />
-        </div>
-      )}
+      {index === 5 && <PersonalProjectsIndicator />}
 
       <div className="flex gap-12 justify-between items-center relative">
         {/* DESKTOP */}
         {index % 2 !== 0 && (
           <div className={cn(" md:hidden sm:hidden ")}>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up w-full">
               <DesktopImage>
                 <Image
                   sizes="500px 250px"
@@ -53,7 +42,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
               )}
               data-aos-delay={500}
             >
-              <MobileImage className="">
+              <MobileImage>
                 <Image
                   sizes="500px 250px"
                   fill
@@ -73,21 +62,20 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
           )}
           data-aos="fade-up"
         >
-          <h5 className="font-bold text-primary-400">
+          <p className="font-bold text-primary-400 !text-2xl">
             {index + 1 < 10 ? "0" + (index + 1) : index + 1}
-          </h5>
-          <h5 className="text-xl font-bold">{data.title}</h5>
+          </p>
+          <p className="text-xl font-bold">{data.title}</p>
           <div
             className={cn(
               index % 2 !== 0 ? "justify-end " : "justify-start ",
               "w-full flex mb-[110px]"
             )}
           >
-            {/* <p className={"h-[110px]"}>{data.description}</p> */}
             <Description
               className={cn(
-                index % 2 !== 0 ? "mr-2" : "ml-2",
-                "w-[450px]  text-sm  dark:text-baseline-100 whitespace-pre-wrap absolute"
+                index % 2 !== 0 ? "lg:mr-2 md:mr-2" : "lg:ml-2 md:ml-2",
+                "max-w-[450px]  text-sm  dark:text-baseline-100 whitespace-pre-wrap absolute"
               )}
               description={data.description}
             />
@@ -138,7 +126,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
           </div>
           {/* TABLET/MOBILE */}
           <div className="lg:hidden flex sm:flex-col w-full">
-            <div data-aos="fade-up ">
+            <div data-aos="fade-up " className="w-full">
               <DesktopImage>
                 <Image
                   sizes="500px 250px"
@@ -149,7 +137,11 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
                 />
               </DesktopImage>
             </div>
-            <div data-aos="fade-right" className="mt-8" data-aos-delay={500}>
+            <div
+              data-aos="fade-right"
+              className="mt-8 w-full"
+              data-aos-delay={500}
+            >
               <MobileImage>
                 <Image
                   className=" object-cover object-top shadow-lg rounded-lg"
@@ -171,7 +163,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
               "md:w-[350px] md:hidden sm:hidden "
             )}
           >
-            <div data-aos="fade-up">
+            <div data-aos="fade-up w-full">
               <DesktopImage>
                 <Image
                   sizes="500px 250px"

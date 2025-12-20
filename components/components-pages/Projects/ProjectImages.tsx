@@ -8,7 +8,7 @@ export const DesktopImage = ({
   return (
     <div
       className={cn(
-        "relative h-[370px]  aspect-video hover:z-10 hover:scale-110 transition-all hover:shadow-2xl duration-500 ",
+        "relative lg:h-[350px]  aspect-video w-full hover:z-10 hover:scale-110 transition-all hover:shadow-2xl duration-500 ",
         className
       )}
     >
@@ -23,7 +23,7 @@ export const MobileImage = ({
   return (
     <div
       className={cn(
-        "relative w-[250px] h-[500px] hover:z-10 hover:scale-110 transition-all hover:shadow-2xl duration-500",
+        "relative w-[250px]  h-[500px] hover:z-10 hover:scale-110 transition-all hover:shadow-2xl duration-500",
         className
       )}
     >

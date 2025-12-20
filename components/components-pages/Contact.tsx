@@ -142,8 +142,8 @@ function Contact() {
             className="rounded-lg bg-baseline-100 p-4 dark:bg-baseline-900 shadow-xl"
             data-aos="fade-up"
           >
-            <h4 className="inline">Contact</h4>
-            <h4 className="inline text-primary-400"> me</h4>
+            <p className="inline !text-2xl">Contact</p>
+            <p className="inline text-primary-400 !text-2xl"> me</p>
             <Spacer size={2} />
             <p className="inline">Send me a message and </p>
             <p className="inline text-primary-400">let`s get in touch!</p>

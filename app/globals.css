@@ -308,10 +308,10 @@ select:focus {
   background: linear-gradient(
     to bottom,
     #000,
-    #2b1942 35%,
-    #8f5c55 60%,
-    #dbaf6e 80%,
-    #dbaf6e 100%
+    #180d25 35%,
+    #000000 60%,
+    #000000 80%,
+    #000000 100%
   );
   transition: height 3s linear;
 
@@ -365,7 +365,7 @@ select:focus {
   }
 
   100% {
-    filter: brightness(1) drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
+    filter: brightness(1.5) drop-shadow(0 0 1rem #ffffff);
   }
 }
 
@@ -418,4 +418,36 @@ select:focus {
     var(--yellow)
   );
   background-clip: text;
+}
+
+@keyframes lightBulbAnimation {
+  0% {
+    opacity: 0;
+    bottom: 200px;
+    right: 160px;
+    scale: 0.5;
+  }
+  50% {
+    opacity: 0.5;
+    bottom: 250px;
+    right: 120px;
+    scale: 1;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 300px;
+    right: 80px;
+    scale: 1.5;
+  }
+}
+
+.lightBulb {
+  z-index: 50;
+  position: absolute;
+
+  animation: lightBulbAnimation 3s linear alternate,
+    glowAnimation 5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }

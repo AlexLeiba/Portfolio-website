@@ -16,7 +16,7 @@ export function AboutCard({ data }: AboutCardProps) {
     >
       <div className=" flex items-start   lg:gap-6 md:gap-6 gap-2  h-full w-full lg:flex-row md:flex-row  flex-col ">
         {/* Icon */}
-        <div>{data.icon}</div>
+        <div className=" z-50">{data.icon}</div>
         {/* GRADIENT */}
         <BackgroundGradientAnimation
           className="-inset-[2px] rounded-xl"
@@ -26,9 +26,9 @@ export function AboutCard({ data }: AboutCardProps) {
         {/* Content */}
         <div className="flex justify-start w-full z-20">
           <div className="flex flex-col gap-2 justify-between h-full">
-            <h5 className="text-primary-400 ">{data.title}</h5>
+            <p className="text-primary-400 text-xl ">{data.title}</p>
 
-            <div className="flex gap-4 flex-wrap lg:h-[115px] md:h-[80px] items-center">
+            <div className="flex gap-4 flex-wrap lg:min-h-[115px] md:min-h-[80px] items-center">
               {data.description.map((description, index) => {
                 return (
                   <div key={index} className="flex flex-col gap-2">

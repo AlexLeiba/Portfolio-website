@@ -27,7 +27,7 @@ export function Description({
         classNameBackground="dark:bg-black bg-white rounded-[5px] dark:rounded-[6px]"
       />
       <div className="relative z-20">
-        <p className="z-20">
+        <p className="z-20 text-left">
           {description.substring(0, expnded ? description.length : 100) +
             (expnded ? "" : "...")}
         </p>

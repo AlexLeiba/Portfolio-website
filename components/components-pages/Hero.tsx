@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Col, Container, Row } from "@/components/UI/Grid";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -9,7 +9,8 @@ import { useTheme } from "@/hooks/useThemeContext";
 
 function Hero() {
   const { darkMode } = useTheme();
-
+  const [lightBulb, setLightBulb] = useState(false);
+  console.log("🚀 ~ Hero ~ lightBulb:", lightBulb);
   function handleDownloadPdf() {
     // pdf link
     const pdfUrl = process.env.NEXT_PUBLIC_PDF_LINK;
@@ -21,6 +22,30 @@ function Hero() {
 
     document.body.removeChild(link);
   }
+
+  useEffect(() => {
+    const darkImages = document.querySelectorAll<HTMLImageElement>(
+      ".hero-illustration-dark"
+    );
+
+    if (!darkImages) return;
+
+    let timeoutId: ReturnType<typeof setTimeout>;
+    darkImages.forEach((img) => {
+      timeoutId = setTimeout(() => {
+        img.style.opacity = "1";
+      }, 500);
+    });
+
+    const timeoutId2 = setTimeout(() => {
+      setLightBulb(true);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timeoutId);
+      clearTimeout(timeoutId2);
+    };
+  }, []);
 
   return (
     <Container
@@ -43,14 +68,68 @@ function Hero() {
               "top-[680px] sm:top-[calc(100vh-100px)]",
               "z-20 position absolute  w-[3000px]  h-full dark:bg-[radial-gradient(closest-side,_#000000_90%,#331d4e)] bg-[radial-gradient(closest-side,_#ffffff_90%,#bfe6f6_100%)] right-0 left-[50%]  rounded-[50%] -translate-x-1/2 ",
               "md:block lg:block hidden planetClassName"
-              // windowHeight < 700 ? "hidden" : "md:block lg:block hidden"
             )}
           >
-            <div className="absolute z-10 bottom-[100%]  left-[50%]  -translate-x-1/2 ">
-              <div className=" relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[200px] sm:h-[400px]   ">
+            <div className="absolute z-10 bottom-[95%]  left-[50%]  -translate-x-1/2 ">
+              <button onClick={() => setLightBulb((prev) => !prev)}>
+                {/* Light bulb */}
+                {lightBulb ? (
+                  <Image
+                    className="object-contain  hover:drop-shadow-[white_0px_4px_10px] lightBulb "
+                    src={"/user/Light-Bulb-1.webp"}
+                    alt="illustration"
+                    draggable="false"
+                    width={30}
+                    height={30}
+                    fetchPriority="high"
+                    loading="lazy"
+                  />
+                ) : (
+                  <Image
+                    className="object-contain hover:drop-shadow-[white_0px_4px_10px] lightBulb "
+                    src={"/user/Light-Bulb-2.webp"}
+                    alt="illustration"
+                    draggable="false"
+                    width={30}
+                    height={30}
+                    fetchPriority="high"
+                    loading="lazy"
+                  />
+                )}
+              </button>
+
+              <div className=" relative lg:w-[500px] lg:h-[400px]  md:h-[400px] md:w-[500px] w-[200px] h-[400px]   ">
                 <Image
-                  className="object-contain object-top"
-                  src={"/hero-illustration.avif"}
+                  className="object-contain object-top  dark:opacity-100  opacity-0  hero-illustration-dark"
+                  src={"/user/Darkness-2.webp"}
+                  alt="illustration"
+                  draggable="false"
+                  fill
+                />
+                {!lightBulb ? (
+                  <Image
+                    className="object-contain object-top  opacity-0 hero-illustration-dark"
+                    src={"/user/Dark-Theme.webp"}
+                    alt="illustration"
+                    draggable="false"
+                    fill
+                    fetchPriority="high"
+                  />
+                ) : (
+                  <Image
+                    className="object-contain object-top dark:opacity-0 opacity-100"
+                    src={"/user/Light-Bulb-On.webp"}
+                    alt="illustration"
+                    draggable="false"
+                    fill
+                    loading="lazy"
+                    fetchPriority="high"
+                  />
+                )}
+
+                <Image
+                  className="object-contain object-top dark:opacity-0 opacity-100"
+                  src={"/user/Light-Theme.webp"}
                   alt="illustration"
                   draggable="false"
                   fill
@@ -121,13 +200,27 @@ function Hero() {
 
       <div
         className={cn(
-          " relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[200px] sm:h-[200px]   ",
-          "lg:hidden md:hidden block heroImageClassName"
+          " relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[300px] sm:h-[270px]   ",
+          "lg:hidden md:hidden block  "
         )}
       >
         <Image
-          className="object-contain object-top"
-          src={"/hero-illustration.avif"}
+          className="object-contain object-top  dark:opacity-100  opacity-0  hero-illustration-dark"
+          src={"/user/Darkness-2.webp"}
+          alt="illustration"
+          draggable="false"
+          fill
+        />
+        <Image
+          className="object-contain object-top opacity-0 hero-illustration-dark"
+          src={"/user/Dark-Theme.webp"}
+          alt="illustration"
+          draggable="false"
+          fill
+        />
+        <Image
+          className="object-contain object-top dark:opacity-0 opacity-100"
+          src={"/user/Light-Theme.webp"}
           alt="illustration"
           draggable="false"
           fill
