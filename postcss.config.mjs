@@ -2,6 +2,16 @@
 const config = {
   plugins: {
     tailwindcss: {},
+    cssnano: {
+      preset: [
+        "default",
+        {
+          discardUnused: false,
+          reduceIdents: false,
+          normalizeWhitespace: false,
+        },
+      ],
+    },
   },
 };
 
