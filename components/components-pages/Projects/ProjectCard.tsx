@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
 import { Button } from "@/components/UI/Button/Button";
-import { Spacer } from "@/components/UI/spacer/spacer";
 import { ProjectsType } from "@/consts/localDB";
 import { cn } from "@/lib/utils";
-import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 import { Description } from "./Description";
 import Image from "next/image";

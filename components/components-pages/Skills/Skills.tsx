@@ -2,14 +2,10 @@
 import React from "react";
 import { Spacer } from "../../UI/spacer/spacer";
 import { Col, Row } from "../../UI/Grid";
-import { useRouter } from "next/navigation";
 import { skillsData } from "@/consts/localDB";
 import { SkillsCard } from "./SkillsCard";
 
 function About() {
-  const router = useRouter();
-  // add circle animation on border on hover
-  // add icons on hero: redux,nodejs,github
   return (
     <div>
       <Row>

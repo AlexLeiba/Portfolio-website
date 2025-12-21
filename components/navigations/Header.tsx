@@ -17,6 +17,7 @@ function Header() {
 
       if (currentScroll <= 100) {
         setIsVisible(true);
+        return;
       }
       if (currentScroll > prevScrollRef.current) {
         setIsVisible(false);

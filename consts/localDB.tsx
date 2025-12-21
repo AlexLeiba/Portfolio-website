@@ -932,23 +932,6 @@ export const skillsData: SkillsType[] = [
 
 export const floatingIcons = [
   {
-    source: "/rocket.svg",
-    width: 20,
-    height: 20,
-    animate: {
-      translateY: 500,
-      transition: { duration: 100 },
-      translateX: -4000,
-      rotate: -20,
-      scale: -1,
-    },
-    className: "absolute top-[100px] right-[-200px] cursor-move rotate-45",
-    image: {
-      className: "rotate-[220deg]",
-    },
-  },
-
-  {
     source: "/categories/React.svg",
     width: 40,
     height: 40,
@@ -958,7 +941,8 @@ export const floatingIcons = [
       rotate: 360,
       transition: { duration: 15 },
     },
-    className: "absolute top-0 left-0 cursor-move",
+    className:
+      "absolute top-0 left-0 cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
       className: "",
     },
@@ -968,64 +952,68 @@ export const floatingIcons = [
     width: 50,
     height: 50,
     animate: {
-      translateY: -500,
+      translateY: 500,
       rotate: 20,
-      transition: { duration: 50 },
+      transition: { duration: 20 },
       scale: 1,
     },
-    className: "absolute bottom-0 right-0 cursor-move",
+    className:
+      "absolute top-0 right-0 cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
       className: "",
     },
   },
   {
     source: "/categories/tailwind.svg",
-    width: 30,
-    height: 30,
+    width: 25,
+    height: 25,
     animate: {
       translateX: 110,
       rotate: 360,
       translateY: 100,
       transition: { duration: 20 },
     },
-    className: "absolute top-[20%] -left-[100px] cursor-move",
+    className:
+      "absolute top-[20%] -left-[100px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
       className: "",
     },
   },
   {
     source: "/categories/TypeScript.svg",
-    width: 30,
-    height: 30,
+    width: 25,
+    height: 25,
     animate: {
       translateX: -150,
       rotate: 30,
       transition: { duration: 20 },
       scale: 1,
     },
-    className: "absolute top-[5%] -right-[100px] sm:-right-[150px] cursor-move",
+    className:
+      "absolute top-[5%] -right-[100px] sm:-right-[150px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
       className: "",
     },
   },
   {
     source: "/categories/JavaScript.svg",
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
     animate: {
       translateX: 50,
       translateY: 60,
       transition: { duration: 20 },
     },
-    className: "absolute top-[50%] -left-[50px] cursor-move",
+    className:
+      "absolute top-[50%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
       className: "",
     },
   },
   {
     source: "/categories/CSS.svg",
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
     animate: {
       translateX: 100,
       rotate: 180,
@@ -1034,22 +1022,24 @@ export const floatingIcons = [
       transition: { duration: 20 },
       scale: -1,
     },
-    className: "absolute top-[35%] -left-[50px] cursor-move",
+    className:
+      "absolute top-[35%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
       className: "",
     },
   },
   {
     source: "/categories/HTML.svg",
-    width: 60,
-    height: 60,
+    width: 30,
+    height: 30,
     animate: {
       translateX: 60,
       rotate: 180,
       transition: { duration: 30 },
       scale: -1,
     },
-    className: "absolute top-[50%] -left-[50px] cursor-move",
+    className:
+      "absolute top-[50%] -left-[50px] cursor-move hover:drop-shadow-[#6b8dff_0px_0px_10px] dark:hover:drop-shadow-[white_0px_0px_10px] transition-all",
     image: {
       className: "",
     },
