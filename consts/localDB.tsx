@@ -564,7 +564,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/JavaScript.svg"
         width={40}
         height={40}
-        alt="JavaScript"
+        alt="JS icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -579,7 +579,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/TypeScript.svg"
         width={40}
         height={40}
-        alt="TypeScript"
+        alt="TS icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -594,7 +594,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/React.svg"
         width={40}
         height={40}
-        alt="React.js"
+        alt="React icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -609,7 +609,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/NextJS.svg"
         width={40}
         height={40}
-        alt="NextJS"
+        alt="Next icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -624,7 +624,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/React.svg"
         width={40}
         height={40}
-        alt="React Native"
+        alt="RN icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -639,7 +639,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/HTML.svg"
         width={40}
         height={40}
-        alt="HTML"
+        alt="HTML icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -654,7 +654,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/CSS.svg"
         width={40}
         height={40}
-        alt="CSS"
+        alt="CSS icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -669,7 +669,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/Tailwind.svg"
         width={40}
         height={40}
-        alt="Tailwind"
+        alt="Tailwind icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -684,7 +684,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/styled.svg"
         width={40}
         height={40}
-        alt="styled-components"
+        alt="styled-components icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -699,7 +699,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/scss.svg"
         width={40}
         height={40}
-        alt="scss"
+        alt="scss icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -714,7 +714,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/redux.webp"
         width={40}
         height={40}
-        alt="Redux"
+        alt="Redux icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover "
       />
     ),
@@ -729,7 +729,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/zustand.svg"
         width={70}
         height={70}
-        alt="Zustand"
+        alt="Zustand icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain "
       />
     ),
@@ -744,7 +744,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/GraphQL.svg"
         width={40}
         height={40}
-        alt="Git"
+        alt="GraphQL icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -759,7 +759,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/NodeJS.svg"
         width={40}
         height={40}
-        alt="NodeJS"
+        alt="NodeJS icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -774,7 +774,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/prisma.svg"
         width={40}
         height={40}
-        alt="prisma"
+        alt="prisma icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -789,7 +789,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/mongodb.svg"
         width={40}
         height={40}
-        alt="mongodb"
+        alt="mongodb icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -804,7 +804,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/ExpressJS.svg"
         width={40}
         height={40}
-        alt="ExpressJS"
+        alt="ExpressJS icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -819,7 +819,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/react-hook-form.svg"
         width={40}
         height={40}
-        alt="react hook form"
+        alt="react hook form icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover"
       />
     ),
@@ -834,7 +834,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/formik.webp"
         width={40}
         height={40}
-        alt="Formik"
+        alt="Formik icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover"
       />
     ),
@@ -849,7 +849,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/zod.webp"
         width={40}
         height={40}
-        alt="Zod"
+        alt="Zod icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover"
       />
     ),
@@ -864,7 +864,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/jest.svg"
         width={40}
         height={40}
-        alt="Jest"
+        alt="Jest icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-cover"
       />
     ),
@@ -880,7 +880,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/GIT.svg"
         width={40}
         height={40}
-        alt="Git"
+        alt="Git icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -895,7 +895,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/github.svg"
         width={40}
         height={40}
-        alt="Github"
+        alt="Github icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),
@@ -910,7 +910,7 @@ export const skillsData: SkillsType[] = [
         src="/categories/jira.svg"
         width={40}
         height={40}
-        alt="Jira"
+        alt="Jira icon"
         className=" shadow-lg rounded-full w-[50px] h-[50px] object-contain"
       />
     ),

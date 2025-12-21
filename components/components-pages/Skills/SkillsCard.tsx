@@ -5,7 +5,6 @@ import { COLORS } from "@/consts/colors";
 import { SkillsType } from "@/consts/localDB";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 type Props = {
@@ -13,8 +12,6 @@ type Props = {
   index: number;
 };
 export function SkillsCard({ data, index }: Props) {
-  const router = useRouter();
-
   return (
     <Col key={index} className="w-full lg:mb-6 mb-3 " lg={2} md={2}>
       <div
