@@ -2,11 +2,7 @@
 import React from "react";
 import { Spacer } from "../../UI/spacer/spacer";
 import { Col, Row } from "../../UI/Grid";
-import { Button } from "../../UI/Button/Button";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
 import { projectsData } from "@/consts/localDB";
-import { ArrowDown } from "lucide-react";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
