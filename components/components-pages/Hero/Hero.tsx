@@ -32,16 +32,14 @@ function Hero() {
             <UserIllustration type="desktop" />
           </Sphere>
 
-          <div className=" flex justify-center flex-col items-center z-40">
-            <div>
-              <div className="font-bold text-center z-40 ">
-                <Greeting />
+          <div className=" flex justify-center flex-col items-center z-40 h-full">
+            <div className="font-bold text-center z-40 ">
+              <Greeting />
 
-                <DownloadPdf />
-              </div>
-
-              <FloatingIcons />
+              <DownloadPdf />
             </div>
+
+            <FloatingIcons />
           </div>
         </Col>
       </Row>

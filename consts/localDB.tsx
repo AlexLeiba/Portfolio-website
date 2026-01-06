@@ -134,6 +134,26 @@ export type ProjectsType = {
 
 export const projectsData: ProjectsType[] = [
   {
+    id: 4,
+    title: "Ledidi",
+    description:
+      "Ledidi is SaaS platform that offers a complete solution that enables users to securely collect, organise, analyse, and visualise data. The platform is specifically designed to facilitate collaboration within a secure digital environment for healthcare professionals and researchers. The pictures and descriptions were downloaded from: https://enovatika.com/en/work/ledidi ",
+    techUsed: [""],
+    github: "",
+    website: "https://ledidi.com/",
+
+    icon: {
+      src: "/projects/ledidi-web-1.webp",
+
+      alt: "ledidi",
+    },
+    icon2: {
+      src: "/projects/ledidi-web-2.webp",
+
+      alt: "ledidi",
+    },
+  },
+  {
     id: 1,
     title: "Wonderland Essentials",
     description:

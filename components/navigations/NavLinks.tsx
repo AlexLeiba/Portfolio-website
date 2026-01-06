@@ -37,7 +37,7 @@ function AuthLinks() {
 
       {/* DESKTOP NAVBAR */}
 
-      <div className=" gap-8 font-bold md:flex lg:flex hidden dark:text-baseline-100 navigation-links ">
+      <div className=" gap-8 font-bold md:flex lg:flex hidden dark:text-baseline-100  ">
         <>
           <Link href="#about" title="About me">
             <p className="text-sm dark:text-baseline-200 ">About me</p>
@@ -61,7 +61,7 @@ function AuthLinks() {
       <div
         className={cn(
           openBurgerMenu ? "translate-x-0" : "translate-x-full",
-          "mt-14  h-screen   w-full z-10 fixed inset-0 text-white font-bold",
+          "mt-14  h-screen w-full z-10 fixed inset-0 text-white font-bold",
           "transition-all duration-200 ease-in-out bg-black"
         )}
       >

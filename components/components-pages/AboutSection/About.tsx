@@ -71,14 +71,14 @@ function About() {
       <Row>
         {aboutMeData.map((data, index) => {
           return (
-            <Col key={index} className="w-full" lg={data.col}>
+            <Col key={index} lg={data.col}>
               <div data-aos-delay={index * 100} data-aos="fade-up">
                 <AboutCard data={data} />
               </div>
             </Col>
           );
         })}
-        <Col className="w-full">
+        <Col>
           <div
             data-aos-delay={100}
             data-aos="fade-left"

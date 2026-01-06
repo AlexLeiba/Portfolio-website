@@ -12,12 +12,17 @@ import { PersonalProjectsIndicator } from "./PersonalProjectsIndicator";
 function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
   return (
     <div>
-      {index === 5 && <PersonalProjectsIndicator />}
+      {index === 6 && <PersonalProjectsIndicator />}
 
       <div className="flex gap-12 justify-between items-center relative">
         {/* DESKTOP */}
         {index % 2 !== 0 && (
-          <div className={cn(" md:hidden sm:hidden ")}>
+          <div
+            className={cn(
+              index === 9 && "mb-64",
+              "md:w-[350px] md:hidden sm:hidden "
+            )}
+          >
             <div data-aos="fade-up w-full">
               <DesktopImage>
                 <Image
@@ -33,18 +38,25 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
             <div
               data-aos="fade-left"
               className={cn(
-                index === 8
+                index === 9
                   ? "left-0 top-[412px]"
-                  : "top-20 right-[550px] md:right-[300px]",
+                  : "top-20 right-[430px] md:right-[300px]",
                 "absolute"
               )}
               data-aos-delay={500}
             >
-              <MobileImage>
+              <MobileImage
+                className={cn(
+                  index === 9 && "h-[370px]  aspect-video w-[622.22px]"
+                )}
+              >
                 <Image
                   sizes="500px 250px"
+                  className={cn(
+                    " object-cover object-top shadow-lg ",
+                    index !== 9 && "rounded-lg"
+                  )}
                   fill
-                  className=" object-cover object-top shadow-lg rounded-lg"
                   src={data.icon2.src}
                   alt={data.icon2.alt}
                 />
@@ -73,7 +85,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
             <Description
               className={cn(
                 index % 2 !== 0 ? "lg:mr-2 md:mr-2" : "lg:ml-2 md:ml-2",
-                "max-w-[450px]  text-sm  dark:text-baseline-100 whitespace-pre-wrap absolute"
+                "max-w-[415px]  text-sm  dark:text-baseline-100 whitespace-pre-wrap absolute"
               )}
               description={data.description}
             />
@@ -157,7 +169,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
         {index % 2 === 0 && (
           <div
             className={cn(
-              index === 8 && "mb-64",
+              index === 0 && "mb-64",
               "md:w-[350px] md:hidden sm:hidden "
             )}
           >
@@ -175,7 +187,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
 
             <div
               className={cn(
-                index === 8
+                index === 0
                   ? "right-0 top-[412px]"
                   : "top-20 right-[430px] md:right-[300px]",
                 "absolute"
@@ -185,12 +197,15 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
             >
               <MobileImage
                 className={cn(
-                  index === 8 && "h-[370px]  aspect-video w-[657.77px]"
+                  index === 0 && "h-[370px]  aspect-video w-[622.22px]"
                 )}
               >
                 <Image
                   sizes="500px 250px"
-                  className=" object-cover object-top shadow-lg rounded-lg"
+                  className={cn(
+                    " object-cover object-top shadow-lg ",
+                    index !== 0 && "rounded-lg"
+                  )}
                   src={data.icon2.src}
                   fill
                   alt={data.icon2.alt}
