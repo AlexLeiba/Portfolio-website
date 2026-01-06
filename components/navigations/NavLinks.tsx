@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { UnderlineLink } from "./UnderlineLink";
 
 function AuthLinks() {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false);
@@ -37,22 +38,31 @@ function AuthLinks() {
 
       {/* DESKTOP NAVBAR */}
 
-      <div className=" gap-8 font-bold md:flex lg:flex hidden dark:text-baseline-100  ">
+      <div className=" gap-8 font-bold md:flex lg:flex hidden  text-white  ">
         <>
-          <Link href="#about" title="About me">
-            <p className="text-sm dark:text-baseline-200 ">About me</p>
+          <Link href="#about" title="About me" className="group">
+            <p className="text-sm ">About me</p>
+            <UnderlineLink />
           </Link>
-          <Link href="#projects" title="Projects">
+          <Link href="#projects" title="Projects" className="group">
             <p className="text-sm">Projects</p>
+            <UnderlineLink />
           </Link>
-          <Link href="#personal-projects" title="Personal projects">
+          <Link
+            href="#personal-projects"
+            title="Personal projects"
+            className="group"
+          >
             <p className="text-sm">Personal projects</p>
+            <UnderlineLink />
           </Link>
-          <Link href="#skills" title="Skills">
+          <Link href="#skills" title="Skills" className="group">
             <p className="text-sm">Skills</p>
+            <UnderlineLink />
           </Link>
-          <Link href="#contact" title="Contact">
+          <Link href="#contact" title="Contact" className="group">
             <p className="text-sm">Contact</p>
+            <UnderlineLink />
           </Link>
         </>
       </div>

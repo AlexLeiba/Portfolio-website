@@ -15,7 +15,7 @@ function Header() {
     function handleHeaderOnScroll() {
       const currentScroll = window.pageYOffset;
 
-      if (currentScroll <= 100) {
+      if (currentScroll <= 120) {
         setIsVisible(true);
         return;
       }
@@ -39,7 +39,7 @@ function Header() {
     <div
       className={cn(
         isVisible ? "translate-y-0" : "-translate-y-[54px]",
-        " p-4  dark:bg-black bg-[#6b8dff]  fixed top-0 left-0 right-0  z-50 transition-all ease-in-out duration-300 shadow-md"
+        " p-4  dark:bg-black bg-[#6b8dff]  fixed top-0 left-0 right-0  z-50 transition-all ease-in-out duration-300 "
       )}
     >
       <Container spacing="none" variant={"fluid"} className="">
