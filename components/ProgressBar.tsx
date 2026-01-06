@@ -24,7 +24,7 @@ export function ProgressBar() {
     <div className={cn("absolute bottom-0 right-0 left-0 z-50")}>
       <div
         style={{ width: `${progress < 10 ? 0 : progress}%` }}
-        className={` dark:bg-[linear-gradient(to_right,var(--secondary-700),var(--secondary-500),var(--error-400),var(--error-200),var(--error-50))] bg-black h-[2px] transition-all  `}
+        className={` dark:bg-[linear-gradient(to_right,var(--secondary-700),var(--secondary-500),var(--error-400),var(--error-200))] bg-black h-[2px] transition-all  `}
       />
     </div>
   );

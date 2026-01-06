@@ -98,7 +98,7 @@ export const aboutMeData: {
     title: "My Projects",
     description: [
       {
-        title: "Check the projects I developed in company.",
+        title: "Check the projects I developed in Team.",
         description: [],
         link: "#projects",
       },
