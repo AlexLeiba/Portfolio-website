@@ -9,10 +9,11 @@ export function Description({
   description,
   ...rest
 }: { description: string } & React.HTMLAttributes<HTMLButtonElement>) {
-  const [expnded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   return (
     <button
-      onClick={() => setExpanded(!expnded)}
+      title={expanded ? "Read less" : "Read more"}
+      onClick={() => setExpanded(!expanded)}
       className={cn(
         [
           "dark:bg-black bg-white shadow-md  dark:ring-1 dark:outline-gray-100 p-2 rounded-md hover:shadow-xl group transition-all",
@@ -28,15 +29,15 @@ export function Description({
       />
       <div className="relative z-20">
         <p className="z-20 text-left">
-          {description.substring(0, expnded ? description.length : 100) +
-            (expnded ? "" : "...")}
+          {description.substring(0, expanded ? description.length : 150) +
+            (expanded ? "" : "...")}
         </p>
         <div
           className="text-primary-400 flex justify-end group-hover:underline z-20"
-          onClick={() => setExpanded(!expnded)}
+          onClick={() => setExpanded(!expanded)}
         >
-          <p>{expnded ? "Read less" : "Read more"}</p>
-          {expnded ? <ChevronUp /> : <ChevronDown />}
+          <p>{expanded ? "Read less" : "Read more"}</p>
+          {expanded ? <ChevronUp /> : <ChevronDown />}
         </div>
       </div>
     </button>

@@ -29,18 +29,14 @@ export default function Home() {
             <Skills />
           </Container>
         </Row>
-      </Container>
 
-      <Container variant={"fluid"} spacing="none" className="relative z-10">
         <Row className="flex flex-col">
           <Container id="projects" spacing="none">
             <Spacer size={24} />
             <Projects />
           </Container>
         </Row>
-      </Container>
 
-      <Container variant={"fluid"} spacing="none" className="relative z-10">
         <Row className="flex flex-col">
           <Container id="contact" spacing="none">
             <Contact />

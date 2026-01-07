@@ -8,6 +8,8 @@ import { Description } from "./Description";
 import Image from "next/image";
 import { DesktopImage, MobileImage } from "./ProjectImages";
 import { PersonalProjectsIndicator } from "./PersonalProjectsIndicator";
+import { Separator } from "./Separator";
+import { TechUsed } from "./TechUsed";
 
 function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
   return (
@@ -79,7 +81,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
           <div
             className={cn(
               index % 2 !== 0 ? "justify-end " : "justify-start ",
-              "w-full flex mb-[110px]"
+              "w-full flex md:mb-[130px] mb-[150px]"
             )}
           >
             <Description
@@ -91,22 +93,12 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
             />
           </div>
           <div className="flex gap-4 flex-col lg:w-[500px] w-full">
-            <div
-              className={cn(
-                "flex gap-4 flex-wrap w-full",
-                index % 2 !== 0 ? "justify-end " : "justify-start "
-              )}
-            >
-              {data.techUsed.map((tech, index) => {
-                return (
-                  <div key={index}>
-                    <p className="font-bold text-baseline-400" key={index}>
-                      {tech}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+            <TechUsed
+              data={data.techUsed}
+              className={
+                index % 2 !== 0 ? "justify-end pl-10" : "justify-start pr-10"
+              }
+            />
             {/* SEPARATOR */}
             <div
               className={cn(
@@ -114,16 +106,16 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
                 index % 2 !== 0 ? "justify-end" : "justify-start"
               )}
             >
-              <div className={"h-[0.5px] w-[50%] bg-black dark:bg-white"} />
+              <Separator />
             </div>
             <div className={cn(index % 2 !== 0 && "justify-end", "flex gap-4")}>
-              <Link href={data.website} target="_blank">
+              <Link href={data.website} target="_blank" title={data.website}>
                 <Button className="text-primary-400 underline" variant={"link"}>
                   Website
                 </Button>
               </Link>
               {data.github && (
-                <Link href={data.github} target="_blank">
+                <Link href={data.github} target="_blank" title={data.github}>
                   <Button
                     className="text-primary-400 underline"
                     variant={"link"}
@@ -169,7 +161,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
         {index % 2 === 0 && (
           <div
             className={cn(
-              index === 0 && "mb-64",
+              (index === 0 || index === 10) && "mb-64",
               "md:w-[350px] md:hidden sm:hidden "
             )}
           >
@@ -187,7 +179,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
 
             <div
               className={cn(
-                index === 0
+                index === 0 || index === 10
                   ? "right-0 top-[412px]"
                   : "top-20 right-[430px] md:right-[300px]",
                 "absolute"
@@ -197,14 +189,15 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
             >
               <MobileImage
                 className={cn(
-                  index === 0 && "h-[370px]  aspect-video w-[622.22px]"
+                  (index === 0 || index === 10) &&
+                    "h-[370px]  aspect-video w-[622.22px]"
                 )}
               >
                 <Image
                   sizes="500px 250px"
                   className={cn(
                     " object-cover object-top shadow-lg ",
-                    index !== 0 && "rounded-lg"
+                    index !== 0 && index !== 10 && "rounded-lg"
                   )}
                   src={data.icon2.src}
                   fill

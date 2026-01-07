@@ -340,7 +340,6 @@ export const projectsData: ProjectsType[] = [
       "React.js",
       "TypeScript",
       "Redux Toolkit",
-      "Custom components",
       "Node.js",
       "Express.js",
       "MongoDB",
@@ -375,6 +374,22 @@ export const projectsData: ProjectsType[] = [
     icon2: {
       src: "/projects/eshop-admin-products.webp",
       alt: "eshop-admin-products",
+    },
+  },
+  {
+    id: 19,
+    title: "Design System Storybook",
+    description: `"The Design System Storybook is a set of reusable components created without ChatGPT or other AI and without additional libraries on purpose. It was developed as a way of testing and showing the ability of a developer to create a design system which can be fully customizable and used in any project. In the future I will improve and extend the current components and add new ones. "`,
+    techUsed: ["React.js", "Tailwind", "TypeScript", "Storybook"],
+    github: "https://github.com/AlexLeiba/Design-system-storybook",
+    website: "https://designsystem-storybook.netlify.app",
+    icon: {
+      src: "/projects/design-system-1.webp",
+      alt: "wt-blogs",
+    },
+    icon2: {
+      src: "/projects/design-system-2.webp",
+      alt: "wt-blogs mobile",
     },
   },
   {
@@ -454,6 +469,7 @@ export const projectsData: ProjectsType[] = [
       alt: "wt-blogs mobile",
     },
   },
+
   {
     id: 14,
     title: "Chat me",
