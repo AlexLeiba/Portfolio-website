@@ -398,11 +398,11 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
     website: "https://designsystem-storybook.netlify.app",
     icon: {
       src: "/projects/design-system-1.webp",
-      alt: "wt-blogs",
+      alt: "design system 1",
     },
     icon2: {
       src: "/projects/design-system-2.webp",
-      alt: "wt-blogs mobile",
+      alt: "design system 2",
     },
   },
   {
