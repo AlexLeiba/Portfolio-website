@@ -379,7 +379,20 @@ export const projectsData: ProjectsType[] = [
   {
     id: 19,
     title: "Design System Storybook",
-    description: `"The Design System Storybook is a set of reusable components created without ChatGPT or other AI and without additional libraries on purpose. It was developed as a way of testing and showing the ability of a developer to create a design system which can be fully customizable and used in any project. In the future I will improve and extend the current components and add new ones. "`,
+    description: `"The Design System Storybook is a collection of reusable and customizable components built according to the following principles: compound component architecture, accessibility, customization, and responsiveness.
+
+It was intentionally created without ChatGPT or other AI technologies, and without additional libraries, to maintain full control over the architecture and implementation.
+
+Composition:
+Almost every component follows a composable interface architecture, making them predictable, flexible, and easy to extend.
+
+Customization:
+Each component exposes specific className props that allow styling of the entire component structure. In addition, the compound component architecture enables direct access to individual subcomponents for styling or data injection.
+
+Accessibility:
+All components are fully accessible, supporting keyboard navigation, semantic HTML elements, appropriate alt and title attributes, and other accessibility best practices.
+
+In the future, I plan to improve , extend , test with Jest and introduce new ones."`,
     techUsed: ["React.js", "Tailwind", "TypeScript", "Storybook"],
     github: "https://github.com/AlexLeiba/Design-system-storybook",
     website: "https://designsystem-storybook.netlify.app",
