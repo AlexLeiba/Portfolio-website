@@ -1,4 +1,3 @@
-import { ProjectsType } from "@/consts/localDB";
 import { cn } from "@/lib/utils";
 import React, { ComponentProps } from "react";
 

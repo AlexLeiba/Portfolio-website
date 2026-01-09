@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Button } from "@/components/UI/Button/Button";
-import { ProjectsType } from "@/consts/localDB";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Description } from "./Description";
@@ -10,6 +9,7 @@ import { DesktopImage, MobileImage } from "./ProjectImages";
 import { PersonalProjectsIndicator } from "./PersonalProjectsIndicator";
 import { Separator } from "./Separator";
 import { TechUsed } from "./TechUsed";
+import { ProjectsType } from "@/consts/types";
 
 function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
   return (

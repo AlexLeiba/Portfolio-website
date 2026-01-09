@@ -1,5 +1,4 @@
-import { BackgroundGradientAnimation } from "@/components/UI/BackgroundGradientAnimation";
-import { AboutMeType } from "@/consts/localDB";
+import { AboutMeType } from "@/consts/types";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 

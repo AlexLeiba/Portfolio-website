@@ -2,7 +2,7 @@
 import { BackgroundGradientAnimation } from "@/components/UI/BackgroundGradientAnimation";
 import { Col } from "@/components/UI/Grid";
 import { COLORS } from "@/consts/colors";
-import { SkillsType } from "@/consts/localDB";
+import { SkillsType } from "@/consts/types";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";

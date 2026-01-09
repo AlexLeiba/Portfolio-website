@@ -10,15 +10,9 @@ import {
   MonitorCog,
 } from "lucide-react";
 import Image from "next/image";
+import { AboutMeType, ProjectsType, SkillsType } from "./types";
 
-export type AboutMeType = (typeof aboutMeData)[number];
-
-export const aboutMeData: {
-  title: string;
-  description: { title: string; description: string[]; link?: string }[];
-  icon: React.JSX.Element;
-  col: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
-}[] = [
+export const aboutMeData: AboutMeType[] = [
   {
     title: "Education",
     description: [
@@ -113,24 +107,6 @@ export const aboutMeData: {
     col: 6,
   },
 ];
-
-export type ProjectsType = {
-  id: number;
-  title: string;
-  description: string;
-  techUsed: string[];
-  github: string;
-  website: string;
-
-  icon: {
-    src: string;
-    alt: string;
-  };
-  icon2: {
-    src: string;
-    alt: string;
-  };
-};
 
 export const projectsData: ProjectsType[] = [
   {
@@ -593,14 +569,6 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
     },
   },
 ];
-
-export type SkillsType = {
-  title: string;
-  percentage?: number;
-  icon: React.JSX.Element;
-  link: string;
-  linkTitle: string;
-};
 
 export const skillsData: SkillsType[] = [
   {
