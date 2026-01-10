@@ -21,7 +21,7 @@ export const aboutMeData: AboutMeType[] = [
         description: [
           " • High school diploma",
           " • IT school - Front end development school",
-          " • Meta - Front end development specialisation",
+          " • Meta - Front end development specialization",
           " • Burlington english school",
         ],
       },
@@ -36,7 +36,7 @@ export const aboutMeData: AboutMeType[] = [
         title: "",
         description: [
           " • IT School - Web development certificate",
-          " • Meta - Front-end development specialisation certificate",
+          " • Meta - Front-end development specialization certificate",
           " • IBM - Developing Back-End Apps with Node.js and Express.js",
           " • Skillup online - React Native: Developing Android and iOS Apps ",
           " • Meta - React Advanced",
