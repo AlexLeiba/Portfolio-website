@@ -19,10 +19,10 @@ export const aboutMeData: AboutMeType[] = [
       {
         title: "",
         description: [
-          " • Baccalaureate - 2000-2012",
-          " • IT school - Front end development school - 2021-2022",
-          " • Meta - Front end development course - 2025",
-          " • Burlington english school -  2022",
+          " • High school diploma",
+          " • IT school - Front end development school",
+          " • Meta - Front end development specialisation",
+          " • Burlington english school",
         ],
       },
     ],
@@ -35,11 +35,12 @@ export const aboutMeData: AboutMeType[] = [
       {
         title: "",
         description: [
-          " • IT School - Web development",
-          " • Meta - Front-end development specialisation ",
+          " • IT School - Web development certificate",
+          " • Meta - Front-end development specialisation certificate",
           " • IBM - Developing Back-End Apps with Node.js and Express.js",
           " • Skillup online - React Native: Developing Android and iOS Apps ",
           " • Meta - React Advanced",
+          " • Meta - Principles of UX/UI Design",
           " • Burlington english certificate",
         ],
       },
