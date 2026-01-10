@@ -79,7 +79,7 @@ export const aboutMeData: AboutMeType[] = [
     description: [
       {
         title: " • Front end",
-        description: ["20 + projects completed as a front end developer."],
+        description: ["25 + projects completed as a front end developer."],
       },
       {
         title: " • Full stack",
