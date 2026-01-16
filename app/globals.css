@@ -411,21 +411,21 @@ select:focus {
 @keyframes lightBulbAnimation {
   0% {
     opacity: 0;
-    bottom: 200px;
-    right: 160px;
+    bottom: 100px;
+    right: 200px;
     scale: 0.5;
   }
   50% {
     opacity: 0.5;
-    bottom: 250px;
-    right: 120px;
+    bottom: 200px;
+    right: 180px;
     scale: 1;
   }
 
   100% {
     opacity: 1;
-    bottom: 300px;
-    right: 80px;
+    bottom: 250px;
+    right: 160px;
     scale: 1.5;
   }
 }

@@ -38,7 +38,7 @@ export function UserIllustration({ type }: Props) {
             {lightBulb ? (
               <Image
                 className="object-contain  hover:drop-shadow-[white_0px_4px_10px] lightBulb "
-                src={"/user/Light-Bulb-1.webp"}
+                src={"/user/lightBulbOn.svg"}
                 alt="illustration"
                 draggable="false"
                 width={30}
@@ -50,7 +50,7 @@ export function UserIllustration({ type }: Props) {
             ) : (
               <Image
                 className="object-contain hover:drop-shadow-[white_0px_4px_10px] lightBulb "
-                src={"/user/Light-Bulb-2.webp"}
+                src={"/user/lightBulbOff.svg"}
                 alt="illustration"
                 draggable="false"
                 width={30}
@@ -65,7 +65,7 @@ export function UserIllustration({ type }: Props) {
           <div className=" relative lg:w-[500px] lg:h-[400px]  md:h-[400px] md:w-[500px] w-[200px] h-[400px]   ">
             <Image
               className="object-contain object-top  dark:opacity-100  opacity-0  hero-illustration-dark"
-              src={"/user/Darkness-2.webp"}
+              src={"/user/lightOffUser.svg"}
               alt="illustration"
               draggable="false"
               fill
@@ -74,7 +74,7 @@ export function UserIllustration({ type }: Props) {
             {!lightBulb ? (
               <Image
                 className="object-contain object-top  opacity-0 hero-illustration-dark"
-                src={"/user/Dark-Theme.webp"}
+                src={"/user/darkUser.svg"}
                 alt="illustration"
                 draggable="false"
                 fill
@@ -83,7 +83,7 @@ export function UserIllustration({ type }: Props) {
             ) : (
               <Image
                 className="object-contain object-top dark:opacity-0 opacity-100"
-                src={"/user/Light-Bulb-On.webp"}
+                src={"/user/lightOnUser.svg"}
                 alt="illustration"
                 draggable="false"
                 fill
@@ -94,7 +94,7 @@ export function UserIllustration({ type }: Props) {
 
             <Image
               className="object-contain object-top dark:opacity-0 opacity-100"
-              src={"/user/Light-Theme.webp"}
+              src={"/user/lightUser.svg"}
               alt="illustration"
               draggable="false"
               fill
@@ -103,12 +103,12 @@ export function UserIllustration({ type }: Props) {
         </div>
       ) : (
         <div
-          className={cn(
-            " relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[300px] sm:h-[270px]   ",
-            "lg:hidden md:hidden block  "
-          )}
+        // className={cn(
+        //   " relative lg:w-[450px] lg:h-[350px]  h-[350px] w-[400px] sm:w-[300px] sm:h-[270px]   ",
+        //   "lg:hidden md:hidden block  "
+        // )}
         >
-          <Image
+          {/* <Image
             className="object-contain object-top  dark:opacity-100  opacity-0  hero-illustration-dark"
             src={"/user/Darkness-2.webp"}
             alt="illustration"
@@ -128,7 +128,7 @@ export function UserIllustration({ type }: Props) {
             alt="illustration"
             draggable="false"
             fill
-          />
+          /> */}
         </div>
       )}
     </>
