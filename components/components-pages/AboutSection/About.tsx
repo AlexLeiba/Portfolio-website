@@ -34,17 +34,21 @@ function About() {
           <p
             className={cn(
               "body-lg text-center line-clamp-2",
-              showMore ? "line-clamp-none" : "line-clamp-2"
+              showMore ? "line-clamp-none" : "line-clamp-2",
             )}
           >
             My name is Alexandru Leiba Lapteacru, and I am a Front-End Developer
-            passionate about creating tools that enhance user experiences and
-            solve real-world problems. I consider myself a creative person, and
-            this field allows me to design functionalities, craft intuitive
-            interfaces, and bring ideas to life—something that gives me a deep
-            sense of fulfillment. I also have experience working on large-scale
-            projects with cross-functional teams, where effective communication
-            and collaboration were key to achieving the best results.
+            specializing in React. I am passionate about creating tools that
+            enhance user experiences and solve real-world problems. I love
+            working in this field because I consider myself a creative person
+            who is always eager to grow and learn new things—something front-end
+            development constantly encourages. Designing functionality, crafting
+            intuitive interfaces, and bringing ideas to life gives me a deep
+            sense of fulfillment. I enjoy being a valuable part of a team,
+            collaborating to brainstorm the best ideas and best practices. I
+            have experience working on large-scale projects with
+            cross-functional teams, where effective communication and
+            collaboration were essential to achieving strong results.
           </p>
 
           <div
@@ -60,7 +64,7 @@ function About() {
               height={20}
               className={cn(
                 "transition-all",
-                showMore ? "rotate-180" : "rotate-0"
+                showMore ? "rotate-180" : "rotate-0",
               )}
             />
           </div>
