@@ -8,7 +8,7 @@ export function UserIllustration({ type }: Props) {
   const [lightBulb, setLightBulb] = useState(false);
   useEffect(() => {
     const darkImages = document.querySelectorAll<HTMLImageElement>(
-      ".hero-illustration-dark"
+      ".hero-illustration-dark",
     );
 
     if (!darkImages) return;
@@ -32,10 +32,10 @@ export function UserIllustration({ type }: Props) {
   return (
     <>
       {type === "desktop" ? (
-        <div className="absolute z-10 bottom-[95%]  left-[50%]  -translate-x-1/2 ">
+        <div className="absolute z-10 bottom-[98%]  left-[50%]  -translate-x-1/2 ">
           <button onClick={() => setLightBulb((prev) => !prev)}>
             {/* Light bulb */}
-            {lightBulb ? (
+            {/* {lightBulb ? (
               <Image
                 className="object-contain  hover:drop-shadow-[white_0px_4px_10px] lightBulb "
                 src={"/user/lightBulbOn.svg"}
@@ -59,19 +59,63 @@ export function UserIllustration({ type }: Props) {
                 loading="lazy"
                 unoptimized
               />
-            )}
+            )} */}
+            {/* <Image
+              className="object-contain  hover:drop-shadow-[white_0px_4px_10px] lightBulb dark:block hidden"
+              src={"/user/lightBulbOn.svg"}
+              alt="illustration"
+              draggable="false"
+              width={30}
+              height={30}
+              fetchPriority="high"
+              loading="lazy"
+              unoptimized
+            />
+            <Image
+              className="object-contain hover:drop-shadow-[white_0px_4px_10px] dark:hidden block  lightBulb "
+              src={"/user/lightBulbOff.svg"}
+              alt="illustration"
+              draggable="false"
+              width={30}
+              height={30}
+              fetchPriority="high"
+              loading="lazy"
+              unoptimized
+            /> */}
           </button>
 
-          <div className=" relative lg:w-[500px] lg:h-[400px]  md:h-[400px] md:w-[500px] w-[200px] h-[400px]   ">
+          <div className=" relative lg:w-[600px] lg:h-[550px]  md:h-[400px] md:w-[500px] w-[200px] h-[400px]   ">
             <Image
+              className="object-contain  hover:drop-shadow-[white_0px_4px_10px] lightBulb dark:block hidden"
+              src={"/user/lightBulbOn.svg"}
+              alt="illustration"
+              draggable="false"
+              width={30}
+              height={30}
+              fetchPriority="high"
+              loading="lazy"
+              unoptimized
+            />
+            <Image
+              className="object-contain hover:drop-shadow-[white_0px_4px_10px] dark:hidden block  lightBulb "
+              src={"/user/lightBulbOff.svg"}
+              alt="illustration"
+              draggable="false"
+              width={30}
+              height={30}
+              fetchPriority="high"
+              loading="lazy"
+              unoptimized
+            />
+            {/* <Image
               className="object-contain object-top  dark:opacity-100  opacity-0  hero-illustration-dark"
               src={"/user/lightOffUser.svg"}
               alt="illustration"
               draggable="false"
               fill
               unoptimized
-            />
-            {!lightBulb ? (
+            /> */}
+            {/* {!lightBulb ? (
               <Image
                 className="object-contain object-top  opacity-0 hero-illustration-dark"
                 src={"/user/darkUser.svg"}
@@ -90,10 +134,20 @@ export function UserIllustration({ type }: Props) {
                 loading="lazy"
                 fetchPriority="high"
               />
-            )}
+            )} */}
 
             <Image
-              className="object-contain object-top dark:opacity-0 opacity-100"
+              className="object-contain object-top   hero-illustration-dark hidden dark:block"
+              src={"/user/lightOnUser.svg"}
+              alt="illustration"
+              draggable="false"
+              fill
+              fetchPriority="high"
+            />
+
+            <Image
+              fetchPriority="high"
+              className="object-contain object-top dark:hidden block"
               src={"/user/lightUser.svg"}
               alt="illustration"
               draggable="false"

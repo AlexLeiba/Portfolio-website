@@ -33,22 +33,15 @@ function About() {
 
           <p
             className={cn(
-              "body-lg text-center line-clamp-2",
+              "body-lg text-center line-clamp-2 whitespace-pre-wrap ",
               showMore ? "line-clamp-none" : "line-clamp-2",
             )}
           >
-            My name is Alexandru Leiba Lapteacru, and I am a Front-End Developer
-            specializing in React. I am passionate about creating tools that
-            enhance user experiences and solve real-world problems. I love
-            working in this field because I consider myself a creative person
-            who is always eager to grow and learn new things—something front-end
-            development constantly encourages. Designing functionality, crafting
-            intuitive interfaces, and bringing ideas to life gives me a deep
-            sense of fulfillment. I enjoy being a valuable part of a team,
-            collaborating to brainstorm the best ideas and best practices. I
-            have experience working on large-scale projects with
-            cross-functional teams, where effective communication and
-            collaboration were essential to achieving strong results.
+            {` My name is Alexandru Leiba Lapteacru, and I am a Front-End Developer specializing in React. I am passionate about creating tools that enhance user experiences and solve real-world problems.
+
+I love working in this field because I consider myself a creative person who is always eager to grow and learn new things—something front-end development constantly encourages. Designing functionality, crafting intuitive interfaces, and bringing ideas to life gives me a deep sense of fulfillment.
+
+I enjoy being a valuable part of a team, collaborating to brainstorm the best ideas and best practices. I have experience working on large-scale projects with cross-functional teams, where effective communication and collaboration were essential to achieving strong results.`}
           </p>
 
           <div

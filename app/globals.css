@@ -202,13 +202,17 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    font-family: Fira Mono, monospace;
+    font-family:
+      Fira Mono,
+      monospace;
   }
   .body-block-quote {
     font-size: 20;
     line-height: 30px;
     font-weight: 400;
-    font-family: Playfair Display, serif;
+    font-family:
+      Playfair Display,
+      serif;
   }
 
   @media (max-width: 1295px) {
@@ -353,7 +357,7 @@ select:focus {
   }
 
   100% {
-    filter: brightness(1.5) drop-shadow(0 0 1rem #ffffff);
+    filter: brightness(2) drop-shadow(0 0 1rem #ffffff);
   }
 }
 
@@ -411,21 +415,27 @@ select:focus {
 @keyframes lightBulbAnimation {
   0% {
     opacity: 0;
-    bottom: 100px;
-    right: 200px;
+    bottom: 200px;
+    right: calc(50%);
+    scale: 0;
+  }
+  30% {
+    opacity: 0.3;
+    bottom: 230px;
+    right: calc(50% + 20px);
     scale: 0.5;
   }
-  50% {
-    opacity: 0.5;
-    bottom: 200px;
-    right: 180px;
+  60% {
+    opacity: 0.7;
+    bottom: 260px;
+    right: calc(50% + 60px);
     scale: 1;
   }
 
   100% {
     opacity: 1;
-    bottom: 250px;
-    right: 160px;
+    bottom: 300px;
+    right: calc(50% + 100px);
     scale: 1.5;
   }
 }
@@ -434,10 +444,11 @@ select:focus {
   z-index: 50;
   position: absolute;
 
-  animation: lightBulbAnimation 3s linear alternate,
-    glowAnimation 5s ease-in-out;
+  animation:
+    lightBulbAnimation 1s linear alternate,
+    glowAnimation 2s ease-in-out 2s infinite alternate-reverse;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
+  /* animation-iteration-count: 1; */
 }
 
 .blob {
