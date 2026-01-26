@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { Col, Container, Row } from "@/components/UI/Grid";
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/hooks/useThemeContext";
@@ -8,6 +8,7 @@ import { UserIllustration } from "./UserIllustration";
 import Greeting from "./Greeting";
 import FloatingIcons from "./FloatingIcons";
 import { Sphere } from "./Sphere";
+import { Spacer } from "@/components/UI/spacer/spacer";
 
 function Hero() {
   const { darkMode } = useTheme();
@@ -16,7 +17,7 @@ function Hero() {
     <Container
       variant={"fluid"}
       className={cn(
-        "relative overflow-hidden h-[calc(100vh)] flex flex-col justify-between items-center pb-0 lg:pb-0 md:pb-0"
+        "relative overflow-hidden h-[calc(100vh)] flex flex-col justify-between items-center pb-0 lg:pb-0 md:pb-0",
       )}
     >
       <Row>
@@ -24,7 +25,7 @@ function Hero() {
           {/* Background */}
           <div
             className={cn(
-              darkMode ? "backgroundDarkHero" : "backgroundLightHero"
+              darkMode ? "backgroundDarkHero" : "backgroundLightHero",
             )}
           />
 

@@ -310,11 +310,11 @@ select:focus {
     to bottom,
     #000,
     #251439 35%,
-    #020103 60%,
-    #000000 80%,
-    #000000 100%
+    #11091b 60%,
+    #11091b 60%,
+    #000000 70%
   );
-  transition: height 6s linear;
+  transition: height 6s ease-out;
 
   height: 100vh;
   position: absolute;
