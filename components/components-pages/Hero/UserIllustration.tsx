@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 type Props = {
   type: "mobile" | "desktop";
 };
 export function UserIllustration({ type }: Props) {
-  const [lightBulb, setLightBulb] = useState(false);
   useEffect(() => {
     const darkImages = document.querySelectorAll<HTMLImageElement>(
       ".hero-illustration-dark",
@@ -20,13 +19,8 @@ export function UserIllustration({ type }: Props) {
       }, 500);
     });
 
-    const timeoutId2 = setTimeout(() => {
-      setLightBulb(true);
-    }, 3000);
-
     return () => {
       clearTimeout(timeoutId);
-      clearTimeout(timeoutId2);
     };
   }, []);
   return (

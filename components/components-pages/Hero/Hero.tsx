@@ -1,5 +1,5 @@
 "use client";
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import { Col, Container, Row } from "@/components/UI/Grid";
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/hooks/useThemeContext";
@@ -8,7 +8,6 @@ import { UserIllustration } from "./UserIllustration";
 import Greeting from "./Greeting";
 import FloatingIcons from "./FloatingIcons";
 import { Sphere } from "./Sphere";
-import { Spacer } from "@/components/UI/spacer/spacer";
 
 function Hero() {
   const { darkMode } = useTheme();

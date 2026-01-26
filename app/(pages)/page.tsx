@@ -1,11 +1,15 @@
+import { lazy } from "react";
 import Hero from "@/components/components-pages/Hero/Hero";
 import About from "@/components/components-pages/AboutSection/About";
-import Contact from "@/components/components-pages/Contact";
-import Projects from "@/components/components-pages/Projects/Projects";
-import Skills from "@/components/components-pages/Skills/Skills";
-import { Container, Row } from "@/components/UI/Grid";
-import { Spacer } from "@/components/UI/spacer/spacer";
+
+import { Container } from "@/components/UI/Grid";
 import { BlobAnimation } from "@/components/UI/BlobAnimation";
+
+const LazySections = lazy(() =>
+  import("@/components/components-pages/LazySections").then((m) => ({
+    default: m.LazySections,
+  })),
+);
 
 export default function Home() {
   return (
@@ -15,34 +19,11 @@ export default function Home() {
       <Container variant={"fluid"} spacing="none" className="relative z-10">
         <BlobAnimation className="top-1/3 blur-lg left-0 blob  w-[700px] h-[300px]" />
         <BlobAnimation className="bottom-10 blur-md right-0 blob2  w-[600px] h-[400px]" />
-
-        <Row className="flex flex-col ">
-          <Container id="about">
-            <About />
-          </Container>
-        </Row>
+        <About />
       </Container>
 
       <Container variant={"fluid"} spacing="none" className="relative z-10">
-        <Row className="flex flex-col ">
-          <Container id="skills">
-            <Skills />
-          </Container>
-        </Row>
-
-        <Row className="flex flex-col">
-          <Container id="projects" spacing="none">
-            <Spacer size={24} />
-            <Projects />
-          </Container>
-        </Row>
-
-        <Row className="flex flex-col">
-          <Container id="contact" spacing="none">
-            <Contact />
-            <Spacer size={24} />
-          </Container>
-        </Row>
+        <LazySections />
       </Container>
     </>
   );

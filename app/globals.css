@@ -376,24 +376,6 @@ select:focus {
   initial-value: 0%;
 }
 
-.conic-gradient-parent:hover .conic-gradient {
-  /* --fill: 100%;
-  background: conic-gradient(
-    var(--secondary-900),
-    var(--secondary-700),
-    var(--error-400),
-    var(--yellow),
-    var(--yellow),
-    transparent var(--fill)
-  ); */
-}
-
-.conic-gradient {
-  /* z-index: -10;
-  transition: --fill 1s ease-in-out;
-  --fill: 0%; */
-}
-
 .skillsCard p {
   text-shadow: #2c2c2c 0px 0px 10px;
 }
