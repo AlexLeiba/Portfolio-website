@@ -14,7 +14,7 @@ import { ProjectsType } from "@/consts/types";
 function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
   return (
     <div>
-      {index === 6 && <PersonalProjectsIndicator />}
+      {index === 5 && <PersonalProjectsIndicator />}
 
       <div className="flex gap-12 justify-between items-center relative">
         {/* DESKTOP */}
@@ -22,7 +22,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
           <div
             className={cn(
               index === 9 && "mb-64",
-              "md:w-[350px] md:hidden sm:hidden "
+              "md:w-[350px] md:hidden sm:hidden ",
             )}
           >
             <div data-aos="fade-up w-full">
@@ -43,20 +43,20 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
                 index === 9
                   ? "left-0 top-[412px]"
                   : "top-20 right-[430px] md:right-[300px]",
-                "absolute"
+                "absolute",
               )}
               data-aos-delay={500}
             >
               <MobileImage
                 className={cn(
-                  index === 9 && "h-[370px]  aspect-video w-[622.22px]"
+                  index === 9 && "h-[370px]  aspect-video w-[622.22px]",
                 )}
               >
                 <Image
                   sizes="500px 250px"
                   className={cn(
                     " object-cover object-top shadow-lg ",
-                    index !== 9 && "rounded-lg"
+                    index !== 9 && "rounded-lg",
                   )}
                   fill
                   src={data.icon2.src}
@@ -70,24 +70,24 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
         <div
           className={cn(
             "flex flex-col gap-4 sm:w-full md:w-full",
-            index % 2 !== 0 && " text-end "
+            index % 2 !== 0 && " text-end ",
           )}
           data-aos="fade-up"
         >
           <p className="font-bold text-primary-400 !text-2xl">
-            {index + 1 < 10 ? "0" + (index + 1) : index + 1}
+            {index + 1 < 9 ? "0" + (index + 1) : index + 1}
           </p>
           <p className="text-xl font-bold">{data.title}</p>
           <div
             className={cn(
               index % 2 !== 0 ? "justify-end " : "justify-start ",
-              "w-full flex md:mb-[130px] mb-[150px]"
+              "w-full flex md:mb-[130px] mb-[150px]",
             )}
           >
             <Description
               className={cn(
                 index % 2 !== 0 ? "lg:mr-2 md:mr-2" : "lg:ml-2 md:ml-2",
-                "max-w-[415px]  text-sm  dark:text-baseline-100 whitespace-pre-wrap absolute"
+                "max-w-[415px]  text-sm  dark:text-baseline-100 whitespace-pre-wrap absolute",
               )}
               description={data.description}
             />
@@ -103,7 +103,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
             <div
               className={cn(
                 "w-full flex",
-                index % 2 !== 0 ? "justify-end" : "justify-start"
+                index % 2 !== 0 ? "justify-end" : "justify-start",
               )}
             >
               <Separator />
@@ -161,8 +161,8 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
         {index % 2 === 0 && (
           <div
             className={cn(
-              (index === 0 || index === 10) && "mb-64",
-              "md:w-[350px] md:hidden sm:hidden "
+              (index === 0 || index === 8) && "mb-64",
+              "md:w-[350px] md:hidden sm:hidden ",
             )}
           >
             <div data-aos="fade-up w-full">
@@ -179,25 +179,25 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
 
             <div
               className={cn(
-                index === 0 || index === 10
+                index === 0 || index === 8
                   ? "right-0 top-[412px]"
                   : "top-20 right-[430px] md:right-[300px]",
-                "absolute"
+                "absolute",
               )}
               data-aos="fade-right"
               data-aos-delay={500}
             >
               <MobileImage
                 className={cn(
-                  (index === 0 || index === 10) &&
-                    "h-[370px]  aspect-video w-[622.22px]"
+                  (index === 0 || index === 8) &&
+                    "h-[370px]  aspect-video w-[622.22px]",
                 )}
               >
                 <Image
                   sizes="500px 250px"
                   className={cn(
                     " object-cover object-top shadow-lg ",
-                    index !== 0 && index !== 10 && "rounded-lg"
+                    index !== 0 && index !== 8 && "rounded-lg",
                   )}
                   src={data.icon2.src}
                   fill

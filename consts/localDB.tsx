@@ -223,23 +223,23 @@ export const projectsData: ProjectsType[] = [
   //     />
   //   ),
   // },
-  {
-    id: 5,
-    title: "The Scaleup fest",
-    description:
-      "Designed for companies that have moved past the early stage , Scaleup Fest is built for scaleups actively navigating growth, market entry, expansion, investment-readiness, and exits. It’s also relevant for mid-sized companies and mature startups looking to learn from others, sharpen their growth strategy, or meet potential partners and investors.",
-    techUsed: [""],
-    github: "",
-    website: "https://thescaleupfest.com/",
-    icon: {
-      src: "/projects/scaleup-web.webp",
-      alt: "Scaleup Fest",
-    },
-    icon2: {
-      src: "/projects/scaleup-mobile.webp",
-      alt: "Scaleup Fest mobile",
-    },
-  },
+  // {
+  //   id: 5,
+  //   title: "The Scaleup fest",
+  //   description:
+  //     "Designed for companies that have moved past the early stage , Scaleup Fest is built for scaleups actively navigating growth, market entry, expansion, investment-readiness, and exits. It’s also relevant for mid-sized companies and mature startups looking to learn from others, sharpen their growth strategy, or meet potential partners and investors.",
+  //   techUsed: [""],
+  //   github: "",
+  //   website: "https://thescaleupfest.com/",
+  //   icon: {
+  //     src: "/projects/scaleup-web.webp",
+  //     alt: "Scaleup Fest",
+  //   },
+  //   icon2: {
+  //     src: "/projects/scaleup-mobile.webp",
+  //     alt: "Scaleup Fest mobile",
+  //   },
+  // },
   {
     id: 6,
     title: "Medforeldre",
