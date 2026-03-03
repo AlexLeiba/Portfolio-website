@@ -271,8 +271,8 @@ export const projectsData: ProjectsType[] = [
       "Shadcn",
       "Clerk",
     ],
-    github: "https://github.com/AlexLeiba/TaskMate",
-    website: "https://task-mate-five.vercel.app/",
+    github: "https://github.com/AlexLeiba/TaskMate-Task-Management-System",
+    website: "https://taskmate-task-management.vercel.app/",
     icon: {
       src: "/projects/task-mate-desktop.webp",
       alt: "taskmate",
