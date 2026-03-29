@@ -42,7 +42,7 @@ function ProjectCard({ data, index }: { data: ProjectsType; index: number }) {
               className={cn(
                 index === 9
                   ? "left-0 top-[412px]"
-                  : "top-20 right-[430px] md:right-[300px]",
+                  : "top-20 right-[480px] md:right-[300px]",
                 "absolute",
               )}
               data-aos-delay={500}

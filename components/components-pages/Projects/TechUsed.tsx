@@ -6,7 +6,7 @@ type Props = ComponentProps<"div"> & {
 };
 export function TechUsed({ className, data }: Props) {
   return (
-    <div className={cn("flex gap-3 flex-wrap ", className)}>
+    <div className={cn("flex gap-3 flex-wrap  ", className)}>
       {data.map((tech, index) => {
         return (
           <p

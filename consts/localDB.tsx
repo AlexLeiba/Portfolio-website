@@ -260,10 +260,11 @@ export const projectsData: ProjectsType[] = [
   {
     id: 7,
     title: "TaskMate",
-    description: `" TaskMate is an Agile Task Manager Web App that allows users to create, manage, assign, add attachments , comments and prioritize tasks and many other useful features. 
+    description: `" TaskMate is a Task management system web app that allows users to create, manage, assign, add attachments , comments and prioritize tasks and many other useful features. 
     It offers a clean ,intuitive and customizable interface, drag-and-drop functionality for lists and cards, and a large variety of beautiful backgrounds, making it easy for users to stay organized and focused while enjoying the beautiful design. "`,
     techUsed: [
       "Next.js",
+      "React.js",
       "Tailwind",
       "TypeScript",
       "React hook form",
@@ -393,7 +394,8 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
       "Next.js",
       "TypeScript",
       "Custom Components",
-      "Stripe",
+      "Node.js",
+      "NextAuth",
     ],
     github: "https://github.com/AlexLeiba/travel-plan",
     website: "https://travel-plan-enjoy.vercel.app/",
@@ -557,7 +559,7 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
     id: 18,
     title: "Weather forecast",
     description: `" Developed in 2021, Weather Forecast is a simple app that displays a real 5-day weather forecast for major cities in Romania. "`,
-    techUsed: ["JavaScript"],
+    techUsed: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/AlexLeiba/Romania-Weather-forecast",
     website: "https://alex-weather-forecast.netlify.app/",
     icon: {
