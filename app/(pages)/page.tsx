@@ -17,8 +17,9 @@ export default function Home() {
       <Hero />
 
       <Container variant={"fluid"} spacing="none" className="relative z-10">
-        <BlobAnimation className="top-1/3 blur-lg left-0 blob  w-[700px] h-[300px]" />
-        <BlobAnimation className="bottom-10 blur-md right-0 blob2  w-[600px] h-[400px]" />
+        <BlobAnimation className="top-1/3 blur-2xl left-0 blob  w-[700px] h-[300px]" />
+        <BlobAnimation className="bottom-10 blur-2xl right-0 blob2  w-[600px] h-[400px]" />
+        <BlobAnimation className="bottom-10 blur-2xl right-0 blob3  w-[350px] h-[250px]" />
         <About />
       </Container>
 

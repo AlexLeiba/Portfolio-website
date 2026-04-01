@@ -309,8 +309,8 @@ select:focus {
   background: linear-gradient(
     to bottom,
     #000,
-    #251439 35%,
-    #11091b 60%,
+    #25103d 35%,
+    #610c69 100%,
     #11091b 60%,
     #000000 70%
   );
@@ -443,7 +443,13 @@ select:focus {
   position: absolute;
   z-index: -1;
   border-radius: 20%;
-  animation: blobWavyFloat 20s ease-in-out infinite alternate;
+  animation: blobWavyFloat 30s ease-in-out infinite alternate;
+}
+.blob3 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 10%;
+  animation: blobWavyFloat2 30s ease-in-out infinite alternate;
 }
 @keyframes waterSplash {
   0% {
@@ -453,27 +459,27 @@ select:focus {
 
   20% {
     border-radius: 40% 60% 80% 20% / 30% 70% 40% 60%;
-    transform: translate(-6px, -100px) scale(1.05);
+    transform: translate(-6px, -200px) scale(1.05);
   }
 
   40% {
     border-radius: 65% 35% 75% 25% / 20% 80% 35% 65%;
-    transform: translate(50px, -50px) scale(1.08);
+    transform: translate(100px, -200px) scale(1.08);
   }
 
   60% {
     border-radius: 55% 45% 65% 35% / 45% 55% 60% 40%;
-    transform: translate(150px, 0px) scale(1.1);
+    transform: translate(150px, -100px) scale(1.1);
   }
 
   80% {
     border-radius: 48% 52% 58% 42% / 55% 45% 50% 50%;
-    transform: translate(80px, 100px) scale(1.05);
+    transform: translate(250px, 100px) scale(1.05);
   }
 
   100% {
     border-radius: 50% 50% 60% 40% / 55% 45% 55% 45%;
-    transform: translate(0, 0) scale(1);
+    transform: translate(100px, 0px) scale(1);
   }
 }
 
@@ -492,11 +498,11 @@ select:focus {
   }
   60% {
     border-radius: 70% 30% 55% 45% / 40% 60% 30% 70%;
-    transform: translate(-300px, 150px);
+    transform: translate(-300px, 300px);
   }
   80% {
     border-radius: 40% 60% 65% 35% / 60% 40% 70% 30%;
-    transform: translate(-100px, 50px);
+    transform: translate(-100px, 150px);
   }
   90% {
     border-radius: 40% 60% 65% 35% / 60% 40% 70% 30%;
@@ -505,5 +511,35 @@ select:focus {
   100% {
     border-radius: 35% 65% 70% 30% / 55% 35% 65% 45%;
     transform: translate(0px, 0px);
+  }
+}
+@keyframes blobWavyFloat2 {
+  0% {
+    border-radius: 35% 65% 70% 30% / 55% 35% 65% 45%;
+    transform: translate(-800px, -200px);
+  }
+  20% {
+    border-radius: 60% 40% 45% 55% / 30% 70% 30% 70%;
+    transform: translate(-100px, 0px);
+  }
+  40% {
+    border-radius: 50% 50% 30% 70% / 65% 35% 55% 45%;
+    transform: translate(200px, 50px);
+  }
+  60% {
+    border-radius: 70% 30% 55% 45% / 40% 60% 30% 70%;
+    transform: translate(-600px, 100px);
+  }
+  80% {
+    border-radius: 40% 60% 65% 35% / 60% 40% 70% 30%;
+    transform: translate(-500px, -500px);
+  }
+  90% {
+    border-radius: 40% 60% 65% 35% / 60% 40% 70% 30%;
+    transform: translate(-400px, -200px);
+  }
+  100% {
+    border-radius: 35% 65% 70% 30% / 55% 35% 65% 45%;
+    transform: translate(-800px, -200px);
   }
 }
