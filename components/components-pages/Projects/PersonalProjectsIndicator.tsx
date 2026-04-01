@@ -7,7 +7,7 @@ export function PersonalProjectsIndicator() {
     <div id="personal-projects">
       <Spacer size={16} />
       <div data-aos="fade-up" className="flex flex-col gap-4">
-        <div className="flex gap-4  items-center justify-end">
+        <div className="flex gap-4  items-center justify-end animate-pulse">
           <p className="text-xl ">Personal projects</p>
           <ArrowDown data-aos="fade-up" className="animate-pulse" />
         </div>

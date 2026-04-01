@@ -134,7 +134,7 @@ export const projectsData: ProjectsType[] = [
     id: 1,
     title: "Wonderland Essentials",
     description:
-      "Developed in 2022 and updated in 2025, Wonderland Essentials is a doTERRA products platform which guides users around the world the benefits of essential oils and other wonderful doTERRA products with weekly live events , monthly blends , articles, support and much more.",
+      "Wonderland Essentials is a doTERRA products platform which guides users around the world the benefits of essential oils and other wonderful doTERRA products with weekly live events , monthly blends , articles, support and much more.",
     techUsed: [""],
     github: "",
     website: "https://wonderlandessentials.com/",
@@ -154,7 +154,7 @@ export const projectsData: ProjectsType[] = [
     id: 2,
     title: "Wonderland Mobile App",
     description:
-      "Developed in 2022 and updated in 2025, Wonderland Essentials is a platform dedicated to doTERRA products that guides users around the world through the benefits of essential oils and other amazing offerings. The platform features weekly live events, monthly blends, informative articles, dedicated support, and much more. You can download the app for free from the App Store and Google Play.",
+      "Mobile app Wonderland Essentials is a platform dedicated to doTERRA products that guides users around the world through the benefits of essential oils and other amazing offerings. The platform features weekly live events, monthly blends, informative articles, dedicated support, and much more. You can download the app for free from the App Store and Google Play.",
     techUsed: [""],
     github: "",
     website: "https://apps.apple.com/gb/app/wonderland-essentials/id1635968740",
@@ -171,7 +171,7 @@ export const projectsData: ProjectsType[] = [
     id: 3,
     title: "Enovatika",
     description:
-      "Developed in 2024, the Enovatika website showcases the company`s achievements, successfully completed projects, benefits, web and design approaches, and many other valuable services.",
+      "Enovatika website showcases the company`s achievements, successfully completed projects, benefits, web and design approaches, and many other valuable services.",
     techUsed: [""],
     github: "",
     website: "https://enovatika.com/en",
@@ -223,28 +223,28 @@ export const projectsData: ProjectsType[] = [
   //     />
   //   ),
   // },
-  // {
-  //   id: 5,
-  //   title: "The Scaleup fest",
-  //   description:
-  //     "Designed for companies that have moved past the early stage , Scaleup Fest is built for scaleups actively navigating growth, market entry, expansion, investment-readiness, and exits. It’s also relevant for mid-sized companies and mature startups looking to learn from others, sharpen their growth strategy, or meet potential partners and investors.",
-  //   techUsed: [""],
-  //   github: "",
-  //   website: "https://thescaleupfest.com/",
-  //   icon: {
-  //     src: "/projects/scaleup-web.webp",
-  //     alt: "Scaleup Fest",
-  //   },
-  //   icon2: {
-  //     src: "/projects/scaleup-mobile.webp",
-  //     alt: "Scaleup Fest mobile",
-  //   },
-  // },
+  {
+    id: 5,
+    title: "The Scaleup fest",
+    description:
+      "Designed for companies that have moved past the early stage , Scaleup Fest is built for scaleups actively navigating growth, market entry, expansion, investment-readiness, and exits. It’s also relevant for mid-sized companies and mature startups looking to learn from others, sharpen their growth strategy, or meet potential partners and investors.",
+    techUsed: [""],
+    github: "",
+    website: "https://thescaleupfest.com/",
+    icon: {
+      src: "/projects/scaleup-web.webp",
+      alt: "Scaleup Fest",
+    },
+    icon2: {
+      src: "/projects/scaleup-mobile.webp",
+      alt: "Scaleup Fest mobile",
+    },
+  },
   {
     id: 6,
     title: "Medforeldre",
     description:
-      "Developed in 2022, Medforeldre is a web service which offers parenting advice and co-parent matching, and is intended to advise and guide people who are seeking parenthood in safe and stable parenthood.",
+      "Medforeldre is a web service which offers parenting advice and co-parent matching, and is intended to advise and guide people who are seeking parenthood in safe and stable parenthood.",
     techUsed: [""],
     github: "",
     website: "https://www.medforeldre.no/",
@@ -260,8 +260,13 @@ export const projectsData: ProjectsType[] = [
   {
     id: 7,
     title: "TaskMate",
-    description: `" TaskMate is a Task management system web app that allows users to create, manage, assign, add attachments , comments and prioritize tasks and many other useful features. 
-    It offers a clean ,intuitive and customizable interface, drag-and-drop functionality for lists and cards, and a large variety of beautiful backgrounds, making it easy for users to stay organized and focused while enjoying the beautiful design. "`,
+    description: `"TaskMate is a task management system designed for users who want to organize their tasks and projects efficiently in a friendly, secure, and intuitive environment—without the need for complex setup or instructions.
+
+It features a clean, customizable interface and supports drag-and-drop functionality for lists and cards. 
+
+TaskMate includes essential tools such as assignees, due dates, checklists, a rich text editor, activity logs, customizable statuses, dashboard chart visualizations and advanced filters. 
+
+It also offers role-based access control and a wide selection of visually appealing backgrounds, along with many other features to enhance productivity."`,
     techUsed: [
       "Next.js",
       "React.js",
@@ -270,6 +275,9 @@ export const projectsData: ProjectsType[] = [
       "React hook form",
       "zod",
       "Shadcn",
+      "Prisma",
+      "Tanstack Query",
+      "Stripe",
       "Clerk",
     ],
     github: "https://github.com/AlexLeiba/TaskMate-Task-Management-System",
@@ -286,9 +294,10 @@ export const projectsData: ProjectsType[] = [
   {
     id: 8,
     title: "Spend or keep",
-    description: `" Spend or Keep is a full-stack Web App application designed to help users track expenses and manage their budgets. 
-    It provides a user-friendly interface and tools that encourage saving and staying on top of personal finances.
-    It features a dashboard that displays all the expenses and incomes, a chart that shows the user's spending habits with sorting options by date, table view for expenses and incomes, sortings, create and edit categories. "`,
+    description: `"Spend or Keep is budget tracker application designed to help users track expenses and manage their budgets efficiently. 
+It provides a user-friendly interface and tools that encourage saving and staying on top of personal finances.
+
+It features a dashboard that displays all the expenses and incomes, a chart that shows the user's spending habits with sorting options by date, table view for expenses and incomes, sortings, create and edit categories. "`,
     techUsed: [
       "React.js",
       "Next.js",
@@ -312,8 +321,9 @@ export const projectsData: ProjectsType[] = [
   {
     id: 9,
     title: "eShop",
-    description: `" eShop is a full-stack e-commerce Web App that allows users to browse and purchase products. 
-      It features a user-friendly interface ,white and dark mode based on your browser theme, star rating, lightbox view, sortings ,pagination, global search, secure payment processing with Stripe and other e-commerce basic features. "`,
+    description: `"eShop is a full-stack e-commerce application that allows users to browse and purchase products. 
+
+It has a user-friendly interface , white and dark mode based on your browser or phone theme, product star rating , lightbox image product view , sortings , pagination , global product search, secure payment processing with Stripe, purchase history and other e-commerce basic features. "`,
     techUsed: [
       "React.js",
       "TypeScript",
@@ -340,8 +350,8 @@ export const projectsData: ProjectsType[] = [
   {
     id: 10,
     title: "eShop Admin CMS",
-    description: `" eShop Admin Dashboard is a full-stack CMS Web App  for handling eShop app data. 
-      It provides an intuitive interface for managing products, orders, and customers, also provides a dashboard for tracking sales , revenue, and active users. "`,
+    description: `"eShop Admin Dashboard is a full-stack CMS application  for handling eShop application users and products. 
+It provides an intuitive interface for managing products (create, update, delete), categories, orders, customers, also provides a dashboard with chart vizualizations for tracking sales , revenue, and active users. "`,
     techUsed: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/AlexLeiba/eShop",
     website: "https://eshop-admin-uvel.onrender.com/",
@@ -386,9 +396,10 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
   {
     id: 11,
     title: "Travel-Plan",
-    description: `" Travel-Plan is a full-stack Web App that allows users to keep track and enjoy again the visited places or to plan a future trip. 
-    This Web app is basically a travel album where you can keep all your travel memories , photos and other useful informations.
-      It features creating or planning a trip, adding and reviewing the trip photo gallery , star rate , globe view of all your visited and created trips, map view ,drag and drop upload images, links, paginations, sortings , gallery slider, white and dark theme which is adopted to your browser theme"`,
+    description: `"Travel-Plan is a full-stack application that helps users to enjoy again or visualize the visited places or to plan a future trip. 
+Tavel-plan app is basically a travel album where you can keep all your travel memories , photos , links and other useful informations about your trips.
+
+It provides creating or planning a trip, adding and reviewing the trip photo gallery , rating a trip , visualize all visited places on an interactive 3D globe view , visualize future or past trips on interactive map view , drag and drop upload images , links , infinite paginations , sortings , gallery slider, white and dark theme which is adopted to your browser or mobile theme"`,
     techUsed: [
       "React.js",
       "Next.js",
@@ -412,9 +423,11 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
   {
     id: 12,
     title: " SyncPoint / Calendly Clone",
-    description: `" SyncPoint is a full-stack Calendly like app which allows users to provide services and book appointments on Google Meet which is automatically generated link,  within the availability of the service provider.
-    All appointments will be added automatically in your google calendar and will notify you via email with all additional informations and Google Meet link.
-    It features: User authentication, Create and edit services, Book or cancel appointments, Sortings, Availability settings, Google calendar notification, Public and unique link for all events provided by the service provider, Automatically provided Google Meet link.
+    description: `"SyncPoint is a full-stack Calendly like app which allows users to provide services and book appointments on Google Meet  within the availability of the service provider.
+
+All appointments will be added automatically in your google calendar and will notify you via email with all additional informations and Google Meet link.
+
+It provides: User authentication, Create and edit services, Book or cancel appointments, Sortings, Availability settings, Google calendar notification, Public and unique link for all events provided by the service provider, Automatically provided Google Meet link.
     "`,
     techUsed: [
       "Next.js",
@@ -440,8 +453,9 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
   {
     id: 13,
     title: "Web tech blogs",
-    description: `" Web Tech Blogs is a full-stack Web App focused on web technology topics, created to share experiences and knowledge about web development that are valuable to the community.
-    It features a user-frienfly interface where you can create your own blogs using a rich text editor or just browse through the existing ones. The app also has a built-in search function and other useful informations about the selected article, allowing you to easily find the content you're looking for. "`,
+    description: `"Web Tech Blogs is a full-stack Web App focused on web technology topics, created to share experiences and knowledge about web development that are valuable to the community.
+
+It provides a user-friendly interface where you can create your own blogs using a rich text editor , upload images, links, categorise the article, view other articles, sort by category, view most read articles, view related articles by author. "`,
     techUsed: [
       "Next.js",
       "Tailwind",
@@ -465,9 +479,10 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
   {
     id: 14,
     title: "Chat me",
-    description: `" Chat Me is a full-stack Web App.
-      It features a real-time chat and notifications which was designed to make connecting with your friends easy. 
-      It provides a wide variety of themes which changes the entire aspect of the app and makes the chat experience unique, edit personal profile data, share images and emoji. "`,
+    description: `"Chat Me is a full-stack app that allows users to chat with their friends in real-time.
+It provides a real-time chat and notifications which was designed to make connecting with your friends easy. 
+
+It provides a wide variety of themes with a preview window, this feature changes the entire aspect of the app and makes the chat experience unique and engaging. It allows users to edit personal profile data, share images and emoji with others, view other users profiles, and much more. "`,
     techUsed: [
       "React.js",
       "Tailwind",
