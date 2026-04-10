@@ -3,6 +3,7 @@ import { Col, Container, Row } from "../UI/Grid";
 import Link from "next/link";
 import { format } from "date-fns";
 import { Spacer } from "../UI/spacer/spacer";
+import { SocialLinks } from "./SocialLinks";
 
 function footer() {
   return (
@@ -66,33 +67,7 @@ function footer() {
           <Col lg={2} md={2}>
             <p className="text-xl font-bold">Social</p>
 
-            <div className="dark:text-baseline-200">
-              <Link
-                href={`${process.env.NEXT_PUBLIC_GITHUB_URL}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Github"
-              >
-                <p>Github</p>
-              </Link>
-
-              <Link
-                href={`${process.env.NEXT_PUBLIC_LINKEDIN_URL}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Linkedin"
-              >
-                <p>Linkedin</p>
-              </Link>
-              <Link
-                href={`${process.env.NEXT_PUBLIC_EMAIL_URL}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Gmail"
-              >
-                <p>Gmail</p>
-              </Link>
-            </div>
+            <SocialLinks size={20} gap={16} />
           </Col>
         </Row>
       </Container>

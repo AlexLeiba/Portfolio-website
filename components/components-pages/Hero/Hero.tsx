@@ -1,50 +1,49 @@
 "use client";
 import React from "react";
-import { Col, Container, Row } from "@/components/UI/Grid";
+import { Container } from "@/components/UI/Grid";
 import { cn } from "@/lib/utils";
-import { useTheme } from "@/hooks/useThemeContext";
-import { DownloadPdf } from "./DownloadPdf";
-import { UserIllustration } from "./UserIllustration";
+
 import Greeting from "./Greeting";
-import FloatingIcons from "./FloatingIcons";
-import { Sphere } from "./Sphere";
+import { Button } from "@/components/UI/Button/Button";
+import { ArrowBigRight, ChevronsDown } from "lucide-react";
+import Link from "next/link";
 
 function Hero() {
-  const { darkMode } = useTheme();
-
   return (
     <Container
       variant={"fluid"}
-      className={cn(
-        "relative overflow-hidden h-[calc(100vh)] flex flex-col justify-between items-center pb-0 lg:pb-0 md:pb-0",
-      )}
+      className={cn("relative overflow-hidden h-[calc(100vh-58px)] ")}
     >
-      <Row>
-        <Col className="flex flex-col justify-between items-center">
-          {/* Background */}
-          <div
-            className={cn(
-              darkMode ? "backgroundDarkHero" : "backgroundLightHero",
-            )}
-          />
-
-          <Sphere>
-            <UserIllustration type="desktop" />
-          </Sphere>
-
-          <div className=" flex justify-center flex-col items-center z-40 h-full">
-            <div className="font-bold text-center z-40 ">
-              <Greeting />
-
-              <DownloadPdf />
-            </div>
-
-            <FloatingIcons />
-          </div>
-        </Col>
-      </Row>
-
-      <UserIllustration type="mobile" />
+      {/* <div
+        className={cn(darkMode ? "backgroundDarkHero" : "backgroundLightHero")}
+      /> */}
+      <Container className="flex flex-col  items-start justify-center gap-8 h-full relative z-10">
+        <Greeting />
+        <div className="flex items-center gap-8 ">
+          <Link href={"#contact"}>
+            <Button
+              size="large"
+              variant="primary"
+              className="group bg-gradient-to-r from-primary-400 to-primary-600 hover:opacity-90"
+              rightIcon={
+                <ArrowBigRight className="ml-2 group-hover:translate-x-6 transition-all duration-500 " />
+              }
+            >
+              <p className=" font-semibold">Get in touch</p>
+            </Button>
+          </Link>
+        </div>
+      </Container>
+      <div className="flex justify-center">
+        <Link href={"#about"}>
+          <Button className="hover:animate-bounce " variant={"link"}>
+            <ChevronsDown
+              size={30}
+              className="dark:text-white drop-shadow-[white_0px_4px_10px] transition-all  animate-pulse"
+            />
+          </Button>
+        </Link>
+      </div>
     </Container>
   );
 }

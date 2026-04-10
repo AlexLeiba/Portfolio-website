@@ -260,6 +260,51 @@
       line-height: 16px;
     }
   }
+  @media (max-width: 768px) {
+    /* HEADINGS */
+    h1 {
+      @apply text-5xl;
+    }
+    h2 {
+      @apply text-4xl;
+    }
+    h3 {
+      @apply text-2xl;
+    }
+    h4 {
+      @apply text-xl;
+    }
+    h5 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    /* PARAGRAPHS */
+
+    .body-xl {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .body-lg {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .body-md {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .body-sm {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .body-xs {
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
 }
 
 * {
