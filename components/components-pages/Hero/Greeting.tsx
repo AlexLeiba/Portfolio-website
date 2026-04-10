@@ -13,8 +13,8 @@ function Greeting() {
       <BlobAnimation className="bottom-10 blur-2xl right-0 blob3  w-[350px] h-[250px]" />
 
       <SocialLinks size={35} gap={32} />
-      <div className="flex flex-col gap-2 md:text-left lg:text-left text-center">
-        <div className="flex gap-2 items-center md:flex-row md:justify-start lg:justify-start  justify-center flex-col">
+      <div className="flex flex-col  gap-2 md:text-left lg:text-left text-center">
+        <div className="flex gap-2 items-center md:flex-row lg:flex-row md:justify-start lg:justify-start  justify-center flex-col">
           <Author />
 
           <div className="flex items-center gap-1">
