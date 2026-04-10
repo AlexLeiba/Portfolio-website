@@ -19,7 +19,7 @@ function Hero() {
       /> */}
       <Container className="flex flex-col  items-start justify-center gap-8 h-full relative z-10">
         <Greeting />
-        <div className="flex items-center gap-8 ">
+        <div className="flex items-center gap-8 md:justify-start lg:justify-start justify-center w-full ">
           <Link href={"#contact"}>
             <Button
               size="large"
