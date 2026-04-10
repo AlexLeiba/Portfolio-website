@@ -9,8 +9,8 @@ export function Author() {
         alt="Author"
         width={200}
         height={200}
-        src={"/author.jpg"}
-        className="object-cover rounded-full w-[150px] h-[150px] border-2 border-primary-400 "
+        src={"/author.png"}
+        className="object-cover object-top rounded-full w-[150px] h-[150px] border-2 border-primary-400 "
       />
       <div className="absolute bottom-0 right-0 z-10">
         <DownloadPdf />

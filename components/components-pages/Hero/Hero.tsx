@@ -36,7 +36,7 @@ function Hero() {
       </Container>
       <div className="flex justify-center">
         <Link href={"#about"}>
-          <Button className="hover:animate-bounce " variant={"link"}>
+          <Button className="hover:animate-bounce" variant={"link"}>
             <ChevronsDown
               size={30}
               className="dark:text-white drop-shadow-[white_0px_4px_10px] transition-all  animate-pulse"
