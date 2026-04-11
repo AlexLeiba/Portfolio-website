@@ -24,7 +24,7 @@ export function DownloadPdf() {
         <FileDown
           width={50}
           height={50}
-          className=" dark:text-white text-baseline-600 hover:text-primary-600 dark:hover:text-primary-600"
+          className=" dark:text-white text-baseline-600 hover:text-success-500 dark:hover:text-success-500"
         />
       </Button>
     </div>
