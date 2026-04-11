@@ -11,7 +11,7 @@ import { SocialLinks } from "./SocialLinks";
 
 function Header() {
   const [isVisible, setIsVisible] = useState(true);
-  const [isOnTop, setIsOnTop] = useState(false);
+  const [isOnTop, setIsOnTop] = useState(true);
 
   const prevScrollRef = useRef(0);
   useEffect(() => {

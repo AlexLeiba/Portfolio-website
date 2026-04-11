@@ -90,14 +90,13 @@ function Greeting() {
             ]}
             wrapper="h5"
             speed={50}
-            // style={{ fontSize: "2em", display: "inline-block" }}
             className="dark:text-primary-400 text-black h-[30px] md:h-[30px] lg:h-[40px]"
             repeat={Infinity}
             cursor={true}
           />
 
           <div className="flex flex-col">
-            <p className="  z-10 dark:text-baseline-200 text-baseline-600 text-balance">
+            <p className=" lg:text-xl md:text-xl z-10 dark:text-baseline-200 text-baseline-600 text-balance">
               Over the past few years, I&apos;ve been building and scaling
               <span className="text-primary-400 mx-1">frontend</span>
               software while actively taking
@@ -105,7 +104,7 @@ function Greeting() {
             </p>
 
             <div className="flex gap-1 md:justify-start lg:justify-start justify-center">
-              <p>download my pdf</p>
+              <p className="text-xl">download my</p>
               <Button
                 onClick={handleDownloadPdf}
                 title="Download my pdf resume"
@@ -113,7 +112,9 @@ function Greeting() {
                 className="animate-pulse"
                 variant={"link"}
               >
-                <p className="text-primary-600">resume here</p>
+                <p className="text-primary-500 text-xl font-semibold">
+                  pdf resume here
+                </p>
               </Button>
             </div>
           </div>
