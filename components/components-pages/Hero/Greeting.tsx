@@ -17,8 +17,8 @@ function Greeting() {
   }
   return (
     <div className="flex flex-col md:items-start lg:items-start items-center gap-8 relative">
-      <BlobAnimation className="top-1/3 blur-2xl left-0 blob  w-[700px] h-[300px]" />
-      <BlobAnimation className="bottom-10 blur-2xl right-0 blob2  w-[600px] h-[400px]" />
+      <BlobAnimation className="top-1/3 blur-2xl left-0 blob  w-[800px] h-[300px]" />
+      <BlobAnimation className="bottom-10 blur-2xl right-0 blob2  w-[800px] h-[400px]" />
       <BlobAnimation className="bottom-10 blur-2xl right-0 blob3  w-[350px] h-[250px]" />
 
       <SocialLinks size={35} gap={32} />

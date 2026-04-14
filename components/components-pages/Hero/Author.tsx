@@ -7,10 +7,10 @@ export function Author() {
     <div className="relative">
       <Image
         alt="Author"
-        width={200}
-        height={200}
+        width={300}
+        height={300}
         src={"/author.png"}
-        className="object-cover object-top rounded-full w-[150px] h-[150px] border-2 border-primary-400 "
+        className="object-cover object-top rounded-full lg:w-[250px] lg:h-[250px] h-[150px] w-[150px] border-2 border-primary-400 "
       />
       <div className="absolute bottom-0 right-0 z-10">
         <DownloadPdf />

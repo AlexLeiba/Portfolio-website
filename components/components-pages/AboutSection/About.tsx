@@ -87,10 +87,10 @@ I enjoy being a valuable part of a team, collaborating to brainstorm the best id
               ])}
             >
               {/* GRADIENT */}
-              <BackgroundGradientAnimation
+              {/* <BackgroundGradientAnimation
                 className="-inset-[2px] "
                 classNameBackground=" rounded-[10px] dark:rounded-[12px]"
-              />
+              /> */}
               <p className="text-primary-400 z-20 text-xl">Skills</p>
               <ChevronDown
                 className="text-primary-400 animate-pulse z-20"

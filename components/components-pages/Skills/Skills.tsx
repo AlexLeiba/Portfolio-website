@@ -4,10 +4,13 @@ import { Spacer } from "../../UI/spacer/spacer";
 import { Col, Container, Row } from "../../UI/Grid";
 import { skillsData } from "@/consts/localDB";
 import { SkillsCard } from "./SkillsCard";
+import { BlobAnimation } from "@/components/UI/BlobAnimation";
 
 function About() {
   return (
-    <Row className="flex flex-col ">
+    <Row className="flex flex-col relative">
+      <BlobAnimation className="top-1/2 blur-2xl left-1/2 translate-x-1/2 blob  w-[800px] h-[300px]" />
+      <BlobAnimation className="bottom-1/4 blur-2xl left-1/4 translate-x-1/2 blob2  w-[700px] h-[400px]" />
       <Container id="skills">
         <Row>
           <Col lgOffset={2} lg={8}>

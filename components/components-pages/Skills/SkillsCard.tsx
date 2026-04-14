@@ -19,11 +19,11 @@ export function SkillsCard({ data, index }: Props) {
         data-aos="fade-up"
         className={cn(
           data.title === "Projects" && "cursor-pointer",
-          "dark:bg-baseline-900 bg-baseline-50 z-20 w-full lg:h-24 rounded-xl mb-2 gap-4 shadow-lg  transition-transform duration-200 ease-out will-change-transform  group relative conic-gradient-parent dark:skillsCard "
+          "dark:bg-baseline-900/30 bg-baseline-50/10 z-20 w-full lg:h-24 rounded-xl mb-2 gap-4 shadow-lg   transition-transform duration-200 ease-out will-change-transform  group relative conic-gradient-parent dark:skillsCard ",
         )}
       >
         {/* GRADIENT */}
-        <BackgroundGradientAnimation classNameBackground="bg-transparent" />
+        {/* <BackgroundGradientAnimation classNameBackground="bg-transparent" /> */}
         {/*  */}
 
         <Link
@@ -33,7 +33,7 @@ export function SkillsCard({ data, index }: Props) {
         >
           <div
             style={{
-              background: `linear-gradient(to right,${COLORS.blueLight},${COLORS.blueLight},${COLORS.blueDark},${data.percentage}% , transparent 10%)`,
+              background: `linear-gradient(to right,${COLORS.blueLight},${COLORS.blueLight},${COLORS.blueDark},${COLORS.blueDark},${data.percentage}% , transparent 10%)`,
             }}
             key={index}
             className={cn([
