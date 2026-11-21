@@ -19,9 +19,9 @@ export const aboutMeData: AboutMeType[] = [
       {
         title: "",
         description: [
-          " • High school diploma",
-          " • IT school - Front end development school",
-          " • Meta - Front end development specialization",
+          " • IT school - Front end development specialization",
+          " • Meta - web development course",
+          " • IBM - Developing Back-End Apps with Node.js and Express.js",
           " • Burlington english school",
         ],
       },
@@ -37,10 +37,10 @@ export const aboutMeData: AboutMeType[] = [
         description: [
           " • IT School - Web development certificate",
           " • Meta - Front-end development specialization certificate",
-          " • IBM - Developing Back-End Apps with Node.js and Express.js",
-          " • Skillup online - React Native: Developing Android and iOS Apps ",
-          " • Meta - React Advanced",
-          " • Meta - Principles of UX/UI Design",
+          " • IBM - Developing Back-End Apps with Node.js and Express.js certificate",
+          " • Skillup online - React Native: Developing Android and iOS Apps certificate",
+          " • Meta - React Advanced certificate",
+          " • Meta - Principles of UX/UI Design certificate",
           " • Burlington english certificate",
         ],
       },
@@ -259,7 +259,7 @@ export const projectsData: ProjectsType[] = [
   },
   {
     id: 7,
-    title: "TaskMate",
+    title: "TaskMate | Manage your tasks",
     description: `"TaskMate is a task management system designed for users who want to organize their tasks and projects efficiently in a friendly, secure, and intuitive environment—without the need for complex setup or instructions.
 
 It features a clean, customizable interface and supports drag-and-drop functionality for lists and cards. 
@@ -293,34 +293,37 @@ It also offers role-based access control and a wide selection of visually appeal
   },
   {
     id: 8,
-    title: "Spend or keep",
-    description: `"Spend or Keep is budget tracker application designed to help users track expenses and manage their budgets efficiently. 
-It provides a user-friendly interface and tools that encourage saving and staying on top of personal finances.
-
-It features a dashboard that displays all the expenses and incomes, a chart that shows the user's spending habits with sorting options by date, table view for expenses and incomes, sortings, create and edit categories. "`,
+    title: "FinMate | Finance helper and organizer",
+    description: `The main objective of finMate is to make personal financial management easier, more organized, and more accessible. By combining expense tracking, budget planning, savings progress monitoring, financial analytics, and CSV data management, finMate gives users the tools to understand their spending behavior, establish financial goals, and make more informed financial decisions.`,
     techUsed: [
       "React.js",
-      "Next.js",
-      "Tailwind",
       "TypeScript",
-      "Prisma",
-      "Clerk",
+      "Zustand",
+      "React-hook-form",
+      "Zod",
+      "Tailwind",
       "Shadcn",
+      "Recharts",
+      "Node.js",
+      "axios",
+      "MongoDB",
+      "Prisma",
+      "JWT",
     ],
-    github: "https://github.com/AlexLeiba/SpendAndKeep",
-    website: "https://spend-or-keep.vercel.app/",
+    github: "https://github.com/AlexLeiba/finMate",
+    website: "https://fin-mate-fe.vercel.app/",
     icon: {
-      src: "/projects/spend-and-keep-web.webp",
-      alt: "spend and keep",
+      src: "/projects/fin-mate-web.webp",
+      alt: "fin mate",
     },
     icon2: {
-      src: "/projects/spend-and-keep-mobile.webp",
-      alt: "spend and keep mobile",
+      src: "/projects/fin-mate-mobile.webp",
+      alt: "fin mate mobile",
     },
   },
   {
     id: 9,
-    title: "eShop",
+    title: "eShop | e-commerce app",
     description: `"eShop is a full-stack e-commerce application that allows users to browse and purchase products. 
 
 It has a user-friendly interface , white and dark mode based on your browser or phone theme, product star rating , lightbox image product view , sortings , pagination , global product search, secure payment processing with Stripe, purchase history and other e-commerce basic features. "`,
@@ -395,7 +398,7 @@ In the future, I plan to improve , extend , test with Jest and introduce new one
   },
   {
     id: 11,
-    title: "Travel-Plan",
+    title: "Travel-Plan | Trip planner and memory keeper",
     description: `"Travel-Plan is a full-stack application that helps users to enjoy again or visualize the visited places or to plan a future trip. 
 Tavel-plan app is basically a travel album where you can keep all your travel memories , photos , links and other useful informations about your trips.
 
@@ -478,7 +481,7 @@ It provides a user-friendly interface where you can create your own blogs using 
 
   {
     id: 14,
-    title: "Chat me",
+    title: "ChatMe | Chat app",
     description: `"Chat Me is a full-stack app that allows users to chat with their friends in real-time.
 It provides a real-time chat and notifications which was designed to make connecting with your friends easy. 
 
@@ -506,57 +509,10 @@ It provides a wide variety of themes with a preview window, this feature changes
     },
   },
 
-  {
-    id: 15,
-    title: "Dev blog",
-    description: `" Developed in 2024, this is a simple full-stack blog app focused on development technologies. It is fully functional, featuring email verification and an admin dashboard. The project was primarily built for the purpose of learning backend development. "`,
-    techUsed: [
-      "JavaScript",
-      "Node.js",
-      "Express.js",
-      "EJS",
-      "Nodemailer",
-      "JWT",
-    ],
-    github:
-      "https://github.com/AlexLeiba/Dev-Blog-NodeJs-ExpressJS-fullstack-app",
-    website: "https://full-stack-blog-37mi.onrender.com",
 
-    icon: {
-      src: "/projects/dev-blog-web.webp",
-      alt: "express-blog",
-    },
-    icon2: {
-      src: "/projects/dev-blog-mobile.webp",
-      alt: "express-blog mobile",
-    },
-  },
-  {
-    id: 16,
-    title: "My portfolio",
-    description: `" Developed in 2025, My Portfolio App is a simple website that showcases my current skills and the projects I have worked on. "`,
-    techUsed: [
-      "Next.js",
-      "Tailwind",
-      "Typescript",
-      "React hook form",
-      "zod",
-      "AOS animation",
-    ],
-    website: "/",
-    github: "https://github.com/AlexLeiba/Portfolio",
-    icon: {
-      src: "/projects/my-portofolio-web.webp",
-      alt: "My portfolio",
-    },
-    icon2: {
-      src: "/projects/portfolio-mobile-white-theme.webp",
-      alt: "My portfolio mobile",
-    },
-  },
   {
     id: 17,
-    title: "WW-News",
+    title: "Real time world wide news",
     description: `" Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API. "`,
     techUsed: ["React.js", "Bootstrap"],
     github: "https://github.com/AlexLeiba/WW-Everyday-news",
