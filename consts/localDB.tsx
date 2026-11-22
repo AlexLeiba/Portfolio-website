@@ -510,22 +510,22 @@ It provides a wide variety of themes with a preview window, this feature changes
   },
 
 
-  {
-    id: 17,
-    title: "Real time world wide news",
-    description: `" Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API. "`,
-    techUsed: ["React.js", "Bootstrap"],
-    github: "https://github.com/AlexLeiba/WW-Everyday-news",
-    website: "https://worldwide-everyday-news.netlify.app",
-    icon: {
-      src: "/projects/ww-news-web.webp",
-      alt: "world-wide-news",
-    },
-    icon2: {
-      src: "/projects/ww-news-mobile.webp",
-      alt: "world-wide-news mobile",
-    },
-  },
+  // {
+  //   id: 17,
+  //   title: "Real time world wide news",
+  //   description: `" Developed in 2022, World Wide News is a real-time news app that delivers global news updates using the Guardian OpenPlatform API. "`,
+  //   techUsed: ["React.js", "Bootstrap"],
+  //   github: "https://github.com/AlexLeiba/WW-Everyday-news",
+  //   website: "https://worldwide-everyday-news.netlify.app",
+  //   icon: {
+  //     src: "/projects/ww-news-web.webp",
+  //     alt: "world-wide-news",
+  //   },
+  //   icon2: {
+  //     src: "/projects/ww-news-mobile.webp",
+  //     alt: "world-wide-news mobile",
+  //   },
+  // },
   {
     id: 18,
     title: "Weather forecast",
