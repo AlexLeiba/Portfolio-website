@@ -293,8 +293,8 @@ It also offers role-based access control and a wide selection of visually appeal
   },
   {
     id: 8,
-    title: "FinMate | Finance helper and organizer",
-    description: `The main objective of finMate is to make personal financial management easier, more organized, and more accessible. By combining expense tracking, budget planning, savings progress monitoring, financial analytics, and CSV data management, finMate gives users the tools to understand their spending behavior, establish financial goals, and make more informed financial decisions.`,
+    title: "FineMate | Finance helper and organizer",
+    description: `The main objective of fineMate is to make personal financial management easier, more organized, and more accessible. By combining expense tracking, budget planning, savings progress monitoring, financial analytics, and CSV data management, finMate gives users the tools to understand their spending behavior, establish financial goals, and make more informed financial decisions.`,
     techUsed: [
       "React.js",
       "TypeScript",
@@ -305,9 +305,10 @@ It also offers role-based access control and a wide selection of visually appeal
       "Shadcn",
       "Recharts",
       "Node.js",
+      "Express",
       "axios",
       "MongoDB",
-      "Prisma",
+      "Mongoose",
       "JWT",
     ],
     github: "https://github.com/AlexLeiba/finMate",
